@@ -6,7 +6,7 @@ import {
   Switch
 } from 'react-router-dom';
 
-import Hotspots from '../Hotspots/Hotspots';
+import HotspotsList from '../HotspotsList/HotspotsList';
 
 class Home extends Component {
   render() {
@@ -18,7 +18,7 @@ class Home extends Component {
           </nav>
           <main>
             <Switch>
-              <Route exact path="/hotspots" component={Hotspots} />
+              <Route exact path="/hotspots" component={HotspotsList} />
             </Switch>
           </main>
         </div>
