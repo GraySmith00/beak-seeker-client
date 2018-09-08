@@ -20,3 +20,14 @@ export const getMostActive = hotspots => {
 
   return mostActive.slice(0, 10);
 };
+
+export const dashCaseNameHelper = name => {
+  return name
+    .split('(')
+    .join('')
+    .split(')')
+    .join('')
+    .split(' ')
+    .join('-')
+    .toLowerCase();
+};
