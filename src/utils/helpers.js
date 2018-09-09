@@ -20,3 +20,22 @@ export const getMostActive = hotspots => {
 
   return mostActive.slice(0, 10);
 };
+
+export const dashCaseNameHelper = name => {
+  return name
+    .split('(')
+    .join('')
+    .split(')')
+    .join('')
+    .split(' ')
+    .join('-')
+    .toLowerCase();
+};
+
+export const getBirdImage = async name => {
+  const url = `http://en.wikipedia.org/w/api.php?action=query&origin=*&titles=${name.toLowerCase()}&prop=pageimages&format=json&pithumbsize=200/`;
+  const response = await fetch(url);
+  const data = await response.json();
+  const pagesObj = data.query.pages;
+  return pagesObj[Object.keys(pagesObj)[0]].thumbnail.source;
+};
