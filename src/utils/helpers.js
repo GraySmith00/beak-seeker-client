@@ -33,8 +33,9 @@ export const dashCaseNameHelper = name => {
 };
 
 export const getBirdImage = async name => {
-  const url = `http://en.wikipedia.org/w/api.php?action=query&titles=${name}&prop=pageimages&format=json&pithumbsize=200/`;
-  const response = await fetch(url, { mode: 'no-cors' });
+  const url = `http://en.wikipedia.org/w/api.php?action=query&origin=*&titles=${name.toLowerCase()}&prop=pageimages&format=json&pithumbsize=200/`;
+  const response = await fetch(url);
   const data = await response.json();
-  console.log(data);
+  const pagesObj = data.query.pages;
+  return pagesObj[Object.keys(pagesObj)[0]].thumbnail.source;
 };

@@ -20,7 +20,7 @@ class BirdInfo extends Component {
     return (
       <div>
         <h1>BirdInfo</h1>
-        <img src={this.state.birdImage} alt="Bird Image" />
+        <img src={this.state.birdImage} alt={this.props.bird.comName} />
       </div>
     );
   }
