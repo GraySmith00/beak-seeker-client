@@ -37,12 +37,27 @@ export const getBirdImage = async name => {
   const response = await fetch(url);
   const data = await response.json();
   const pagesObj = data.query.pages;
-  if (!pagesObj[Object.keys(pagesObj)[0]].thumbnail && !name.includes('-')) {
+  const firstPage = pagesObj[Object.keys(pagesObj)[0]];
+  if (!firstPage.thumbnail && !name.includes('-')) {
     return '';
-  } else if (!pagesObj[Object.keys(pagesObj)[0]].thumbnail) {
+  } else if (!firstPage.thumbnail) {
     return getBirdImage(name.split('-').join(' '));
   } else {
-    const imgSrc = pagesObj[Object.keys(pagesObj)[0]].thumbnail.source;
+    const imgSrc = firstPage.thumbnail.source;
     return imgSrc;
+  }
+};
+
+export const getBirdInfo = async name => {
+  const url = `https://en.wikipedia.org/w/api.php?origin=*&format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles=${name.toLowerCase()}`;
+  const response = await fetch(url);
+  const data = await response.json();
+  const pagesObj = data.query.pages;
+  const firstPage = pagesObj[Object.keys(pagesObj)[0]];
+  if (!firstPage.extract) {
+    return 'Sorry, no information was found on this bird :(';
+  } else {
+    console.log(firstPage.extract);
+    return firstPage.extract;
   }
 };

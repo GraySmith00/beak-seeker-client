@@ -1,26 +1,32 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { getBirdImage } from '../../utils/helpers';
+import { getBirdImage, getBirdInfo } from '../../utils/helpers';
 
 class BirdInfo extends Component {
   constructor() {
     super();
     this.state = {
-      birdImage: ''
+      birdImage: '',
+      birdInfo: ''
     };
   }
   async componentDidMount() {
-    const birdImage = await getBirdImage(this.props.bird.comName);
+    const { comName } = this.props.bird;
+    const birdImage = await getBirdImage(comName);
+    const birdInfo = await getBirdInfo(comName);
     this.setState({
-      birdImage
+      birdImage,
+      birdInfo
     });
   }
 
   render() {
+    const { birdImage, birdInfo } = this.state;
     return (
       <div>
         <h1>BirdInfo</h1>
         <img src={this.state.birdImage} alt={this.props.bird.comName} />
+        <p>{birdInfo}</p>
       </div>
     );
   }
