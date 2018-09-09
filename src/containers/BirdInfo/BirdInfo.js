@@ -25,7 +25,11 @@ class BirdInfo extends Component {
     return (
       <div>
         <h1>BirdInfo</h1>
-        <img src={this.state.birdImage} alt={this.props.bird.comName} />
+        {birdImage ? (
+          <img src={birdImage} alt={this.props.bird.comName} />
+        ) : (
+          <p>Sorry, we could not find an image of this bird at this time :(</p>
+        )}
         <p>{birdInfo}</p>
       </div>
     );

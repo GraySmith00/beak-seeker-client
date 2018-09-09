@@ -57,7 +57,6 @@ export const getBirdInfo = async name => {
   if (!firstPage.extract) {
     return 'Sorry, no information was found on this bird :(';
   } else {
-    console.log(firstPage.extract);
     return firstPage.extract;
   }
 };
