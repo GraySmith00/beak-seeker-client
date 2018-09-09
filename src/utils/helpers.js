@@ -37,5 +37,12 @@ export const getBirdImage = async name => {
   const response = await fetch(url);
   const data = await response.json();
   const pagesObj = data.query.pages;
-  return pagesObj[Object.keys(pagesObj)[0]].thumbnail.source;
+  if (!pagesObj[Object.keys(pagesObj)[0]].thumbnail && !name.includes('-')) {
+    return '';
+  } else if (!pagesObj[Object.keys(pagesObj)[0]].thumbnail) {
+    return getBirdImage(name.split('-').join(' '));
+  } else {
+    const imgSrc = pagesObj[Object.keys(pagesObj)[0]].thumbnail.source;
+    return imgSrc;
+  }
 };
