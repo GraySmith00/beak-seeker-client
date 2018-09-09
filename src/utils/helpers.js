@@ -31,3 +31,10 @@ export const dashCaseNameHelper = name => {
     .join('-')
     .toLowerCase();
 };
+
+export const getBirdImage = async name => {
+  const url = `http://en.wikipedia.org/w/api.php?action=query&titles=${name}&prop=pageimages&format=json&pithumbsize=200/`;
+  const response = await fetch(url, { mode: 'no-cors' });
+  const data = await response.json();
+  console.log(data);
+};
