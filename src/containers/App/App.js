@@ -24,17 +24,8 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <header>
-            <nav>
-              <NavLink to="/home">Home</NavLink>
-            </nav>
-          </header>
           <main>
-            <section className="routes">
-              <Switch>
-                <Route exact path="/home" component={Home} />
-              </Switch>
-            </section>
+            <Home />
           </main>
         </div>
       </Router>
