@@ -10,6 +10,7 @@ class Hotspot extends Component {
   render() {
     const { hotspot } = this.props;
     const { locName, birds } = this.props.hotspot;
+
     const displayBirds = birds
       .map((bird, index) => (
         <div key={`${index}-${bird.speciesCode}`} className="bird">
@@ -30,6 +31,7 @@ class Hotspot extends Component {
         </div>
       ))
       .slice(0, 10);
+
     return (
       <Router>
         <div>
