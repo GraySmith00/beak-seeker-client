@@ -8,15 +8,12 @@ describe('BirdInfo component', () => {
   let wrapper;
 
   beforeEach(() => {
-    // wrapper = shallow(<BirdInfo bird={mockBird} />);
+    wrapper = shallow(<BirdInfo bird={mockBird} />, {
+      disableLifecycleMethods: true
+    });
   });
 
   it('should match the snapshot', () => {
-    // window.fetch = jest.fn().mockImplementation(() =>
-    //   Promise.resolve({
-    //     json: () => Promise.resolve()
-    //   })
-    // );
-    // expect(wrapper).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 });

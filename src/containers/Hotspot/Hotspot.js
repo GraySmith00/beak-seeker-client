@@ -32,10 +32,22 @@ class Hotspot extends Component {
       ))
       .slice(0, 10);
 
+    // const displayLinks = () => {
+    //   return <Route
+    //             exact
+    //             path={}
+    //             render{() => {
+    //               return <div>
+    //                 {birds.map()}
+    //               </div>
+    //             }}
+    // }
+
     return (
       <Router>
         <div>
           <h1>{locName}</h1>
+          {/* <div className="links">{displayLinks}</div> */}
           <div className="birds">{displayBirds}</div>
         </div>
       </Router>
