@@ -1,0 +1,460 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home component shuould match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Home />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": <div
+        className="home"
+>
+        <nav>
+                <NavLink
+                        activeClassName="active"
+                        aria-current="page"
+                        to="/hotspots"
+                >
+                        Nearby Hotspots
+                </NavLink>
+                <NavLink
+                        activeClassName="active"
+                        aria-current="page"
+                        to="/leaderboard"
+                >
+                        Leaderboard
+                </NavLink>
+        </nav>
+        <main>
+                <Switch>
+                        <Route
+                                component={[Function]}
+                                exact={true}
+                                path="/hotspots"
+                        />
+                        <Route
+                                component={[Function]}
+                                exact={true}
+                                path="/leaderboard"
+                        />
+                </Switch>
+        </main>
+</div>,
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <nav>
+            <NavLink
+                        activeClassName="active"
+                        aria-current="page"
+                        to="/hotspots"
+            >
+                        Nearby Hotspots
+            </NavLink>
+            <NavLink
+                        activeClassName="active"
+                        aria-current="page"
+                        to="/leaderboard"
+            >
+                        Leaderboard
+            </NavLink>
+</nav>,
+          <main>
+            <Switch>
+                        <Route
+                                    component={[Function]}
+                                    exact={true}
+                                    path="/hotspots"
+                        />
+                        <Route
+                                    component={[Function]}
+                                    exact={true}
+                                    path="/leaderboard"
+                        />
+            </Switch>
+</main>,
+        ],
+        "className": "home",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/hotspots"
+>
+                Nearby Hotspots
+</NavLink>,
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/leaderboard"
+>
+                Leaderboard
+</NavLink>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "aria-current": "page",
+                "children": "Nearby Hotspots",
+                "to": "/hotspots",
+              },
+              "ref": null,
+              "rendered": "Nearby Hotspots",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "aria-current": "page",
+                "children": "Leaderboard",
+                "to": "/leaderboard",
+              },
+              "ref": null,
+              "rendered": "Leaderboard",
+              "type": [Function],
+            },
+          ],
+          "type": "nav",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Switch>
+              <Route
+                            component={[Function]}
+                            exact={true}
+                            path="/hotspots"
+              />
+              <Route
+                            component={[Function]}
+                            exact={true}
+                            path="/leaderboard"
+              />
+</Switch>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/hotspots"
+/>,
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/leaderboard"
+/>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "exact": true,
+                  "path": "/hotspots",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "exact": true,
+                  "path": "/leaderboard",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": "main",
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <div
+          className="home"
+>
+          <nav>
+                    <NavLink
+                              activeClassName="active"
+                              aria-current="page"
+                              to="/hotspots"
+                    >
+                              Nearby Hotspots
+                    </NavLink>
+                    <NavLink
+                              activeClassName="active"
+                              aria-current="page"
+                              to="/leaderboard"
+                    >
+                              Leaderboard
+                    </NavLink>
+          </nav>
+          <main>
+                    <Switch>
+                              <Route
+                                        component={[Function]}
+                                        exact={true}
+                                        path="/hotspots"
+                              />
+                              <Route
+                                        component={[Function]}
+                                        exact={true}
+                                        path="/leaderboard"
+                              />
+                    </Switch>
+          </main>
+</div>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <nav>
+              <NavLink
+                            activeClassName="active"
+                            aria-current="page"
+                            to="/hotspots"
+              >
+                            Nearby Hotspots
+              </NavLink>
+              <NavLink
+                            activeClassName="active"
+                            aria-current="page"
+                            to="/leaderboard"
+              >
+                            Leaderboard
+              </NavLink>
+</nav>,
+            <main>
+              <Switch>
+                            <Route
+                                          component={[Function]}
+                                          exact={true}
+                                          path="/hotspots"
+                            />
+                            <Route
+                                          component={[Function]}
+                                          exact={true}
+                                          path="/leaderboard"
+                            />
+              </Switch>
+</main>,
+          ],
+          "className": "home",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <NavLink
+                  activeClassName="active"
+                  aria-current="page"
+                  to="/hotspots"
+>
+                  Nearby Hotspots
+</NavLink>,
+                <NavLink
+                  activeClassName="active"
+                  aria-current="page"
+                  to="/leaderboard"
+>
+                  Leaderboard
+</NavLink>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "activeClassName": "active",
+                  "aria-current": "page",
+                  "children": "Nearby Hotspots",
+                  "to": "/hotspots",
+                },
+                "ref": null,
+                "rendered": "Nearby Hotspots",
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "activeClassName": "active",
+                  "aria-current": "page",
+                  "children": "Leaderboard",
+                  "to": "/leaderboard",
+                },
+                "ref": null,
+                "rendered": "Leaderboard",
+                "type": [Function],
+              },
+            ],
+            "type": "nav",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Switch>
+                <Route
+                                component={[Function]}
+                                exact={true}
+                                path="/hotspots"
+                />
+                <Route
+                                component={[Function]}
+                                exact={true}
+                                path="/leaderboard"
+                />
+</Switch>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/hotspots"
+/>,
+                  <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/leaderboard"
+/>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "component": [Function],
+                    "exact": true,
+                    "path": "/hotspots",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "component": [Function],
+                    "exact": true,
+                    "path": "/leaderboard",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            "type": "main",
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;

@@ -10,7 +10,7 @@ import { dashCaseNameHelper } from '../../utils/helpers';
 import Hotspot from '../Hotspot/Hotspot';
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
 
-class HotspotsList extends Component {
+export class HotspotsList extends Component {
   componentDidMount() {
     this.props.getNearbyHotspots();
   }
@@ -40,7 +40,6 @@ class HotspotsList extends Component {
       <Router>
         <div>
           <h1>HotspotsList</h1>
-
           {displayHotspots}
         </div>
       </Router>
