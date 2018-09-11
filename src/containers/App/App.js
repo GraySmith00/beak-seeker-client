@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Home from '../Home/Home';
-import TwitterLogin from 'react-twitter-auth/lib/react-twitter-auth-component.js';
 import './App.css';
 
 class App extends Component {
@@ -13,22 +12,18 @@ class App extends Component {
     };
   }
 
-  onSuccess = response => {
-    const token = response.headers.get('x-auth-token');
-    response.json().then(user => {
-      if (token) {
-        this.setState({
-          isAuthenticated: true,
-          user: user,
-          token: token
-        });
-      }
-    });
-  };
-
-  onFailed = error => {
-    alert(error);
-  };
+  // onSuccess = response => {
+  //   const token = response.headers.get('x-auth-token');
+  //   response.json().then(user => {
+  //     if (token) {
+  //       this.setState({
+  //         isAuthenticated: true,
+  //         user: user,
+  //         token: token
+  //       });
+  //     }
+  //   });
+  // };
 
   render() {
     return (

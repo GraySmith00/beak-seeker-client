@@ -1,15 +1,23 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import {
   BrowserRouter as Router,
   Route,
   NavLink,
   Switch
 } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 import HotspotsList from '../HotspotsList/HotspotsList';
 import Leaderboard from '../Leaderboard/Leaderboard';
+import { setCurrentUser } from '../../actions/thunks/setCurrentUser';
 
 class Home extends Component {
+  componentDidMount() {
+    const id = window.location.search.slice(4);
+    this.props.setCurrentUser(id);
+  }
+
   render() {
     return (
       <Router>
@@ -30,4 +38,15 @@ class Home extends Component {
   }
 }
 
-export default Home;
+Home.propTypes = {
+  setCurrentUser: PropTypes.func.isRequired
+};
+
+const mapDispatchToProps = dispatch => ({
+  setCurrentUser: id => dispatch(setCurrentUser(id))
+});
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(Home);
