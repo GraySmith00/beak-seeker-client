@@ -19,7 +19,6 @@ class BirdInfo extends Component {
 
     const bird = location.birds.find(bird => bird.speciesCode === speciesCode);
     const { comName } = bird;
-    console.log(comName);
 
     const birdImage = await getBirdImage(comName);
     const birdInfo = await getBirdInfo(comName);
@@ -31,7 +30,6 @@ class BirdInfo extends Component {
   }
 
   render() {
-    console.log('hiiii from birdinfo!!');
     const { birdImage, birdInfo, loading } = this.state;
     let birdContent;
 
@@ -41,7 +39,7 @@ class BirdInfo extends Component {
       birdContent = (
         <div className="bird-content">
           {birdImage ? (
-            <img src={birdImage} alt="bird picture" />
+            <img src={birdImage} alt="bird" />
           ) : (
             <p>
               Sorry, we could not find an image of this bird at this time :(

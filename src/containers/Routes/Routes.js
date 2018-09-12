@@ -36,15 +36,6 @@ class Routes extends Component {
               return <Hotspot hotspotId={match.params.location_id} />;
             }}
           />
-          {/* <Route
-            exact
-            path={`/hotspots/:location_id/:species_code`}
-            render={({ match }) => {
-              console.log(match.params.species_code);
-              return null;
-              return <Hotspot hotspotId={match.params.location_id} />;
-            }}
-          /> */}
           <Route
             exact
             path={`/hotspots/:location_id/:speciesCode`}

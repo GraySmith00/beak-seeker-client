@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 class Hotspot extends Component {
   render() {
-    console.log('hiiiiii from hotspot');
     const { hotspotId } = this.props;
     const hotspot = this.props.hotspots.find(
       hotspot => hotspot.locId === hotspotId
