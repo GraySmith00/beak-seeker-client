@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 
 import { getNearbyHotspots } from '../../actions/thunks/getNearbyHotspots';
-import { dashCaseNameHelper } from '../../utils/helpers';
-import Hotspot from '../Hotspot/Hotspot';
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
 
 export class HotspotsList extends Component {
@@ -17,32 +15,23 @@ export class HotspotsList extends Component {
 
   render() {
     const { loading } = this.props;
-    let displayHotspots;
+    let displayHotspotLinks;
 
     if (loading) {
-      displayHotspots = <LoadingSpinner />;
+      displayHotspotLinks = <LoadingSpinner />;
     } else {
-      displayHotspots = this.props.hotspots.map(hotspot => (
+      displayHotspotLinks = this.props.hotspots.map(hotspot => (
         <div key={hotspot.locId} className="hotspot">
-          <Link to={`/hotspots/${dashCaseNameHelper(hotspot.locName)}`}>
-            {hotspot.locName}
-          </Link>
-          <Route
-            exact
-            path={`/hotspots/${dashCaseNameHelper(hotspot.locName)}`}
-            render={() => <Hotspot hotspot={hotspot} />}
-          />
+          <Link to={`/hotspots/${hotspot.locId}`}>{hotspot.locName}</Link>
         </div>
       ));
     }
 
     return (
-      <Router>
-        <div>
-          <h1>HotspotsList</h1>
-          {displayHotspots}
-        </div>
-      </Router>
+      <div>
+        <h1>HotspotsList</h1>
+        {displayHotspotLinks}
+      </div>
     );
   }
 }

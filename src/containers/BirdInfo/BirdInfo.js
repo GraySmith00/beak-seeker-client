@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { getBirdImage, getBirdInfo } from '../../utils/helpers';
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
+import { connect } from 'react-redux';
 
 class BirdInfo extends Component {
   constructor() {
@@ -13,7 +14,13 @@ class BirdInfo extends Component {
     };
   }
   async componentDidMount() {
-    const { comName } = this.props.bird;
+    const { locId, speciesCode, hotspots } = this.props;
+    const location = hotspots.find(hotspot => hotspot.locId === locId);
+
+    const bird = location.birds.find(bird => bird.speciesCode === speciesCode);
+    const { comName } = bird;
+    console.log(comName);
+
     const birdImage = await getBirdImage(comName);
     const birdInfo = await getBirdInfo(comName);
     this.setState({
@@ -24,6 +31,7 @@ class BirdInfo extends Component {
   }
 
   render() {
+    console.log('hiiii from birdinfo!!');
     const { birdImage, birdInfo, loading } = this.state;
     let birdContent;
 
@@ -33,7 +41,7 @@ class BirdInfo extends Component {
       birdContent = (
         <div className="bird-content">
           {birdImage ? (
-            <img src={birdImage} alt={this.props.bird.comName} />
+            <img src={birdImage} alt="bird picture" />
           ) : (
             <p>
               Sorry, we could not find an image of this bird at this time :(
@@ -54,7 +62,12 @@ class BirdInfo extends Component {
 }
 
 BirdInfo.propTypes = {
-  bird: PropTypes.object.isRequired
+  locId: PropTypes.string.isRequired,
+  speciesCode: PropTypes.string.isRequired
 };
 
-export default BirdInfo;
+const mapStateToProps = state => ({
+  hotspots: state.hotspots
+});
+
+export default connect(mapStateToProps)(BirdInfo);
