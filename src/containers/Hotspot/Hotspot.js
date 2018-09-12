@@ -1,62 +1,42 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
-import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
-
-import BirdInfo from '../BirdInfo/BirdInfo';
-import { dashCaseNameHelper } from '../../utils/helpers';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 class Hotspot extends Component {
   render() {
-    const { hotspot } = this.props;
-    const { locName, birds } = this.props.hotspot;
+    const { hotspotId } = this.props;
+    const hotspot = this.props.hotspots.find(
+      hotspot => hotspot.locId === hotspotId
+    );
+    const { locName, birds } = hotspot;
 
-    const displayBirds = birds
+    const displayBirdLinks = birds
       .map((bird, index) => (
         <div key={`${index}-${bird.speciesCode}`} className="bird">
-          <Link
-            to={`/hotspots/${dashCaseNameHelper(
-              hotspot.locName
-            )}/${dashCaseNameHelper(bird.comName)}`}
-          >
+          <Link to={`/hotspots/${hotspot.locId}/${bird.speciesCode}`}>
             {bird.comName}
           </Link>
-          <Route
-            exact
-            path={`/hotspots/${dashCaseNameHelper(
-              hotspot.locName
-            )}/${dashCaseNameHelper(bird.comName)}`}
-            render={() => <BirdInfo bird={bird} />}
-          />
         </div>
       ))
       .slice(0, 10);
 
-    // const displayLinks = () => {
-    //   return <Route
-    //             exact
-    //             path={}
-    //             render{() => {
-    //               return <div>
-    //                 {birds.map()}
-    //               </div>
-    //             }}
-    // }
-
     return (
-      <Router>
-        <div>
-          <h1>{locName}</h1>
-          {/* <div className="links">{displayLinks}</div> */}
-          <div className="birds">{displayBirds}</div>
-        </div>
-      </Router>
+      <div>
+        <h1>{locName}</h1>
+        <div className="birds">{displayBirdLinks}</div>
+      </div>
     );
   }
 }
 
 Hotspot.propTypes = {
-  hotspot: PropTypes.object.isRequired
+  hotspotId: PropTypes.string.isRequired,
+  hotspots: PropTypes.array.isRequired
 };
 
-export default Hotspot;
+const mapStateToProps = state => ({
+  hotspots: state.hotspots
+});
+
+export default connect(mapStateToProps)(Hotspot);
