@@ -4,11 +4,13 @@ import {
   hotspotsErroredReducer,
   hotspotsLoadingReducer
 } from './hotspotReducer';
+import { userReducer } from './userReducer';
 
 const rootReducer = combineReducers({
   hotspots: hotspotReducer,
   hotspotsLoading: hotspotsLoadingReducer,
-  hotspotsErrored: hotspotsErroredReducer
+  hotspotsErrored: hotspotsErroredReducer,
+  currentUser: userReducer
 });
 
 export default rootReducer;
