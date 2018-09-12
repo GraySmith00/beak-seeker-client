@@ -14,7 +14,9 @@ import { setCurrentUser } from '../../actions/thunks/setCurrentUser';
 
 class Home extends Component {
   componentDidMount() {
+    console.log('hiiiiiiii');
     const id = window.location.search.slice(4);
+    console.log(id);
     this.props.setCurrentUser(id);
   }
 

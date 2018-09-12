@@ -1,40 +1,42 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Home from '../Home/Home';
+import SignIn from '../SignIn/SignIn';
 import './App.css';
+import { connect } from 'react-redux';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      isAuthenticated: false,
-      user: null,
-      token: ''
-    };
-  }
-
-  // onSuccess = response => {
-  //   const token = response.headers.get('x-auth-token');
-  //   response.json().then(user => {
-  //     if (token) {
-  //       this.setState({
-  //         isAuthenticated: true,
-  //         user: user,
-  //         token: token
-  //       });
-  //     }
-  //   });
-  // };
-
+export class App extends Component {
   render() {
     return (
-      <div className="App">
-        <main>
-          <Home />
-          <a href="http://localhost:5000/twitter/login">Sign in with twitter</a>
-        </main>
-      </div>
+      <Router>
+        <div className="App">
+          <main>
+            <Route
+              exact
+              path="/"
+              render={() => {
+                if (!this.props.currentUser) {
+                  return <SignIn />;
+                } else {
+                  return <Home />;
+                }
+              }}
+            />
+            <Route path="/home" component={Home} />
+          </main>
+        </div>
+      </Router>
     );
   }
 }
 
-export default App;
+App.propTypes = {
+  currentUser: PropTypes.object
+};
+
+const mapStateToProps = state => ({
+  currentUser: state.currentUser
+});
+
+export default connect(mapStateToProps)(App);
