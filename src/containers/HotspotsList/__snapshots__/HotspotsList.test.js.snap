@@ -4955,166 +4955,424 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "host",
     "props": Object {
-      "children": <div>
+      "children": Array [
         <h1>
-                HotspotsList
-        </h1>
-        <div
-                className="hotspot"
-        >
-                <Link
+          HotspotsList
+</h1>,
+        Array [
+          <div
+            className="hotspot"
+>
+            <Link
                         replace={false}
-                        to="/hotspots/belmar-park"
-                >
+                        to="/hotspots/L1743685"
+            >
                         Belmar Park
-                </Link>
-                <Route
-                        exact={true}
-                        path="/hotspots/belmar-park"
-                        render={[Function]}
-                />
-        </div>
-        <div
-                className="hotspot"
-        >
-                <Link
-                        replace={false}
-                        to="/hotspots/lowell-ponds-clear-creek-valley-park"
-                >
-                        Lowell Ponds (Clear Creek Valley Park)
-                </Link>
-                <Route
-                        exact={true}
-                        path="/hotspots/lowell-ponds-clear-creek-valley-park"
-                        render={[Function]}
-                />
-        </div>
-        <div
-                className="hotspot"
-        >
-                <Link
-                        replace={false}
-                        to="/hotspots/washington-park"
-                >
-                        Washington Park
-                </Link>
-                <Route
-                        exact={true}
-                        path="/hotspots/washington-park"
-                        render={[Function]}
-                />
-        </div>
-        <div
-                className="hotspot"
-        >
-                <Link
-                        replace={false}
-                        to="/hotspots/heron-pond-natural-area"
-                >
-                        Heron Pond Natural Area
-                </Link>
-                <Route
-                        exact={true}
-                        path="/hotspots/heron-pond-natural-area"
-                        render={[Function]}
-                />
-        </div>
-        <div
-                className="hotspot"
-        >
-                <Link
-                        replace={false}
-                        to="/hotspots/confluence-&-commons-parks"
-                >
-                        Confluence & Commons Parks
-                </Link>
-                <Route
-                        exact={true}
-                        path="/hotspots/confluence-&-commons-parks"
-                        render={[Function]}
-                />
-        </div>
-        <div
-                className="hotspot"
-        >
-                <Link
-                        replace={false}
-                        to="/hotspots/rocky-mountain-lake-park"
-                >
-                        Rocky Mountain Lake Park
-                </Link>
-                <Route
-                        exact={true}
-                        path="/hotspots/rocky-mountain-lake-park"
-                        render={[Function]}
-                />
-        </div>
-        <div
-                className="hotspot"
-        >
-                <Link
-                        replace={false}
-                        to="/hotspots/fairmount-cemetery"
-                >
-                        Fairmount Cemetery
-                </Link>
-                <Route
-                        exact={true}
-                        path="/hotspots/fairmount-cemetery"
-                        render={[Function]}
-                />
-        </div>
-        <div
-                className="hotspot"
-        >
-                <Link
-                        replace={false}
-                        to="/hotspots/lowell-ponds-state-wildlife-area"
-                >
-                        Lowell Ponds State Wildlife Area
-                </Link>
-                <Route
-                        exact={true}
-                        path="/hotspots/lowell-ponds-state-wildlife-area"
-                        render={[Function]}
-                />
-        </div>
-        <div
-                className="hotspot"
-        >
-                <Link
-                        replace={false}
-                        to="/hotspots/denver-botanic-gardens-and-cheesman-park"
-                >
-                        Denver Botanic Gardens and Cheesman Park
-                </Link>
-                <Route
-                        exact={true}
-                        path="/hotspots/denver-botanic-gardens-and-cheesman-park"
-                        render={[Function]}
-                />
-        </div>
-        <div
-                className="hotspot"
-        >
-                <Link
-                        replace={false}
-                        to="/hotspots/crown-hill-regional-park"
-                >
-                        Crown Hill Regional Park
-                </Link>
-                <Route
-                        exact={true}
-                        path="/hotspots/crown-hill-regional-park"
-                        render={[Function]}
-                />
-        </div>
+            </Link>
 </div>,
+          <div
+            className="hotspot"
+>
+            <Link
+                        replace={false}
+                        to="/hotspots/L357698"
+            >
+                        Lowell Ponds (Clear Creek Valley Park)
+            </Link>
+</div>,
+          <div
+            className="hotspot"
+>
+            <Link
+                        replace={false}
+                        to="/hotspots/L343087"
+            >
+                        Washington Park
+            </Link>
+</div>,
+          <div
+            className="hotspot"
+>
+            <Link
+                        replace={false}
+                        to="/hotspots/L1776225"
+            >
+                        Heron Pond Natural Area
+            </Link>
+</div>,
+          <div
+            className="hotspot"
+>
+            <Link
+                        replace={false}
+                        to="/hotspots/L2853694"
+            >
+                        Confluence & Commons Parks
+            </Link>
+</div>,
+          <div
+            className="hotspot"
+>
+            <Link
+                        replace={false}
+                        to="/hotspots/L883813"
+            >
+                        Rocky Mountain Lake Park
+            </Link>
+</div>,
+          <div
+            className="hotspot"
+>
+            <Link
+                        replace={false}
+                        to="/hotspots/L724372"
+            >
+                        Fairmount Cemetery
+            </Link>
+</div>,
+          <div
+            className="hotspot"
+>
+            <Link
+                        replace={false}
+                        to="/hotspots/L207902"
+            >
+                        Lowell Ponds State Wildlife Area
+            </Link>
+</div>,
+          <div
+            className="hotspot"
+>
+            <Link
+                        replace={false}
+                        to="/hotspots/L232994"
+            >
+                        Denver Botanic Gardens and Cheesman Park
+            </Link>
+</div>,
+          <div
+            className="hotspot"
+>
+            <Link
+                        replace={false}
+                        to="/hotspots/L684445"
+            >
+                        Crown Hill Regional Park
+            </Link>
+</div>,
+        ],
+      ],
     },
     "ref": null,
-    "rendered": Object {
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "HotspotsList",
+        },
+        "ref": null,
+        "rendered": "HotspotsList",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": "L1743685",
+        "nodeType": "host",
+        "props": Object {
+          "children": <Link
+            replace={false}
+            to="/hotspots/L1743685"
+>
+            Belmar Park
+</Link>,
+          "className": "hotspot",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Belmar Park",
+            "replace": false,
+            "to": "/hotspots/L1743685",
+          },
+          "ref": null,
+          "rendered": "Belmar Park",
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "L357698",
+        "nodeType": "host",
+        "props": Object {
+          "children": <Link
+            replace={false}
+            to="/hotspots/L357698"
+>
+            Lowell Ponds (Clear Creek Valley Park)
+</Link>,
+          "className": "hotspot",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Lowell Ponds (Clear Creek Valley Park)",
+            "replace": false,
+            "to": "/hotspots/L357698",
+          },
+          "ref": null,
+          "rendered": "Lowell Ponds (Clear Creek Valley Park)",
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "L343087",
+        "nodeType": "host",
+        "props": Object {
+          "children": <Link
+            replace={false}
+            to="/hotspots/L343087"
+>
+            Washington Park
+</Link>,
+          "className": "hotspot",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Washington Park",
+            "replace": false,
+            "to": "/hotspots/L343087",
+          },
+          "ref": null,
+          "rendered": "Washington Park",
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "L1776225",
+        "nodeType": "host",
+        "props": Object {
+          "children": <Link
+            replace={false}
+            to="/hotspots/L1776225"
+>
+            Heron Pond Natural Area
+</Link>,
+          "className": "hotspot",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Heron Pond Natural Area",
+            "replace": false,
+            "to": "/hotspots/L1776225",
+          },
+          "ref": null,
+          "rendered": "Heron Pond Natural Area",
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "L2853694",
+        "nodeType": "host",
+        "props": Object {
+          "children": <Link
+            replace={false}
+            to="/hotspots/L2853694"
+>
+            Confluence & Commons Parks
+</Link>,
+          "className": "hotspot",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Confluence & Commons Parks",
+            "replace": false,
+            "to": "/hotspots/L2853694",
+          },
+          "ref": null,
+          "rendered": "Confluence & Commons Parks",
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "L883813",
+        "nodeType": "host",
+        "props": Object {
+          "children": <Link
+            replace={false}
+            to="/hotspots/L883813"
+>
+            Rocky Mountain Lake Park
+</Link>,
+          "className": "hotspot",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Rocky Mountain Lake Park",
+            "replace": false,
+            "to": "/hotspots/L883813",
+          },
+          "ref": null,
+          "rendered": "Rocky Mountain Lake Park",
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "L724372",
+        "nodeType": "host",
+        "props": Object {
+          "children": <Link
+            replace={false}
+            to="/hotspots/L724372"
+>
+            Fairmount Cemetery
+</Link>,
+          "className": "hotspot",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Fairmount Cemetery",
+            "replace": false,
+            "to": "/hotspots/L724372",
+          },
+          "ref": null,
+          "rendered": "Fairmount Cemetery",
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "L207902",
+        "nodeType": "host",
+        "props": Object {
+          "children": <Link
+            replace={false}
+            to="/hotspots/L207902"
+>
+            Lowell Ponds State Wildlife Area
+</Link>,
+          "className": "hotspot",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Lowell Ponds State Wildlife Area",
+            "replace": false,
+            "to": "/hotspots/L207902",
+          },
+          "ref": null,
+          "rendered": "Lowell Ponds State Wildlife Area",
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "L232994",
+        "nodeType": "host",
+        "props": Object {
+          "children": <Link
+            replace={false}
+            to="/hotspots/L232994"
+>
+            Denver Botanic Gardens and Cheesman Park
+</Link>,
+          "className": "hotspot",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Denver Botanic Gardens and Cheesman Park",
+            "replace": false,
+            "to": "/hotspots/L232994",
+          },
+          "ref": null,
+          "rendered": "Denver Botanic Gardens and Cheesman Park",
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": "L684445",
+        "nodeType": "host",
+        "props": Object {
+          "children": <Link
+            replace={false}
+            to="/hotspots/L684445"
+>
+            Crown Hill Regional Park
+</Link>,
+          "className": "hotspot",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Crown Hill Regional Park",
+            "replace": false,
+            "to": "/hotspots/L684445",
+          },
+          "ref": null,
+          "rendered": "Crown Hill Regional Park",
+          "type": [Function],
+        },
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
@@ -5129,150 +5387,100 @@ ShallowWrapper {
 >
               <Link
                             replace={false}
-                            to="/hotspots/belmar-park"
+                            to="/hotspots/L1743685"
               >
                             Belmar Park
               </Link>
-              <Route
-                            exact={true}
-                            path="/hotspots/belmar-park"
-                            render={[Function]}
-              />
 </div>,
             <div
               className="hotspot"
 >
               <Link
                             replace={false}
-                            to="/hotspots/lowell-ponds-clear-creek-valley-park"
+                            to="/hotspots/L357698"
               >
                             Lowell Ponds (Clear Creek Valley Park)
               </Link>
-              <Route
-                            exact={true}
-                            path="/hotspots/lowell-ponds-clear-creek-valley-park"
-                            render={[Function]}
-              />
 </div>,
             <div
               className="hotspot"
 >
               <Link
                             replace={false}
-                            to="/hotspots/washington-park"
+                            to="/hotspots/L343087"
               >
                             Washington Park
               </Link>
-              <Route
-                            exact={true}
-                            path="/hotspots/washington-park"
-                            render={[Function]}
-              />
 </div>,
             <div
               className="hotspot"
 >
               <Link
                             replace={false}
-                            to="/hotspots/heron-pond-natural-area"
+                            to="/hotspots/L1776225"
               >
                             Heron Pond Natural Area
               </Link>
-              <Route
-                            exact={true}
-                            path="/hotspots/heron-pond-natural-area"
-                            render={[Function]}
-              />
 </div>,
             <div
               className="hotspot"
 >
               <Link
                             replace={false}
-                            to="/hotspots/confluence-&-commons-parks"
+                            to="/hotspots/L2853694"
               >
                             Confluence & Commons Parks
               </Link>
-              <Route
-                            exact={true}
-                            path="/hotspots/confluence-&-commons-parks"
-                            render={[Function]}
-              />
 </div>,
             <div
               className="hotspot"
 >
               <Link
                             replace={false}
-                            to="/hotspots/rocky-mountain-lake-park"
+                            to="/hotspots/L883813"
               >
                             Rocky Mountain Lake Park
               </Link>
-              <Route
-                            exact={true}
-                            path="/hotspots/rocky-mountain-lake-park"
-                            render={[Function]}
-              />
 </div>,
             <div
               className="hotspot"
 >
               <Link
                             replace={false}
-                            to="/hotspots/fairmount-cemetery"
+                            to="/hotspots/L724372"
               >
                             Fairmount Cemetery
               </Link>
-              <Route
-                            exact={true}
-                            path="/hotspots/fairmount-cemetery"
-                            render={[Function]}
-              />
 </div>,
             <div
               className="hotspot"
 >
               <Link
                             replace={false}
-                            to="/hotspots/lowell-ponds-state-wildlife-area"
+                            to="/hotspots/L207902"
               >
                             Lowell Ponds State Wildlife Area
               </Link>
-              <Route
-                            exact={true}
-                            path="/hotspots/lowell-ponds-state-wildlife-area"
-                            render={[Function]}
-              />
 </div>,
             <div
               className="hotspot"
 >
               <Link
                             replace={false}
-                            to="/hotspots/denver-botanic-gardens-and-cheesman-park"
+                            to="/hotspots/L232994"
               >
                             Denver Botanic Gardens and Cheesman Park
               </Link>
-              <Route
-                            exact={true}
-                            path="/hotspots/denver-botanic-gardens-and-cheesman-park"
-                            render={[Function]}
-              />
 </div>,
             <div
               className="hotspot"
 >
               <Link
                             replace={false}
-                            to="/hotspots/crown-hill-regional-park"
+                            to="/hotspots/L684445"
               >
                             Crown Hill Regional Park
               </Link>
-              <Route
-                            exact={true}
-                            path="/hotspots/crown-hill-regional-park"
-                            render={[Function]}
-              />
 </div>,
           ],
         ],
@@ -5295,50 +5503,28 @@ ShallowWrapper {
           "key": "L1743685",
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <Link
-                replace={false}
-                to="/hotspots/belmar-park"
+            "children": <Link
+              replace={false}
+              to="/hotspots/L1743685"
 >
-                Belmar Park
+              Belmar Park
 </Link>,
-              <Route
-                exact={true}
-                path="/hotspots/belmar-park"
-                render={[Function]}
-/>,
-            ],
             "className": "hotspot",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "Belmar Park",
-                "replace": false,
-                "to": "/hotspots/belmar-park",
-              },
-              "ref": null,
-              "rendered": "Belmar Park",
-              "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Belmar Park",
+              "replace": false,
+              "to": "/hotspots/L1743685",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "exact": true,
-                "path": "/hotspots/belmar-park",
-                "render": [Function],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
+            "ref": null,
+            "rendered": "Belmar Park",
+            "type": [Function],
+          },
           "type": "div",
         },
         Object {
@@ -5346,50 +5532,28 @@ ShallowWrapper {
           "key": "L357698",
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <Link
-                replace={false}
-                to="/hotspots/lowell-ponds-clear-creek-valley-park"
+            "children": <Link
+              replace={false}
+              to="/hotspots/L357698"
 >
-                Lowell Ponds (Clear Creek Valley Park)
+              Lowell Ponds (Clear Creek Valley Park)
 </Link>,
-              <Route
-                exact={true}
-                path="/hotspots/lowell-ponds-clear-creek-valley-park"
-                render={[Function]}
-/>,
-            ],
             "className": "hotspot",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "Lowell Ponds (Clear Creek Valley Park)",
-                "replace": false,
-                "to": "/hotspots/lowell-ponds-clear-creek-valley-park",
-              },
-              "ref": null,
-              "rendered": "Lowell Ponds (Clear Creek Valley Park)",
-              "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Lowell Ponds (Clear Creek Valley Park)",
+              "replace": false,
+              "to": "/hotspots/L357698",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "exact": true,
-                "path": "/hotspots/lowell-ponds-clear-creek-valley-park",
-                "render": [Function],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
+            "ref": null,
+            "rendered": "Lowell Ponds (Clear Creek Valley Park)",
+            "type": [Function],
+          },
           "type": "div",
         },
         Object {
@@ -5397,50 +5561,28 @@ ShallowWrapper {
           "key": "L343087",
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <Link
-                replace={false}
-                to="/hotspots/washington-park"
+            "children": <Link
+              replace={false}
+              to="/hotspots/L343087"
 >
-                Washington Park
+              Washington Park
 </Link>,
-              <Route
-                exact={true}
-                path="/hotspots/washington-park"
-                render={[Function]}
-/>,
-            ],
             "className": "hotspot",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "Washington Park",
-                "replace": false,
-                "to": "/hotspots/washington-park",
-              },
-              "ref": null,
-              "rendered": "Washington Park",
-              "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Washington Park",
+              "replace": false,
+              "to": "/hotspots/L343087",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "exact": true,
-                "path": "/hotspots/washington-park",
-                "render": [Function],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
+            "ref": null,
+            "rendered": "Washington Park",
+            "type": [Function],
+          },
           "type": "div",
         },
         Object {
@@ -5448,50 +5590,28 @@ ShallowWrapper {
           "key": "L1776225",
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <Link
-                replace={false}
-                to="/hotspots/heron-pond-natural-area"
+            "children": <Link
+              replace={false}
+              to="/hotspots/L1776225"
 >
-                Heron Pond Natural Area
+              Heron Pond Natural Area
 </Link>,
-              <Route
-                exact={true}
-                path="/hotspots/heron-pond-natural-area"
-                render={[Function]}
-/>,
-            ],
             "className": "hotspot",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "Heron Pond Natural Area",
-                "replace": false,
-                "to": "/hotspots/heron-pond-natural-area",
-              },
-              "ref": null,
-              "rendered": "Heron Pond Natural Area",
-              "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Heron Pond Natural Area",
+              "replace": false,
+              "to": "/hotspots/L1776225",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "exact": true,
-                "path": "/hotspots/heron-pond-natural-area",
-                "render": [Function],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
+            "ref": null,
+            "rendered": "Heron Pond Natural Area",
+            "type": [Function],
+          },
           "type": "div",
         },
         Object {
@@ -5499,50 +5619,28 @@ ShallowWrapper {
           "key": "L2853694",
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <Link
-                replace={false}
-                to="/hotspots/confluence-&-commons-parks"
+            "children": <Link
+              replace={false}
+              to="/hotspots/L2853694"
 >
-                Confluence & Commons Parks
+              Confluence & Commons Parks
 </Link>,
-              <Route
-                exact={true}
-                path="/hotspots/confluence-&-commons-parks"
-                render={[Function]}
-/>,
-            ],
             "className": "hotspot",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "Confluence & Commons Parks",
-                "replace": false,
-                "to": "/hotspots/confluence-&-commons-parks",
-              },
-              "ref": null,
-              "rendered": "Confluence & Commons Parks",
-              "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Confluence & Commons Parks",
+              "replace": false,
+              "to": "/hotspots/L2853694",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "exact": true,
-                "path": "/hotspots/confluence-&-commons-parks",
-                "render": [Function],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
+            "ref": null,
+            "rendered": "Confluence & Commons Parks",
+            "type": [Function],
+          },
           "type": "div",
         },
         Object {
@@ -5550,50 +5648,28 @@ ShallowWrapper {
           "key": "L883813",
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <Link
-                replace={false}
-                to="/hotspots/rocky-mountain-lake-park"
+            "children": <Link
+              replace={false}
+              to="/hotspots/L883813"
 >
-                Rocky Mountain Lake Park
+              Rocky Mountain Lake Park
 </Link>,
-              <Route
-                exact={true}
-                path="/hotspots/rocky-mountain-lake-park"
-                render={[Function]}
-/>,
-            ],
             "className": "hotspot",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "Rocky Mountain Lake Park",
-                "replace": false,
-                "to": "/hotspots/rocky-mountain-lake-park",
-              },
-              "ref": null,
-              "rendered": "Rocky Mountain Lake Park",
-              "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Rocky Mountain Lake Park",
+              "replace": false,
+              "to": "/hotspots/L883813",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "exact": true,
-                "path": "/hotspots/rocky-mountain-lake-park",
-                "render": [Function],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
+            "ref": null,
+            "rendered": "Rocky Mountain Lake Park",
+            "type": [Function],
+          },
           "type": "div",
         },
         Object {
@@ -5601,50 +5677,28 @@ ShallowWrapper {
           "key": "L724372",
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <Link
-                replace={false}
-                to="/hotspots/fairmount-cemetery"
+            "children": <Link
+              replace={false}
+              to="/hotspots/L724372"
 >
-                Fairmount Cemetery
+              Fairmount Cemetery
 </Link>,
-              <Route
-                exact={true}
-                path="/hotspots/fairmount-cemetery"
-                render={[Function]}
-/>,
-            ],
             "className": "hotspot",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "Fairmount Cemetery",
-                "replace": false,
-                "to": "/hotspots/fairmount-cemetery",
-              },
-              "ref": null,
-              "rendered": "Fairmount Cemetery",
-              "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Fairmount Cemetery",
+              "replace": false,
+              "to": "/hotspots/L724372",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "exact": true,
-                "path": "/hotspots/fairmount-cemetery",
-                "render": [Function],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
+            "ref": null,
+            "rendered": "Fairmount Cemetery",
+            "type": [Function],
+          },
           "type": "div",
         },
         Object {
@@ -5652,50 +5706,28 @@ ShallowWrapper {
           "key": "L207902",
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <Link
-                replace={false}
-                to="/hotspots/lowell-ponds-state-wildlife-area"
+            "children": <Link
+              replace={false}
+              to="/hotspots/L207902"
 >
-                Lowell Ponds State Wildlife Area
+              Lowell Ponds State Wildlife Area
 </Link>,
-              <Route
-                exact={true}
-                path="/hotspots/lowell-ponds-state-wildlife-area"
-                render={[Function]}
-/>,
-            ],
             "className": "hotspot",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "Lowell Ponds State Wildlife Area",
-                "replace": false,
-                "to": "/hotspots/lowell-ponds-state-wildlife-area",
-              },
-              "ref": null,
-              "rendered": "Lowell Ponds State Wildlife Area",
-              "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Lowell Ponds State Wildlife Area",
+              "replace": false,
+              "to": "/hotspots/L207902",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "exact": true,
-                "path": "/hotspots/lowell-ponds-state-wildlife-area",
-                "render": [Function],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
+            "ref": null,
+            "rendered": "Lowell Ponds State Wildlife Area",
+            "type": [Function],
+          },
           "type": "div",
         },
         Object {
@@ -5703,50 +5735,28 @@ ShallowWrapper {
           "key": "L232994",
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <Link
-                replace={false}
-                to="/hotspots/denver-botanic-gardens-and-cheesman-park"
+            "children": <Link
+              replace={false}
+              to="/hotspots/L232994"
 >
-                Denver Botanic Gardens and Cheesman Park
+              Denver Botanic Gardens and Cheesman Park
 </Link>,
-              <Route
-                exact={true}
-                path="/hotspots/denver-botanic-gardens-and-cheesman-park"
-                render={[Function]}
-/>,
-            ],
             "className": "hotspot",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "Denver Botanic Gardens and Cheesman Park",
-                "replace": false,
-                "to": "/hotspots/denver-botanic-gardens-and-cheesman-park",
-              },
-              "ref": null,
-              "rendered": "Denver Botanic Gardens and Cheesman Park",
-              "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Denver Botanic Gardens and Cheesman Park",
+              "replace": false,
+              "to": "/hotspots/L232994",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "exact": true,
-                "path": "/hotspots/denver-botanic-gardens-and-cheesman-park",
-                "render": [Function],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
+            "ref": null,
+            "rendered": "Denver Botanic Gardens and Cheesman Park",
+            "type": [Function],
+          },
           "type": "div",
         },
         Object {
@@ -5754,910 +5764,32 @@ ShallowWrapper {
           "key": "L684445",
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <Link
-                replace={false}
-                to="/hotspots/crown-hill-regional-park"
+            "children": <Link
+              replace={false}
+              to="/hotspots/L684445"
 >
-                Crown Hill Regional Park
+              Crown Hill Regional Park
 </Link>,
-              <Route
-                exact={true}
-                path="/hotspots/crown-hill-regional-park"
-                render={[Function]}
-/>,
-            ],
             "className": "hotspot",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "Crown Hill Regional Park",
-                "replace": false,
-                "to": "/hotspots/crown-hill-regional-park",
-              },
-              "ref": null,
-              "rendered": "Crown Hill Regional Park",
-              "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Crown Hill Regional Park",
+              "replace": false,
+              "to": "/hotspots/L684445",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "exact": true,
-                "path": "/hotspots/crown-hill-regional-park",
-                "render": [Function],
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
+            "ref": null,
+            "rendered": "Crown Hill Regional Park",
+            "type": [Function],
+          },
           "type": "div",
         },
       ],
       "type": "div",
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": <div>
-          <h1>
-                    HotspotsList
-          </h1>
-          <div
-                    className="hotspot"
-          >
-                    <Link
-                              replace={false}
-                              to="/hotspots/belmar-park"
-                    >
-                              Belmar Park
-                    </Link>
-                    <Route
-                              exact={true}
-                              path="/hotspots/belmar-park"
-                              render={[Function]}
-                    />
-          </div>
-          <div
-                    className="hotspot"
-          >
-                    <Link
-                              replace={false}
-                              to="/hotspots/lowell-ponds-clear-creek-valley-park"
-                    >
-                              Lowell Ponds (Clear Creek Valley Park)
-                    </Link>
-                    <Route
-                              exact={true}
-                              path="/hotspots/lowell-ponds-clear-creek-valley-park"
-                              render={[Function]}
-                    />
-          </div>
-          <div
-                    className="hotspot"
-          >
-                    <Link
-                              replace={false}
-                              to="/hotspots/washington-park"
-                    >
-                              Washington Park
-                    </Link>
-                    <Route
-                              exact={true}
-                              path="/hotspots/washington-park"
-                              render={[Function]}
-                    />
-          </div>
-          <div
-                    className="hotspot"
-          >
-                    <Link
-                              replace={false}
-                              to="/hotspots/heron-pond-natural-area"
-                    >
-                              Heron Pond Natural Area
-                    </Link>
-                    <Route
-                              exact={true}
-                              path="/hotspots/heron-pond-natural-area"
-                              render={[Function]}
-                    />
-          </div>
-          <div
-                    className="hotspot"
-          >
-                    <Link
-                              replace={false}
-                              to="/hotspots/confluence-&-commons-parks"
-                    >
-                              Confluence & Commons Parks
-                    </Link>
-                    <Route
-                              exact={true}
-                              path="/hotspots/confluence-&-commons-parks"
-                              render={[Function]}
-                    />
-          </div>
-          <div
-                    className="hotspot"
-          >
-                    <Link
-                              replace={false}
-                              to="/hotspots/rocky-mountain-lake-park"
-                    >
-                              Rocky Mountain Lake Park
-                    </Link>
-                    <Route
-                              exact={true}
-                              path="/hotspots/rocky-mountain-lake-park"
-                              render={[Function]}
-                    />
-          </div>
-          <div
-                    className="hotspot"
-          >
-                    <Link
-                              replace={false}
-                              to="/hotspots/fairmount-cemetery"
-                    >
-                              Fairmount Cemetery
-                    </Link>
-                    <Route
-                              exact={true}
-                              path="/hotspots/fairmount-cemetery"
-                              render={[Function]}
-                    />
-          </div>
-          <div
-                    className="hotspot"
-          >
-                    <Link
-                              replace={false}
-                              to="/hotspots/lowell-ponds-state-wildlife-area"
-                    >
-                              Lowell Ponds State Wildlife Area
-                    </Link>
-                    <Route
-                              exact={true}
-                              path="/hotspots/lowell-ponds-state-wildlife-area"
-                              render={[Function]}
-                    />
-          </div>
-          <div
-                    className="hotspot"
-          >
-                    <Link
-                              replace={false}
-                              to="/hotspots/denver-botanic-gardens-and-cheesman-park"
-                    >
-                              Denver Botanic Gardens and Cheesman Park
-                    </Link>
-                    <Route
-                              exact={true}
-                              path="/hotspots/denver-botanic-gardens-and-cheesman-park"
-                              render={[Function]}
-                    />
-          </div>
-          <div
-                    className="hotspot"
-          >
-                    <Link
-                              replace={false}
-                              to="/hotspots/crown-hill-regional-park"
-                    >
-                              Crown Hill Regional Park
-                    </Link>
-                    <Route
-                              exact={true}
-                              path="/hotspots/crown-hill-regional-park"
-                              render={[Function]}
-                    />
-          </div>
-</div>,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <h1>
-              HotspotsList
-</h1>,
-            Array [
-              <div
-                className="hotspot"
->
-                <Link
-                                replace={false}
-                                to="/hotspots/belmar-park"
-                >
-                                Belmar Park
-                </Link>
-                <Route
-                                exact={true}
-                                path="/hotspots/belmar-park"
-                                render={[Function]}
-                />
-</div>,
-              <div
-                className="hotspot"
->
-                <Link
-                                replace={false}
-                                to="/hotspots/lowell-ponds-clear-creek-valley-park"
-                >
-                                Lowell Ponds (Clear Creek Valley Park)
-                </Link>
-                <Route
-                                exact={true}
-                                path="/hotspots/lowell-ponds-clear-creek-valley-park"
-                                render={[Function]}
-                />
-</div>,
-              <div
-                className="hotspot"
->
-                <Link
-                                replace={false}
-                                to="/hotspots/washington-park"
-                >
-                                Washington Park
-                </Link>
-                <Route
-                                exact={true}
-                                path="/hotspots/washington-park"
-                                render={[Function]}
-                />
-</div>,
-              <div
-                className="hotspot"
->
-                <Link
-                                replace={false}
-                                to="/hotspots/heron-pond-natural-area"
-                >
-                                Heron Pond Natural Area
-                </Link>
-                <Route
-                                exact={true}
-                                path="/hotspots/heron-pond-natural-area"
-                                render={[Function]}
-                />
-</div>,
-              <div
-                className="hotspot"
->
-                <Link
-                                replace={false}
-                                to="/hotspots/confluence-&-commons-parks"
-                >
-                                Confluence & Commons Parks
-                </Link>
-                <Route
-                                exact={true}
-                                path="/hotspots/confluence-&-commons-parks"
-                                render={[Function]}
-                />
-</div>,
-              <div
-                className="hotspot"
->
-                <Link
-                                replace={false}
-                                to="/hotspots/rocky-mountain-lake-park"
-                >
-                                Rocky Mountain Lake Park
-                </Link>
-                <Route
-                                exact={true}
-                                path="/hotspots/rocky-mountain-lake-park"
-                                render={[Function]}
-                />
-</div>,
-              <div
-                className="hotspot"
->
-                <Link
-                                replace={false}
-                                to="/hotspots/fairmount-cemetery"
-                >
-                                Fairmount Cemetery
-                </Link>
-                <Route
-                                exact={true}
-                                path="/hotspots/fairmount-cemetery"
-                                render={[Function]}
-                />
-</div>,
-              <div
-                className="hotspot"
->
-                <Link
-                                replace={false}
-                                to="/hotspots/lowell-ponds-state-wildlife-area"
-                >
-                                Lowell Ponds State Wildlife Area
-                </Link>
-                <Route
-                                exact={true}
-                                path="/hotspots/lowell-ponds-state-wildlife-area"
-                                render={[Function]}
-                />
-</div>,
-              <div
-                className="hotspot"
->
-                <Link
-                                replace={false}
-                                to="/hotspots/denver-botanic-gardens-and-cheesman-park"
-                >
-                                Denver Botanic Gardens and Cheesman Park
-                </Link>
-                <Route
-                                exact={true}
-                                path="/hotspots/denver-botanic-gardens-and-cheesman-park"
-                                render={[Function]}
-                />
-</div>,
-              <div
-                className="hotspot"
->
-                <Link
-                                replace={false}
-                                to="/hotspots/crown-hill-regional-park"
-                >
-                                Crown Hill Regional Park
-                </Link>
-                <Route
-                                exact={true}
-                                path="/hotspots/crown-hill-regional-park"
-                                render={[Function]}
-                />
-</div>,
-            ],
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "HotspotsList",
-            },
-            "ref": null,
-            "rendered": "HotspotsList",
-            "type": "h1",
-          },
-          Object {
-            "instance": null,
-            "key": "L1743685",
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <Link
-                  replace={false}
-                  to="/hotspots/belmar-park"
->
-                  Belmar Park
-</Link>,
-                <Route
-                  exact={true}
-                  path="/hotspots/belmar-park"
-                  render={[Function]}
-/>,
-              ],
-              "className": "hotspot",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "Belmar Park",
-                  "replace": false,
-                  "to": "/hotspots/belmar-park",
-                },
-                "ref": null,
-                "rendered": "Belmar Park",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "exact": true,
-                  "path": "/hotspots/belmar-park",
-                  "render": [Function],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": "L357698",
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <Link
-                  replace={false}
-                  to="/hotspots/lowell-ponds-clear-creek-valley-park"
->
-                  Lowell Ponds (Clear Creek Valley Park)
-</Link>,
-                <Route
-                  exact={true}
-                  path="/hotspots/lowell-ponds-clear-creek-valley-park"
-                  render={[Function]}
-/>,
-              ],
-              "className": "hotspot",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "Lowell Ponds (Clear Creek Valley Park)",
-                  "replace": false,
-                  "to": "/hotspots/lowell-ponds-clear-creek-valley-park",
-                },
-                "ref": null,
-                "rendered": "Lowell Ponds (Clear Creek Valley Park)",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "exact": true,
-                  "path": "/hotspots/lowell-ponds-clear-creek-valley-park",
-                  "render": [Function],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": "L343087",
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <Link
-                  replace={false}
-                  to="/hotspots/washington-park"
->
-                  Washington Park
-</Link>,
-                <Route
-                  exact={true}
-                  path="/hotspots/washington-park"
-                  render={[Function]}
-/>,
-              ],
-              "className": "hotspot",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "Washington Park",
-                  "replace": false,
-                  "to": "/hotspots/washington-park",
-                },
-                "ref": null,
-                "rendered": "Washington Park",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "exact": true,
-                  "path": "/hotspots/washington-park",
-                  "render": [Function],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": "L1776225",
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <Link
-                  replace={false}
-                  to="/hotspots/heron-pond-natural-area"
->
-                  Heron Pond Natural Area
-</Link>,
-                <Route
-                  exact={true}
-                  path="/hotspots/heron-pond-natural-area"
-                  render={[Function]}
-/>,
-              ],
-              "className": "hotspot",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "Heron Pond Natural Area",
-                  "replace": false,
-                  "to": "/hotspots/heron-pond-natural-area",
-                },
-                "ref": null,
-                "rendered": "Heron Pond Natural Area",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "exact": true,
-                  "path": "/hotspots/heron-pond-natural-area",
-                  "render": [Function],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": "L2853694",
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <Link
-                  replace={false}
-                  to="/hotspots/confluence-&-commons-parks"
->
-                  Confluence & Commons Parks
-</Link>,
-                <Route
-                  exact={true}
-                  path="/hotspots/confluence-&-commons-parks"
-                  render={[Function]}
-/>,
-              ],
-              "className": "hotspot",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "Confluence & Commons Parks",
-                  "replace": false,
-                  "to": "/hotspots/confluence-&-commons-parks",
-                },
-                "ref": null,
-                "rendered": "Confluence & Commons Parks",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "exact": true,
-                  "path": "/hotspots/confluence-&-commons-parks",
-                  "render": [Function],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": "L883813",
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <Link
-                  replace={false}
-                  to="/hotspots/rocky-mountain-lake-park"
->
-                  Rocky Mountain Lake Park
-</Link>,
-                <Route
-                  exact={true}
-                  path="/hotspots/rocky-mountain-lake-park"
-                  render={[Function]}
-/>,
-              ],
-              "className": "hotspot",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "Rocky Mountain Lake Park",
-                  "replace": false,
-                  "to": "/hotspots/rocky-mountain-lake-park",
-                },
-                "ref": null,
-                "rendered": "Rocky Mountain Lake Park",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "exact": true,
-                  "path": "/hotspots/rocky-mountain-lake-park",
-                  "render": [Function],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": "L724372",
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <Link
-                  replace={false}
-                  to="/hotspots/fairmount-cemetery"
->
-                  Fairmount Cemetery
-</Link>,
-                <Route
-                  exact={true}
-                  path="/hotspots/fairmount-cemetery"
-                  render={[Function]}
-/>,
-              ],
-              "className": "hotspot",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "Fairmount Cemetery",
-                  "replace": false,
-                  "to": "/hotspots/fairmount-cemetery",
-                },
-                "ref": null,
-                "rendered": "Fairmount Cemetery",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "exact": true,
-                  "path": "/hotspots/fairmount-cemetery",
-                  "render": [Function],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": "L207902",
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <Link
-                  replace={false}
-                  to="/hotspots/lowell-ponds-state-wildlife-area"
->
-                  Lowell Ponds State Wildlife Area
-</Link>,
-                <Route
-                  exact={true}
-                  path="/hotspots/lowell-ponds-state-wildlife-area"
-                  render={[Function]}
-/>,
-              ],
-              "className": "hotspot",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "Lowell Ponds State Wildlife Area",
-                  "replace": false,
-                  "to": "/hotspots/lowell-ponds-state-wildlife-area",
-                },
-                "ref": null,
-                "rendered": "Lowell Ponds State Wildlife Area",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "exact": true,
-                  "path": "/hotspots/lowell-ponds-state-wildlife-area",
-                  "render": [Function],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": "L232994",
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <Link
-                  replace={false}
-                  to="/hotspots/denver-botanic-gardens-and-cheesman-park"
->
-                  Denver Botanic Gardens and Cheesman Park
-</Link>,
-                <Route
-                  exact={true}
-                  path="/hotspots/denver-botanic-gardens-and-cheesman-park"
-                  render={[Function]}
-/>,
-              ],
-              "className": "hotspot",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "Denver Botanic Gardens and Cheesman Park",
-                  "replace": false,
-                  "to": "/hotspots/denver-botanic-gardens-and-cheesman-park",
-                },
-                "ref": null,
-                "rendered": "Denver Botanic Gardens and Cheesman Park",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "exact": true,
-                  "path": "/hotspots/denver-botanic-gardens-and-cheesman-park",
-                  "render": [Function],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": "L684445",
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <Link
-                  replace={false}
-                  to="/hotspots/crown-hill-regional-park"
->
-                  Crown Hill Regional Park
-</Link>,
-                <Route
-                  exact={true}
-                  path="/hotspots/crown-hill-regional-park"
-                  render={[Function]}
-/>,
-              ],
-              "className": "hotspot",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "Crown Hill Regional Park",
-                  "replace": false,
-                  "to": "/hotspots/crown-hill-regional-park",
-                },
-                "ref": null,
-                "rendered": "Crown Hill Regional Park",
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "exact": true,
-                  "path": "/hotspots/crown-hill-regional-park",
-                  "render": [Function],
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-            ],
-            "type": "div",
-          },
-        ],
-        "type": "div",
-      },
-      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {
@@ -6700,17 +5832,42 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "host",
     "props": Object {
-      "children": <div>
+      "children": Array [
         <h1>
-                HotspotsList
-        </h1>
-        <LoadingSpinner />
-</div>,
+          HotspotsList
+</h1>,
+        <LoadingSpinner />,
+      ],
     },
     "ref": null,
-    "rendered": Object {
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "HotspotsList",
+        },
+        "ref": null,
+        "rendered": "HotspotsList",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
@@ -6746,61 +5903,6 @@ ShallowWrapper {
         },
       ],
       "type": "div",
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": <div>
-          <h1>
-                    HotspotsList
-          </h1>
-          <LoadingSpinner />
-</div>,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <h1>
-              HotspotsList
-</h1>,
-            <LoadingSpinner />,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "HotspotsList",
-            },
-            "ref": null,
-            "rendered": "HotspotsList",
-            "type": "h1",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-        ],
-        "type": "div",
-      },
-      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {

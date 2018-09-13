@@ -4,61 +4,106 @@ exports[`Hotspot component should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Hotspot
-    hotspot={
-        Object {
-            "birds": Array [
-              Object {
-                "comName": "Canada Goose",
-                "howMany": 10,
-                "lat": 39.7044793,
-                "lng": -105.0857735,
-                "locId": "L1743685",
-                "locName": "Belmar Park",
-                "locationPrivate": false,
-                "obsDt": "2018-09-09 12:15",
-                "obsReviewed": false,
-                "obsValid": true,
-                "sciName": "Branta canadensis",
-                "speciesCode": "cangoo",
-              },
-              Object {
-                "comName": "Graylag Goose (Domestic type) x Canada Goose (hybrid)",
-                "howMany": 1,
-                "lat": 39.7044793,
-                "lng": -105.0857735,
-                "locId": "L1743685",
-                "locName": "Belmar Park",
-                "locationPrivate": false,
-                "obsDt": "2018-09-09 12:15",
-                "obsReviewed": false,
-                "obsValid": true,
-                "sciName": "Anser anser (Domestic type) x Branta canadensis",
-                "speciesCode": "gragoo4",
-              },
-              Object {
-                "comName": "Mallard",
-                "howMany": 14,
-                "lat": 39.7044793,
-                "lng": -105.0857735,
-                "locId": "L1743685",
-                "locName": "Belmar Park",
-                "locationPrivate": false,
-                "obsDt": "2018-09-09 12:15",
-                "obsReviewed": false,
-                "obsValid": true,
-                "sciName": "Anas platyrhynchos",
-                "speciesCode": "mallar3",
-              },
-            ],
-            "countryCode": "US",
-            "lat": 39.7044793,
-            "lng": -105.0857735,
-            "locID": "L1743685",
-            "locId": "L1743685",
-            "locName": "Belmar Park",
-            "subnational1Code": "US-CO",
-            "subnational2Code": "US-CO-059",
-          }
+    hotspotId="L1743685"
+    hotspots={
+        Array [
+            Object {
+              "birds": Array [
+                Object {
+                  "comName": "Canada Goose",
+                  "howMany": 10,
+                  "lat": 39.7044793,
+                  "lng": -105.0857735,
+                  "locId": "L1743685",
+                  "locName": "Belmar Park",
+                  "locationPrivate": false,
+                  "obsDt": "2018-09-09 12:15",
+                  "obsReviewed": false,
+                  "obsValid": true,
+                  "sciName": "Branta canadensis",
+                  "speciesCode": "cangoo",
+                },
+                Object {
+                  "comName": "Graylag Goose (Domestic type) x Canada Goose (hybrid)",
+                  "howMany": 1,
+                  "lat": 39.7044793,
+                  "lng": -105.0857735,
+                  "locId": "L1743685",
+                  "locName": "Belmar Park",
+                  "locationPrivate": false,
+                  "obsDt": "2018-09-09 12:15",
+                  "obsReviewed": false,
+                  "obsValid": true,
+                  "sciName": "Anser anser (Domestic type) x Branta canadensis",
+                  "speciesCode": "gragoo4",
+                },
+                Object {
+                  "comName": "Mallard",
+                  "howMany": 14,
+                  "lat": 39.7044793,
+                  "lng": -105.0857735,
+                  "locId": "L1743685",
+                  "locName": "Belmar Park",
+                  "locationPrivate": false,
+                  "obsDt": "2018-09-09 12:15",
+                  "obsReviewed": false,
+                  "obsValid": true,
+                  "sciName": "Anas platyrhynchos",
+                  "speciesCode": "mallar3",
+                },
+                Object {
+                  "comName": "Ring-billed Gull",
+                  "howMany": 2,
+                  "lat": 39.7044793,
+                  "lng": -105.0857735,
+                  "locId": "L1743685",
+                  "locName": "Belmar Park",
+                  "locationPrivate": false,
+                  "obsDt": "2018-09-09 12:15",
+                  "obsReviewed": false,
+                  "obsValid": true,
+                  "sciName": "Larus delawarensis",
+                  "speciesCode": "ribgul",
+                },
+                Object {
+                  "comName": "Double-crested Cormorant",
+                  "howMany": 4,
+                  "lat": 39.7044793,
+                  "lng": -105.0857735,
+                  "locId": "L1743685",
+                  "locName": "Belmar Park",
+                  "locationPrivate": false,
+                  "obsDt": "2018-09-09 12:15",
+                  "obsReviewed": false,
+                  "obsValid": true,
+                  "sciName": "Phalacrocorax auritus",
+                  "speciesCode": "doccor",
+                },
+                Object {
+                  "comName": "Great Blue Heron",
+                  "howMany": 1,
+                  "lat": 39.7044793,
+                  "lng": -105.0857735,
+                  "locId": "L1743685",
+                  "locName": "Belmar Park",
+                  "locationPrivate": false,
+                  "obsDt": "2018-09-09 12:15",
+                  "obsReviewed": false,
+                  "obsValid": true,
+                  "sciName": "Ardea herodias",
+                  "speciesCode": "grbher3",
+                },
+              ],
+              "countryCode": "US",
+              "lat": 39.7044793,
+              "lng": -105.0857735,
+              "locID": "L1743685",
+              "locId": "L1743685",
+              "locName": "Belmar Park",
+              "subnational1Code": "US-CO",
+              "subnational2Code": "US-CO-059",
+            },
+          ]
     }
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -71,65 +116,344 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "host",
     "props": Object {
-      "children": <div>
+      "children": Array [
         <h1>
-                Belmar Park
-        </h1>
+          Belmar Park
+</h1>,
         <div
-                className="birds"
-        >
-                <div
-                        className="bird"
-                >
-                        <Link
-                                replace={false}
-                                to="/hotspots/belmar-park/canada-goose"
-                        >
-                                Canada Goose
-                        </Link>
-                        <Route
-                                exact={true}
-                                path="/hotspots/belmar-park/canada-goose"
-                                render={[Function]}
-                        />
-                </div>
-                <div
-                        className="bird"
-                >
-                        <Link
-                                replace={false}
-                                to="/hotspots/belmar-park/graylag-goose-domestic-type-x-canada-goose-hybrid"
-                        >
-                                Graylag Goose (Domestic type) x Canada Goose (hybrid)
-                        </Link>
-                        <Route
-                                exact={true}
-                                path="/hotspots/belmar-park/graylag-goose-domestic-type-x-canada-goose-hybrid"
-                                render={[Function]}
-                        />
-                </div>
-                <div
-                        className="bird"
-                >
-                        <Link
-                                replace={false}
-                                to="/hotspots/belmar-park/mallard"
-                        >
-                                Mallard
-                        </Link>
-                        <Route
-                                exact={true}
-                                path="/hotspots/belmar-park/mallard"
-                                render={[Function]}
-                        />
-                </div>
-        </div>
+          className="birds"
+>
+          <div
+                    className="bird"
+          >
+                    <Link
+                              replace={false}
+                              to="/hotspots/L1743685/cangoo"
+                    >
+                              Canada Goose
+                    </Link>
+          </div>
+          <div
+                    className="bird"
+          >
+                    <Link
+                              replace={false}
+                              to="/hotspots/L1743685/gragoo4"
+                    >
+                              Graylag Goose (Domestic type) x Canada Goose (hybrid)
+                    </Link>
+          </div>
+          <div
+                    className="bird"
+          >
+                    <Link
+                              replace={false}
+                              to="/hotspots/L1743685/mallar3"
+                    >
+                              Mallard
+                    </Link>
+          </div>
+          <div
+                    className="bird"
+          >
+                    <Link
+                              replace={false}
+                              to="/hotspots/L1743685/ribgul"
+                    >
+                              Ring-billed Gull
+                    </Link>
+          </div>
+          <div
+                    className="bird"
+          >
+                    <Link
+                              replace={false}
+                              to="/hotspots/L1743685/doccor"
+                    >
+                              Double-crested Cormorant
+                    </Link>
+          </div>
+          <div
+                    className="bird"
+          >
+                    <Link
+                              replace={false}
+                              to="/hotspots/L1743685/grbher3"
+                    >
+                              Great Blue Heron
+                    </Link>
+          </div>
 </div>,
+      ],
     },
     "ref": null,
-    "rendered": Object {
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Belmar Park",
+        },
+        "ref": null,
+        "rendered": "Belmar Park",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="bird"
+>
+              <Link
+                            replace={false}
+                            to="/hotspots/L1743685/cangoo"
+              >
+                            Canada Goose
+              </Link>
+</div>,
+            <div
+              className="bird"
+>
+              <Link
+                            replace={false}
+                            to="/hotspots/L1743685/gragoo4"
+              >
+                            Graylag Goose (Domestic type) x Canada Goose (hybrid)
+              </Link>
+</div>,
+            <div
+              className="bird"
+>
+              <Link
+                            replace={false}
+                            to="/hotspots/L1743685/mallar3"
+              >
+                            Mallard
+              </Link>
+</div>,
+            <div
+              className="bird"
+>
+              <Link
+                            replace={false}
+                            to="/hotspots/L1743685/ribgul"
+              >
+                            Ring-billed Gull
+              </Link>
+</div>,
+            <div
+              className="bird"
+>
+              <Link
+                            replace={false}
+                            to="/hotspots/L1743685/doccor"
+              >
+                            Double-crested Cormorant
+              </Link>
+</div>,
+            <div
+              className="bird"
+>
+              <Link
+                            replace={false}
+                            to="/hotspots/L1743685/grbher3"
+              >
+                            Great Blue Heron
+              </Link>
+</div>,
+          ],
+          "className": "birds",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0-cangoo",
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/hotspots/L1743685/cangoo"
+>
+                Canada Goose
+</Link>,
+              "className": "bird",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Canada Goose",
+                "replace": false,
+                "to": "/hotspots/L1743685/cangoo",
+              },
+              "ref": null,
+              "rendered": "Canada Goose",
+              "type": [Function],
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "1-gragoo4",
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/hotspots/L1743685/gragoo4"
+>
+                Graylag Goose (Domestic type) x Canada Goose (hybrid)
+</Link>,
+              "className": "bird",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Graylag Goose (Domestic type) x Canada Goose (hybrid)",
+                "replace": false,
+                "to": "/hotspots/L1743685/gragoo4",
+              },
+              "ref": null,
+              "rendered": "Graylag Goose (Domestic type) x Canada Goose (hybrid)",
+              "type": [Function],
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "2-mallar3",
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/hotspots/L1743685/mallar3"
+>
+                Mallard
+</Link>,
+              "className": "bird",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Mallard",
+                "replace": false,
+                "to": "/hotspots/L1743685/mallar3",
+              },
+              "ref": null,
+              "rendered": "Mallard",
+              "type": [Function],
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "3-ribgul",
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/hotspots/L1743685/ribgul"
+>
+                Ring-billed Gull
+</Link>,
+              "className": "bird",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Ring-billed Gull",
+                "replace": false,
+                "to": "/hotspots/L1743685/ribgul",
+              },
+              "ref": null,
+              "rendered": "Ring-billed Gull",
+              "type": [Function],
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "4-doccor",
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/hotspots/L1743685/doccor"
+>
+                Double-crested Cormorant
+</Link>,
+              "className": "bird",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Double-crested Cormorant",
+                "replace": false,
+                "to": "/hotspots/L1743685/doccor",
+              },
+              "ref": null,
+              "rendered": "Double-crested Cormorant",
+              "type": [Function],
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "5-grbher3",
+            "nodeType": "host",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/hotspots/L1743685/grbher3"
+>
+                Great Blue Heron
+</Link>,
+              "className": "bird",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Great Blue Heron",
+                "replace": false,
+                "to": "/hotspots/L1743685/grbher3",
+              },
+              "ref": null,
+              "rendered": "Great Blue Heron",
+              "type": [Function],
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
       "instance": null,
       "key": undefined,
       "nodeType": "host",
@@ -146,45 +470,60 @@ ShallowWrapper {
             >
                         <Link
                                     replace={false}
-                                    to="/hotspots/belmar-park/canada-goose"
+                                    to="/hotspots/L1743685/cangoo"
                         >
                                     Canada Goose
                         </Link>
-                        <Route
-                                    exact={true}
-                                    path="/hotspots/belmar-park/canada-goose"
-                                    render={[Function]}
-                        />
             </div>
             <div
                         className="bird"
             >
                         <Link
                                     replace={false}
-                                    to="/hotspots/belmar-park/graylag-goose-domestic-type-x-canada-goose-hybrid"
+                                    to="/hotspots/L1743685/gragoo4"
                         >
                                     Graylag Goose (Domestic type) x Canada Goose (hybrid)
                         </Link>
-                        <Route
-                                    exact={true}
-                                    path="/hotspots/belmar-park/graylag-goose-domestic-type-x-canada-goose-hybrid"
-                                    render={[Function]}
-                        />
             </div>
             <div
                         className="bird"
             >
                         <Link
                                     replace={false}
-                                    to="/hotspots/belmar-park/mallard"
+                                    to="/hotspots/L1743685/mallar3"
                         >
                                     Mallard
                         </Link>
-                        <Route
-                                    exact={true}
-                                    path="/hotspots/belmar-park/mallard"
-                                    render={[Function]}
-                        />
+            </div>
+            <div
+                        className="bird"
+            >
+                        <Link
+                                    replace={false}
+                                    to="/hotspots/L1743685/ribgul"
+                        >
+                                    Ring-billed Gull
+                        </Link>
+            </div>
+            <div
+                        className="bird"
+            >
+                        <Link
+                                    replace={false}
+                                    to="/hotspots/L1743685/doccor"
+                        >
+                                    Double-crested Cormorant
+                        </Link>
+            </div>
+            <div
+                        className="bird"
+            >
+                        <Link
+                                    replace={false}
+                                    to="/hotspots/L1743685/grbher3"
+                        >
+                                    Great Blue Heron
+                        </Link>
             </div>
 </div>,
         ],
@@ -213,45 +552,60 @@ ShallowWrapper {
 >
                 <Link
                                 replace={false}
-                                to="/hotspots/belmar-park/canada-goose"
+                                to="/hotspots/L1743685/cangoo"
                 >
                                 Canada Goose
                 </Link>
-                <Route
-                                exact={true}
-                                path="/hotspots/belmar-park/canada-goose"
-                                render={[Function]}
-                />
 </div>,
               <div
                 className="bird"
 >
                 <Link
                                 replace={false}
-                                to="/hotspots/belmar-park/graylag-goose-domestic-type-x-canada-goose-hybrid"
+                                to="/hotspots/L1743685/gragoo4"
                 >
                                 Graylag Goose (Domestic type) x Canada Goose (hybrid)
                 </Link>
-                <Route
-                                exact={true}
-                                path="/hotspots/belmar-park/graylag-goose-domestic-type-x-canada-goose-hybrid"
-                                render={[Function]}
-                />
 </div>,
               <div
                 className="bird"
 >
                 <Link
                                 replace={false}
-                                to="/hotspots/belmar-park/mallard"
+                                to="/hotspots/L1743685/mallar3"
                 >
                                 Mallard
                 </Link>
-                <Route
-                                exact={true}
-                                path="/hotspots/belmar-park/mallard"
-                                render={[Function]}
-                />
+</div>,
+              <div
+                className="bird"
+>
+                <Link
+                                replace={false}
+                                to="/hotspots/L1743685/ribgul"
+                >
+                                Ring-billed Gull
+                </Link>
+</div>,
+              <div
+                className="bird"
+>
+                <Link
+                                replace={false}
+                                to="/hotspots/L1743685/doccor"
+                >
+                                Double-crested Cormorant
+                </Link>
+</div>,
+              <div
+                className="bird"
+>
+                <Link
+                                replace={false}
+                                to="/hotspots/L1743685/grbher3"
+                >
+                                Great Blue Heron
+                </Link>
 </div>,
             ],
             "className": "birds",
@@ -263,50 +617,28 @@ ShallowWrapper {
               "key": "0-cangoo",
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  <Link
-                    replace={false}
-                    to="/hotspots/belmar-park/canada-goose"
+                "children": <Link
+                  replace={false}
+                  to="/hotspots/L1743685/cangoo"
 >
-                    Canada Goose
+                  Canada Goose
 </Link>,
-                  <Route
-                    exact={true}
-                    path="/hotspots/belmar-park/canada-goose"
-                    render={[Function]}
-/>,
-                ],
                 "className": "bird",
               },
               "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "Canada Goose",
-                    "replace": false,
-                    "to": "/hotspots/belmar-park/canada-goose",
-                  },
-                  "ref": null,
-                  "rendered": "Canada Goose",
-                  "type": [Function],
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Canada Goose",
+                  "replace": false,
+                  "to": "/hotspots/L1743685/cangoo",
                 },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "exact": true,
-                    "path": "/hotspots/belmar-park/canada-goose",
-                    "render": [Function],
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-              ],
+                "ref": null,
+                "rendered": "Canada Goose",
+                "type": [Function],
+              },
               "type": "div",
             },
             Object {
@@ -314,50 +646,28 @@ ShallowWrapper {
               "key": "1-gragoo4",
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  <Link
-                    replace={false}
-                    to="/hotspots/belmar-park/graylag-goose-domestic-type-x-canada-goose-hybrid"
+                "children": <Link
+                  replace={false}
+                  to="/hotspots/L1743685/gragoo4"
 >
-                    Graylag Goose (Domestic type) x Canada Goose (hybrid)
+                  Graylag Goose (Domestic type) x Canada Goose (hybrid)
 </Link>,
-                  <Route
-                    exact={true}
-                    path="/hotspots/belmar-park/graylag-goose-domestic-type-x-canada-goose-hybrid"
-                    render={[Function]}
-/>,
-                ],
                 "className": "bird",
               },
               "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "Graylag Goose (Domestic type) x Canada Goose (hybrid)",
-                    "replace": false,
-                    "to": "/hotspots/belmar-park/graylag-goose-domestic-type-x-canada-goose-hybrid",
-                  },
-                  "ref": null,
-                  "rendered": "Graylag Goose (Domestic type) x Canada Goose (hybrid)",
-                  "type": [Function],
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Graylag Goose (Domestic type) x Canada Goose (hybrid)",
+                  "replace": false,
+                  "to": "/hotspots/L1743685/gragoo4",
                 },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "exact": true,
-                    "path": "/hotspots/belmar-park/graylag-goose-domestic-type-x-canada-goose-hybrid",
-                    "render": [Function],
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-              ],
+                "ref": null,
+                "rendered": "Graylag Goose (Domestic type) x Canada Goose (hybrid)",
+                "type": [Function],
+              },
               "type": "div",
             },
             Object {
@@ -365,50 +675,115 @@ ShallowWrapper {
               "key": "2-mallar3",
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  <Link
-                    replace={false}
-                    to="/hotspots/belmar-park/mallard"
+                "children": <Link
+                  replace={false}
+                  to="/hotspots/L1743685/mallar3"
 >
-                    Mallard
+                  Mallard
 </Link>,
-                  <Route
-                    exact={true}
-                    path="/hotspots/belmar-park/mallard"
-                    render={[Function]}
-/>,
-                ],
                 "className": "bird",
               },
               "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "Mallard",
-                    "replace": false,
-                    "to": "/hotspots/belmar-park/mallard",
-                  },
-                  "ref": null,
-                  "rendered": "Mallard",
-                  "type": [Function],
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Mallard",
+                  "replace": false,
+                  "to": "/hotspots/L1743685/mallar3",
                 },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "exact": true,
-                    "path": "/hotspots/belmar-park/mallard",
-                    "render": [Function],
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
+                "ref": null,
+                "rendered": "Mallard",
+                "type": [Function],
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "3-ribgul",
+              "nodeType": "host",
+              "props": Object {
+                "children": <Link
+                  replace={false}
+                  to="/hotspots/L1743685/ribgul"
+>
+                  Ring-billed Gull
+</Link>,
+                "className": "bird",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Ring-billed Gull",
+                  "replace": false,
+                  "to": "/hotspots/L1743685/ribgul",
                 },
-              ],
+                "ref": null,
+                "rendered": "Ring-billed Gull",
+                "type": [Function],
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "4-doccor",
+              "nodeType": "host",
+              "props": Object {
+                "children": <Link
+                  replace={false}
+                  to="/hotspots/L1743685/doccor"
+>
+                  Double-crested Cormorant
+</Link>,
+                "className": "bird",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Double-crested Cormorant",
+                  "replace": false,
+                  "to": "/hotspots/L1743685/doccor",
+                },
+                "ref": null,
+                "rendered": "Double-crested Cormorant",
+                "type": [Function],
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "5-grbher3",
+              "nodeType": "host",
+              "props": Object {
+                "children": <Link
+                  replace={false}
+                  to="/hotspots/L1743685/grbher3"
+>
+                  Great Blue Heron
+</Link>,
+                "className": "bird",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "Great Blue Heron",
+                  "replace": false,
+                  "to": "/hotspots/L1743685/grbher3",
+                },
+                "ref": null,
+                "rendered": "Great Blue Heron",
+                "type": [Function],
+              },
               "type": "div",
             },
           ],
@@ -416,360 +791,6 @@ ShallowWrapper {
         },
       ],
       "type": "div",
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
-      "props": Object {
-        "children": <div>
-          <h1>
-                    Belmar Park
-          </h1>
-          <div
-                    className="birds"
-          >
-                    <div
-                              className="bird"
-                    >
-                              <Link
-                                        replace={false}
-                                        to="/hotspots/belmar-park/canada-goose"
-                              >
-                                        Canada Goose
-                              </Link>
-                              <Route
-                                        exact={true}
-                                        path="/hotspots/belmar-park/canada-goose"
-                                        render={[Function]}
-                              />
-                    </div>
-                    <div
-                              className="bird"
-                    >
-                              <Link
-                                        replace={false}
-                                        to="/hotspots/belmar-park/graylag-goose-domestic-type-x-canada-goose-hybrid"
-                              >
-                                        Graylag Goose (Domestic type) x Canada Goose (hybrid)
-                              </Link>
-                              <Route
-                                        exact={true}
-                                        path="/hotspots/belmar-park/graylag-goose-domestic-type-x-canada-goose-hybrid"
-                                        render={[Function]}
-                              />
-                    </div>
-                    <div
-                              className="bird"
-                    >
-                              <Link
-                                        replace={false}
-                                        to="/hotspots/belmar-park/mallard"
-                              >
-                                        Mallard
-                              </Link>
-                              <Route
-                                        exact={true}
-                                        path="/hotspots/belmar-park/mallard"
-                                        render={[Function]}
-                              />
-                    </div>
-          </div>
-</div>,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <h1>
-              Belmar Park
-</h1>,
-            <div
-              className="birds"
->
-              <div
-                            className="bird"
-              >
-                            <Link
-                                          replace={false}
-                                          to="/hotspots/belmar-park/canada-goose"
-                            >
-                                          Canada Goose
-                            </Link>
-                            <Route
-                                          exact={true}
-                                          path="/hotspots/belmar-park/canada-goose"
-                                          render={[Function]}
-                            />
-              </div>
-              <div
-                            className="bird"
-              >
-                            <Link
-                                          replace={false}
-                                          to="/hotspots/belmar-park/graylag-goose-domestic-type-x-canada-goose-hybrid"
-                            >
-                                          Graylag Goose (Domestic type) x Canada Goose (hybrid)
-                            </Link>
-                            <Route
-                                          exact={true}
-                                          path="/hotspots/belmar-park/graylag-goose-domestic-type-x-canada-goose-hybrid"
-                                          render={[Function]}
-                            />
-              </div>
-              <div
-                            className="bird"
-              >
-                            <Link
-                                          replace={false}
-                                          to="/hotspots/belmar-park/mallard"
-                            >
-                                          Mallard
-                            </Link>
-                            <Route
-                                          exact={true}
-                                          path="/hotspots/belmar-park/mallard"
-                                          render={[Function]}
-                            />
-              </div>
-</div>,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Belmar Park",
-            },
-            "ref": null,
-            "rendered": "Belmar Park",
-            "type": "h1",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": Array [
-                <div
-                  className="bird"
->
-                  <Link
-                                    replace={false}
-                                    to="/hotspots/belmar-park/canada-goose"
-                  >
-                                    Canada Goose
-                  </Link>
-                  <Route
-                                    exact={true}
-                                    path="/hotspots/belmar-park/canada-goose"
-                                    render={[Function]}
-                  />
-</div>,
-                <div
-                  className="bird"
->
-                  <Link
-                                    replace={false}
-                                    to="/hotspots/belmar-park/graylag-goose-domestic-type-x-canada-goose-hybrid"
-                  >
-                                    Graylag Goose (Domestic type) x Canada Goose (hybrid)
-                  </Link>
-                  <Route
-                                    exact={true}
-                                    path="/hotspots/belmar-park/graylag-goose-domestic-type-x-canada-goose-hybrid"
-                                    render={[Function]}
-                  />
-</div>,
-                <div
-                  className="bird"
->
-                  <Link
-                                    replace={false}
-                                    to="/hotspots/belmar-park/mallard"
-                  >
-                                    Mallard
-                  </Link>
-                  <Route
-                                    exact={true}
-                                    path="/hotspots/belmar-park/mallard"
-                                    render={[Function]}
-                  />
-</div>,
-              ],
-              "className": "birds",
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": "0-cangoo",
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <Link
-                      replace={false}
-                      to="/hotspots/belmar-park/canada-goose"
->
-                      Canada Goose
-</Link>,
-                    <Route
-                      exact={true}
-                      path="/hotspots/belmar-park/canada-goose"
-                      render={[Function]}
-/>,
-                  ],
-                  "className": "bird",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "Canada Goose",
-                      "replace": false,
-                      "to": "/hotspots/belmar-park/canada-goose",
-                    },
-                    "ref": null,
-                    "rendered": "Canada Goose",
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "exact": true,
-                      "path": "/hotspots/belmar-park/canada-goose",
-                      "render": [Function],
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": [Function],
-                  },
-                ],
-                "type": "div",
-              },
-              Object {
-                "instance": null,
-                "key": "1-gragoo4",
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <Link
-                      replace={false}
-                      to="/hotspots/belmar-park/graylag-goose-domestic-type-x-canada-goose-hybrid"
->
-                      Graylag Goose (Domestic type) x Canada Goose (hybrid)
-</Link>,
-                    <Route
-                      exact={true}
-                      path="/hotspots/belmar-park/graylag-goose-domestic-type-x-canada-goose-hybrid"
-                      render={[Function]}
-/>,
-                  ],
-                  "className": "bird",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "Graylag Goose (Domestic type) x Canada Goose (hybrid)",
-                      "replace": false,
-                      "to": "/hotspots/belmar-park/graylag-goose-domestic-type-x-canada-goose-hybrid",
-                    },
-                    "ref": null,
-                    "rendered": "Graylag Goose (Domestic type) x Canada Goose (hybrid)",
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "exact": true,
-                      "path": "/hotspots/belmar-park/graylag-goose-domestic-type-x-canada-goose-hybrid",
-                      "render": [Function],
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": [Function],
-                  },
-                ],
-                "type": "div",
-              },
-              Object {
-                "instance": null,
-                "key": "2-mallar3",
-                "nodeType": "host",
-                "props": Object {
-                  "children": Array [
-                    <Link
-                      replace={false}
-                      to="/hotspots/belmar-park/mallard"
->
-                      Mallard
-</Link>,
-                    <Route
-                      exact={true}
-                      path="/hotspots/belmar-park/mallard"
-                      render={[Function]}
-/>,
-                  ],
-                  "className": "bird",
-                },
-                "ref": null,
-                "rendered": Array [
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "Mallard",
-                      "replace": false,
-                      "to": "/hotspots/belmar-park/mallard",
-                    },
-                    "ref": null,
-                    "rendered": "Mallard",
-                    "type": [Function],
-                  },
-                  Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "exact": true,
-                      "path": "/hotspots/belmar-park/mallard",
-                      "render": [Function],
-                    },
-                    "ref": null,
-                    "rendered": null,
-                    "type": [Function],
-                  },
-                ],
-                "type": "div",
-              },
-            ],
-            "type": "div",
-          },
-        ],
-        "type": "div",
-      },
-      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {

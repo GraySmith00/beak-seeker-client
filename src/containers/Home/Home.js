@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 
 import { setCurrentUser } from '../../actions/thunks/setCurrentUser';
 
-class Home extends Component {
+export class Home extends Component {
   componentDidMount() {
     const id = window.location.search.slice(4);
 

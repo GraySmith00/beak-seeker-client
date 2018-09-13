@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App component matches the snapshot 1`] = `
+exports[`LoadingSpinner component should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__unrendered__): <LoadingSpinner />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -16,18 +16,35 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <Connect(Routes) />,
-      "className": "App",
+      "children": <img
+        alt="Loading..."
+        src="spinner.gif"
+        style={
+                Object {
+                        "display": "block",
+                        "margin": "auto",
+                        "width": "200px",
+                      }
+        }
+/>,
     },
     "ref": null,
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
-      "props": Object {},
+      "nodeType": "host",
+      "props": Object {
+        "alt": "Loading...",
+        "src": "spinner.gif",
+        "style": Object {
+          "display": "block",
+          "margin": "auto",
+          "width": "200px",
+        },
+      },
       "ref": null,
       "rendered": null,
-      "type": [Function],
+      "type": "img",
     },
     "type": "div",
   },
@@ -37,18 +54,35 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <Connect(Routes) />,
-        "className": "App",
+        "children": <img
+          alt="Loading..."
+          src="spinner.gif"
+          style={
+                    Object {
+                              "display": "block",
+                              "margin": "auto",
+                              "width": "200px",
+                            }
+          }
+/>,
       },
       "ref": null,
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
-        "props": Object {},
+        "nodeType": "host",
+        "props": Object {
+          "alt": "Loading...",
+          "src": "spinner.gif",
+          "style": Object {
+            "display": "block",
+            "margin": "auto",
+            "width": "200px",
+          },
+        },
         "ref": null,
         "rendered": null,
-        "type": [Function],
+        "type": "img",
       },
       "type": "div",
     },
