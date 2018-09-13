@@ -42,16 +42,16 @@ HotspotsList.propTypes = {
   loading: PropTypes.bool.isRequired
 };
 
-const mapStatetoProps = state => ({
+export const mapStateToProps = state => ({
   hotspots: state.hotspots,
   loading: state.hotspotsLoading
 });
 
-const mapDispatchToProps = dispatch => ({
+export const mapDispatchToProps = dispatch => ({
   getNearbyHotspots: () => dispatch(getNearbyHotspots())
 });
 
 export default connect(
-  mapStatetoProps,
+  mapStateToProps,
   mapDispatchToProps
 )(HotspotsList);

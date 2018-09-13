@@ -35,7 +35,7 @@ Hotspot.propTypes = {
   hotspots: PropTypes.array.isRequired
 };
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   hotspots: state.hotspots
 });
 

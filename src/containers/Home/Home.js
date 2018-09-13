@@ -8,7 +8,6 @@ import { setCurrentUser } from '../../actions/thunks/setCurrentUser';
 export class Home extends Component {
   componentDidMount() {
     const id = window.location.search.slice(4);
-
     this.props.setCurrentUser(id);
   }
 
@@ -28,7 +27,7 @@ Home.propTypes = {
   setCurrentUser: PropTypes.func.isRequired
 };
 
-const mapDispatchToProps = dispatch => ({
+export const mapDispatchToProps = dispatch => ({
   setCurrentUser: id => dispatch(setCurrentUser(id))
 });
 

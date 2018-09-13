@@ -5,7 +5,7 @@ export const hotspotsLoading = bool => ({
 
 export const hotspotsErrored = bool => ({
   type: 'HOTSPOTS_ERRORED',
-  hotspotsErrored: bool
+  hasErrored: bool
 });
 
 export const hotspotsSuccess = hotspots => ({
