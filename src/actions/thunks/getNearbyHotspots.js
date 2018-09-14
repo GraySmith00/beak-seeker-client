@@ -7,9 +7,17 @@ import {
 import { getHotspotBirds, getMostActive } from '../../utils/helpers';
 import { eBirdKey } from '../../keys';
 
+export const getPosition = options => {
+  return new Promise((resolve, reject) => {
+    navigator.geolocation.getCurrentPosition(resolve, reject, options);
+  });
+};
+
 export const getNearbyHotspots = () => async dispatch => {
-  const url =
-    'https://ebird.org/ws2.0/ref/hotspot/geo?lat=39.744245&lng=-105.0025553&fmt=json&dist=10';
+  const position = await getPosition();
+  const { latitude, longitude } = position.coords;
+
+  const url = `https://ebird.org/ws2.0/ref/hotspot/geo?lat=${latitude}&lng=${longitude}&fmt=json&dist=10`;
 
   try {
     dispatch(hotspotsLoading(true));

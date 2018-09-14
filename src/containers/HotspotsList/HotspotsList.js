@@ -9,8 +9,12 @@ import { getNearbyHotspots } from '../../actions/thunks/getNearbyHotspots';
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
 
 export class HotspotsList extends Component {
-  componentDidMount() {
-    this.props.getNearbyHotspots();
+  async componentDidMount() {
+    try {
+      this.props.getNearbyHotspots();
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   render() {
