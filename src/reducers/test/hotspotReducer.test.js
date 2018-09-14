@@ -2,13 +2,13 @@ import {
   hotspotsLoadingReducer,
   hotspotsErroredReducer,
   hotspotReducer
-} from './hotspotReducer';
-import * as actions from '../actions/hotspotActions';
+} from '../hotspotReducer';
+import * as actions from '../../actions/hotspotActions';
 import { mockHotspots } from './mockReducerData';
 
 describe('hotspotReducer', () => {
   describe('hotspotsLoadingReducer', () => {
-    it('should return the initail state', () => {
+    it('should return the initial state', () => {
       const expected = false;
       const result = hotspotsLoadingReducer(undefined, {});
       expect(result).toEqual(expected);

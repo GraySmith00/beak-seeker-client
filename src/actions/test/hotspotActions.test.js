@@ -1,4 +1,4 @@
-import * as actions from './hotspotActions';
+import * as actions from '../hotspotActions';
 import mockHotspots from './mockActionsData';
 
 describe('hotspotActions', () => {

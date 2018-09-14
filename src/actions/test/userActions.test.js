@@ -1,4 +1,4 @@
-import * as actions from './userActions';
+import * as actions from '../userActions';
 import { mockUser } from './mockActionsData';
 
 describe('userActions', () => {
