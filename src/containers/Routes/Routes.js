@@ -10,7 +10,7 @@ import Leaderboard from '../Leaderboard/Leaderboard';
 import Hotspot from '../Hotspot/Hotspot';
 import BirdInfo from '../BirdInfo/BirdInfo';
 
-class Routes extends Component {
+export class Routes extends Component {
   render() {
     return (
       <Router>

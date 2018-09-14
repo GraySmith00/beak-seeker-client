@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
-class Hotspot extends Component {
+export class Hotspot extends Component {
   render() {
     const { hotspotId } = this.props;
     const hotspot = this.props.hotspots.find(
@@ -35,7 +35,7 @@ Hotspot.propTypes = {
   hotspots: PropTypes.array.isRequired
 };
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   hotspots: state.hotspots
 });
 

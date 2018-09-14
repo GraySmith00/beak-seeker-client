@@ -4,22 +4,8 @@ exports[`BirdInfo component should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <BirdInfo
-    bird={
-        Object {
-            "comName": "Canada Goose",
-            "howMany": 15,
-            "lat": 39.7824006,
-            "lng": -105.0299138,
-            "locId": "L883813",
-            "locName": "Rocky Mountain Lake Park",
-            "locationPrivate": false,
-            "obsDt": "2018-09-06 06:40",
-            "obsReviewed": false,
-            "obsValid": true,
-            "sciName": "Branta canadensis",
-            "speciesCode": "cangoo",
-          }
-    }
+    locId="L883813"
+    speciesCode="cangoo"
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],

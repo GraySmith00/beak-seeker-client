@@ -4,7 +4,7 @@ import { getBirdImage, getBirdInfo } from '../../utils/helpers';
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
 import { connect } from 'react-redux';
 
-class BirdInfo extends Component {
+export class BirdInfo extends Component {
   constructor() {
     super();
     this.state = {
