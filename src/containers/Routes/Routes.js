@@ -9,6 +9,7 @@ import SignIn from '../SignIn/SignIn';
 import Leaderboard from '../Leaderboard/Leaderboard';
 import Hotspot from '../Hotspot/Hotspot';
 import BirdInfo from '../BirdInfo/BirdInfo';
+import PostTweet from '../PostTweet/PostTweet';
 
 export class Routes extends Component {
   render() {
@@ -48,6 +49,7 @@ export class Routes extends Component {
               );
             }}
           />
+          <Route exact path="/tweet" component={PostTweet} />
         </div>
       </Router>
     );
