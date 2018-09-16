@@ -16,47 +16,45 @@ export class Routes extends Component {
   render() {
     const { currentUser } = this.props;
     return (
-      <Fragment>
-        <Router>
-          <div>
-            <Route path="/home" component={Home} />
-            <Route exact path="/hotspots" component={HotspotsList} />
-            <Route exact path="/leaderboard" component={Leaderboard} />
-            <Route
-              exact
-              path="/"
-              render={() => {
-                if (!this.props.currentUser) {
-                  return <SignIn />;
-                } else {
-                  return <Home />;
-                }
-              }}
-            />
-            <Route
-              exact
-              path={`/hotspots/:location_id`}
-              render={({ match }) => {
-                return <Hotspot hotspotId={match.params.location_id} />;
-              }}
-            />
-            <Route
-              exact
-              path={`/hotspots/:location_id/:speciesCode`}
-              render={({ match }) => {
-                return (
-                  <BirdInfo
-                    locId={match.params.location_id}
-                    speciesCode={match.params.speciesCode}
-                  />
-                );
-              }}
-            />
-            <Route exact path="/tweet" component={PostTweet} />
-            {currentUser && <Footer />}
-          </div>
-        </Router>
-      </Fragment>
+      <Router>
+        <Fragment>
+          <Route path="/home" component={Home} />
+          <Route exact path="/hotspots" component={HotspotsList} />
+          <Route exact path="/leaderboard" component={Leaderboard} />
+          <Route
+            exact
+            path="/"
+            render={() => {
+              if (!this.props.currentUser) {
+                return <SignIn />;
+              } else {
+                return <Home />;
+              }
+            }}
+          />
+          <Route
+            exact
+            path={`/hotspots/:location_id`}
+            render={({ match }) => {
+              return <Hotspot hotspotId={match.params.location_id} />;
+            }}
+          />
+          <Route
+            exact
+            path={`/hotspots/:location_id/:speciesCode`}
+            render={({ match }) => {
+              return (
+                <BirdInfo
+                  locId={match.params.location_id}
+                  speciesCode={match.params.speciesCode}
+                />
+              );
+            }}
+          />
+          <Route exact path="/tweet" component={PostTweet} />
+          {currentUser && <Footer />}
+        </Fragment>
+      </Router>
     );
   }
 }
