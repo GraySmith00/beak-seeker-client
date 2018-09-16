@@ -1,0 +1,6 @@
+.hotspot {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .hotspot .main-content {
+    margin: 60px auto; }
