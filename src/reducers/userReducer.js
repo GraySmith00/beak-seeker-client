@@ -31,6 +31,10 @@ export const userReducer = (state = null, action) => {
         sightings: action.newSightings
       };
     }
+
+    case 'LOGOUT':
+      return null;
+
     default:
       return state;
   }
