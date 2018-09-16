@@ -9,16 +9,29 @@ import { getNearbyHotspots } from '../../actions/thunks/getNearbyHotspots';
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
 
 export class HotspotsList extends Component {
+  constructor() {
+    super();
+    this.state = {
+      loading: true
+    };
+  }
+
   async componentDidMount() {
-    try {
-      this.props.getNearbyHotspots();
-    } catch (error) {
-      console.log(error);
+    const { hotspots } = this.props;
+
+    if (Object.keys(hotspots).length === 0) {
+      try {
+        await this.props.getNearbyHotspots();
+      } catch (error) {
+        console.log(error);
+      }
     }
+
+    this.setState({ loading: false });
   }
 
   render() {
-    const { loading } = this.props;
+    const { loading } = this.state;
     let displayHotspotLinks;
 
     if (loading) {
