@@ -4,10 +4,15 @@ import { getBirdImage, getBirdInfo } from '../../utils/helpers';
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
 import { connect } from 'react-redux';
 
+import Header from '../../components/Header/Header';
+
+import './BirdInfo.css';
+
 export class BirdInfo extends Component {
   constructor() {
     super();
     this.state = {
+      comName: '',
       birdImage: '',
       birdInfo: '',
       loading: true
@@ -22,7 +27,9 @@ export class BirdInfo extends Component {
 
     const birdImage = await getBirdImage(comName);
     const birdInfo = await getBirdInfo(comName);
+
     this.setState({
+      comName,
       birdImage,
       birdInfo,
       loading: false
@@ -30,7 +37,7 @@ export class BirdInfo extends Component {
   }
 
   render() {
-    const { birdImage, birdInfo, loading } = this.state;
+    const { birdImage, birdInfo, loading, comName } = this.state;
     let birdContent;
 
     if (loading) {
@@ -45,15 +52,16 @@ export class BirdInfo extends Component {
               Sorry, we could not find an image of this bird at this time :(
             </p>
           )}
+          <h3>{comName}</h3>
           <p>{birdInfo}</p>
         </div>
       );
     }
 
     return (
-      <div>
-        <h1>BirdInfo</h1>
-        {birdContent}
+      <div className="bird-info">
+        <Header currentPage="Bird Info" />
+        <main className="main-content">{birdContent}</main>
       </div>
     );
   }
