@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 375px;
+  background: crimson; }
+  .header .back-icon {
+    position: absolute;
+    left: 20px;
+    font-size: 1.8rem;
+    cursor: pointer; }
