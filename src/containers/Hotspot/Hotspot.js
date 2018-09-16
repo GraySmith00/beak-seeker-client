@@ -26,7 +26,6 @@ export class Hotspot extends Component {
             sighting.speciesCode === bird.speciesCode
         );
 
-        console.log(birdSeen);
         birdSeen ? (birdSeen = true) : (birdSeen = false);
 
         return (
