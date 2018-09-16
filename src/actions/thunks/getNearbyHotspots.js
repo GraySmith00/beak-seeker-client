@@ -1,8 +1,4 @@
-import {
-  hotspotsLoading,
-  hotspotsErrored,
-  hotspotsSuccess
-} from '../hotspotActions';
+import { hotspotsErrored, hotspotsSuccess } from '../hotspotActions';
 
 import { getHotspotBirds, getMostActive } from '../../utils/helpers';
 import { eBirdKey } from '../../keys';
@@ -20,7 +16,6 @@ export const getNearbyHotspots = () => async dispatch => {
   const url = `https://ebird.org/ws2.0/ref/hotspot/geo?lat=${latitude}&lng=${longitude}&fmt=json&dist=10`;
 
   try {
-    dispatch(hotspotsLoading(true));
     const response = await fetch(url, {
       headers: {
         'x-ebirdapitoken': eBirdKey
@@ -31,7 +26,6 @@ export const getNearbyHotspots = () => async dispatch => {
     const hotSpotsWithBirds = await Promise.all(hotSpotWithBirdsPromises);
     const mostActive = getMostActive(hotSpotsWithBirds);
 
-    dispatch(hotspotsLoading(false));
     dispatch(hotspotsSuccess(mostActive));
   } catch (error) {
     dispatch(hotspotsErrored(true));
