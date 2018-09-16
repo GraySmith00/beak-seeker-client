@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 
+import { logout } from '../../actions/userActions';
+
 import Home from '../Home/Home';
 import HotspotsList from '../HotspotsList/HotspotsList';
 import SignIn from '../SignIn/SignIn';
@@ -52,12 +54,24 @@ export class Routes extends Component {
             }}
           />
           <Route exact path="/tweet" component={PostTweet} />
+          <Route
+            exact
+            path="/logout"
+            render={() => {
+              this.props.logout();
+              return <SignIn />;
+            }}
+          />
           {currentUser && <Footer />}
         </Fragment>
       </Router>
     );
   }
 }
+
+Routes.propTypes = {
+  logout: PropTypes.func.isRequired
+};
 
 Routes.propTypes = {
   currentUser: PropTypes.object
@@ -68,4 +82,11 @@ const mapStateToProps = state => ({
   hotspots: state.hotspots
 });
 
-export default connect(mapStateToProps)(Routes);
+const mapDispatchToProps = dispatch => ({
+  logout: () => dispatch(logout())
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Routes);
