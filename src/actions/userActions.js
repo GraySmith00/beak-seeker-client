@@ -3,7 +3,7 @@ export const setCurrentUserState = user => ({
   user
 });
 
-export const toggleBirdSightingState = newSighting => ({
+export const toggleBirdSightingState = newSightings => ({
   type: 'TOGGLE_BIRD_SIGHTING_STATE',
-  newSighting
+  newSightings
 });
