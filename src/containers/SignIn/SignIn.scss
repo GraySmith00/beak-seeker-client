@@ -1,0 +1,87 @@
+.sign-in {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+
+  .hero {
+    background: url('./birdsSunset1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    height: 300px;
+    width: 100%;
+
+    -webkit-box-shadow: 10px 10px 43px -8px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 10px 10px 43px -8px rgba(0, 0, 0, 0.43);
+    box-shadow: 10px 10px 43px -8px rgba(0, 0, 0, 0.43);
+  }
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    width: 100%;
+  }
+
+  .welcome-text {
+    width: 83%;
+
+    margin: 0 auto;
+    padding-top: 20%;
+    color: #fff;
+  }
+
+  .fa-dove {
+    margin-right: 1rem;
+  }
+
+  h3 {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  h2 {
+    margin-top: 0.5rem;
+    font-size: 2.5rem;
+    font-family: 'Pacifico', cursive;
+  }
+
+  .app-description {
+    position: absolute;
+    top: 42%;
+    text-align: center;
+    background-color: #1b2026;
+    width: 75%;
+    padding: 1rem;
+    border-radius: 5px;
+    color: #fff;
+  }
+
+  .twitter-button {
+    padding: 1rem;
+    margin: 3rem auto;
+    text-decoration: none;
+
+    border-radius: 5px;
+    color: #fff;
+
+    background: #00c6ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #0072ff,
+      #00c6ff
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #0072ff,
+      #00c6ff
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    -webkit-box-shadow: 10px 10px 43px -8px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 10px 10px 43px -8px rgba(0, 0, 0, 0.43);
+    box-shadow: 10px 10px 43px -8px rgba(0, 0, 0, 0.43);
+  }
+}
