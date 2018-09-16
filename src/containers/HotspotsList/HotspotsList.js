@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
 import { Link } from 'react-router-dom';
-
 import { connect } from 'react-redux';
 
 import { getNearbyHotspots } from '../../actions/thunks/getNearbyHotspots';
+
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
+import Header from '../../components/Header/Header';
+
+import './HotspotsList.css';
 
 export class HotspotsList extends Component {
   constructor() {
@@ -45,9 +47,9 @@ export class HotspotsList extends Component {
     }
 
     return (
-      <div>
-        <h1>HotspotsList</h1>
-        {displayHotspotLinks}
+      <div className="hotspots-list">
+        <Header currentPage="Nearby Hotspots" />
+        <main className="main-content">{displayHotspotLinks}</main>
       </div>
     );
   }
@@ -55,13 +57,11 @@ export class HotspotsList extends Component {
 
 HotspotsList.propTypes = {
   getNearbyHotspots: PropTypes.func.isRequired,
-  hotspots: PropTypes.array.isRequired,
-  loading: PropTypes.bool.isRequired
+  hotspots: PropTypes.array.isRequired
 };
 
 export const mapStateToProps = state => ({
-  hotspots: state.hotspots,
-  loading: state.hotspotsLoading
+  hotspots: state.hotspots
 });
 
 export const mapDispatchToProps = dispatch => ({
