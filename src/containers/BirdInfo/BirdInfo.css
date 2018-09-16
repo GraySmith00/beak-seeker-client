@@ -1,0 +1,13 @@
+.bird-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .bird-info .main-content {
+    margin: 60px auto; }
+  .bird-info .bird-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+    overflow: scroll; }

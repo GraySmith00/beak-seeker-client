@@ -5,6 +5,10 @@ import { connect } from 'react-redux';
 
 import { setCurrentUser } from '../../actions/thunks/setCurrentUser';
 
+import Header from '../../components/Header/Header';
+
+import './Home.css';
+
 export class Home extends Component {
   componentDidMount() {
     const id = window.location.search.slice(4);
@@ -14,10 +18,15 @@ export class Home extends Component {
   render() {
     return (
       <div className="home">
-        <nav>
-          <NavLink to="/hotspots">Nearby Hotspots</NavLink>
-          <NavLink to="/leaderboard">Leaderboard</NavLink>
-        </nav>
+        <Header currentPage="Home" />
+        <main className="main-content">
+          <NavLink to="/hotspots" className="nav-link">
+            Nearby Hotspots
+          </NavLink>
+          <NavLink to="/leaderboard" className="nav-link">
+            Leaderboard
+          </NavLink>
+        </main>
       </div>
     );
   }

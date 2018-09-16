@@ -5,6 +5,10 @@ import { connect } from 'react-redux';
 
 import { toggleBirdSighting } from '../../actions/thunks/toggleBirdSighting';
 
+import Header from '../../components/Header/Header';
+
+import './Hotspot.css';
+
 export class Hotspot extends Component {
   handleChange = bird => {
     const { hotspotId, currentUser, toggleBirdSighting } = this.props;
@@ -30,11 +34,14 @@ export class Hotspot extends Component {
 
         return (
           <div key={`${index}-${bird.speciesCode}`} className="bird">
-            <Link to={`/hotspots/${hotspot.locId}/${bird.speciesCode}`}>
+            <Link
+              to={`/hotspots/${hotspot.locId}/${bird.speciesCode}`}
+              className="bird-link"
+            >
               {bird.comName}
             </Link>
             <input
-              onChange={e => this.handleChange(bird)}
+              onChange={() => this.handleChange(bird)}
               type="checkbox"
               name={bird.speciesCode}
               checked={birdSeen}
@@ -45,12 +52,16 @@ export class Hotspot extends Component {
       .slice(0, 10);
 
     return (
-      <div>
-        <h1>{locName}</h1>
-        <div className="birds">
-          <form>{displayBirdLinks}</form>
-        </div>
-        <Link to={`/tweet`}>Post a Tweet!</Link>
+      <div className="hotspot">
+        <Header currentPage="Hotspot Info" />
+        <main className="main-content">
+          <div className="birds">
+            <form>{displayBirdLinks}</form>
+          </div>
+          <Link to={`/tweet`} className="twitter-button">
+            Post a Tweet!
+          </Link>
+        </main>
       </div>
     );
   }

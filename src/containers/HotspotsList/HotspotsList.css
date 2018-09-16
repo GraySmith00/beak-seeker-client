@@ -1,0 +1,24 @@
+.hotspots-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .hotspots-list .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    width: 100%; }
+  .hotspots-list .hotspot {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem auto;
+    padding: 0.8rem;
+    width: 80%;
+    background: crimson;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.43);
+    box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.43); }

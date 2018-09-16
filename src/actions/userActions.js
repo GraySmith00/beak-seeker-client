@@ -7,3 +7,7 @@ export const toggleBirdSightingState = newSightings => ({
   type: 'TOGGLE_BIRD_SIGHTING_STATE',
   newSightings
 });
+
+export const logout = () => ({
+  type: 'LOGOUT'
+});

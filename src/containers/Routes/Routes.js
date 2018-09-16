@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
+
+import { logout } from '../../actions/userActions';
 
 import Home from '../Home/Home';
 import HotspotsList from '../HotspotsList/HotspotsList';
@@ -10,12 +12,15 @@ import Leaderboard from '../Leaderboard/Leaderboard';
 import Hotspot from '../Hotspot/Hotspot';
 import BirdInfo from '../BirdInfo/BirdInfo';
 import PostTweet from '../PostTweet/PostTweet';
+import Footer from '../../components/Footer/Footer';
 
 export class Routes extends Component {
   render() {
+    const { currentUser } = this.props;
     return (
       <Router>
-        <div>
+        <Fragment>
+          <Route path="/home" component={Home} />
           <Route exact path="/hotspots" component={HotspotsList} />
           <Route exact path="/leaderboard" component={Leaderboard} />
           <Route
@@ -29,7 +34,6 @@ export class Routes extends Component {
               }
             }}
           />
-          <Route path="/home" component={Home} />
           <Route
             exact
             path={`/hotspots/:location_id`}
@@ -50,11 +54,24 @@ export class Routes extends Component {
             }}
           />
           <Route exact path="/tweet" component={PostTweet} />
-        </div>
+          <Route
+            exact
+            path="/logout"
+            render={() => {
+              this.props.logout();
+              return <SignIn />;
+            }}
+          />
+          {currentUser && <Footer />}
+        </Fragment>
       </Router>
     );
   }
 }
+
+Routes.propTypes = {
+  logout: PropTypes.func.isRequired
+};
 
 Routes.propTypes = {
   currentUser: PropTypes.object
@@ -65,4 +82,11 @@ const mapStateToProps = state => ({
   hotspots: state.hotspots
 });
 
-export default connect(mapStateToProps)(Routes);
+const mapDispatchToProps = dispatch => ({
+  logout: () => dispatch(logout())
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Routes);

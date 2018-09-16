@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 375px;
+  background: #1b2026;
+  color: #fff; }
+  .header .back-icon {
+    position: absolute;
+    left: 20px;
+    font-size: 1.8rem;
+    cursor: pointer; }
