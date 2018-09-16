@@ -24,6 +24,10 @@ export const userReducer = (state = null, action) => {
         sightings: newSightingArray
       };
     }
+
+    case 'LOGOUT':
+      return null;
+
     default:
       return state;
   }
