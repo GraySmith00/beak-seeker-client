@@ -22,10 +22,11 @@ export class Hotspot extends Component {
       .map((bird, index) => {
         let birdSeen = currentUser.sightings.find(
           sighting =>
-            sighting.location === hotspot.locId &&
-            sighting.bird === bird.speciesCode
+            sighting.locationId === hotspot.locId &&
+            sighting.speciesCode === bird.speciesCode
         );
 
+        console.log(birdSeen);
         birdSeen ? (birdSeen = true) : (birdSeen = false);
 
         return (

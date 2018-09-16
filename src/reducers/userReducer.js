@@ -13,9 +13,9 @@ export const userReducer = (state = null, action) => {
       let newSightingArray;
 
       if (alreadySeen) {
-        newSightingArray = state.sightings.filter(
-          sighting => sighting.id !== action.sighting_id
-        );
+        // newSightingArray = state.sightings.filter(
+        //   sighting => sighting.id !== action.sighting_id
+        // );
       } else {
         newSightingArray = [...state.sightings, action.newSighting];
       }
