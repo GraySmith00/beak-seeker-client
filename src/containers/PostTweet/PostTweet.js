@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import Header from '../../components/Header/Header';
+
 class PostTweet extends Component {
   constructor() {
     super();
@@ -41,7 +43,7 @@ class PostTweet extends Component {
   render() {
     return (
       <div>
-        <h1>PostTweet</h1>
+        <Header currentPage="Post Tweet" />
         <form onSubmit={this.handleSubmit}>
           <input
             onChange={this.handleChange}
