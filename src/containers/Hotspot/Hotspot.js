@@ -34,7 +34,10 @@ export class Hotspot extends Component {
 
         return (
           <div key={`${index}-${bird.speciesCode}`} className="bird">
-            <Link to={`/hotspots/${hotspot.locId}/${bird.speciesCode}`}>
+            <Link
+              to={`/hotspots/${hotspot.locId}/${bird.speciesCode}`}
+              className="bird-link"
+            >
               {bird.comName}
             </Link>
             <input
@@ -55,7 +58,9 @@ export class Hotspot extends Component {
           <div className="birds">
             <form>{displayBirdLinks}</form>
           </div>
-          <Link to={`/tweet`}>Post a Tweet!</Link>
+          <Link to={`/tweet`} className="twitter-button">
+            Post a Tweet!
+          </Link>
         </main>
       </div>
     );

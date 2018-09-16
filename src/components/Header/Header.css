@@ -4,9 +4,10 @@
   align-items: center;
   position: fixed;
   top: 0;
-  height: 50px;
+  height: 60px;
   width: 375px;
-  background: crimson; }
+  background: #1b2026;
+  color: #fff; }
   .header .back-icon {
     position: absolute;
     left: 20px;

@@ -7,7 +7,7 @@
   bottom: 0;
   width: 375px;
 
-  background: green;
+  background: #1b2026;
 
   .nav-link {
     display: flex;
@@ -16,5 +16,9 @@
 
     width: 100%;
     border-right: 1px solid black;
+
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
   }
 }

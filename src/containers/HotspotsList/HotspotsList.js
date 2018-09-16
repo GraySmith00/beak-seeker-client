@@ -40,9 +40,13 @@ export class HotspotsList extends Component {
       displayHotspotLinks = <LoadingSpinner />;
     } else {
       displayHotspotLinks = this.props.hotspots.map(hotspot => (
-        <div key={hotspot.locId} className="hotspot">
-          <Link to={`/hotspots/${hotspot.locId}`}>{hotspot.locName}</Link>
-        </div>
+        <Link
+          key={hotspot.locId}
+          className="hotspot"
+          to={`/hotspots/${hotspot.locId}`}
+        >
+          {hotspot.locName}
+        </Link>
       ));
     }
 

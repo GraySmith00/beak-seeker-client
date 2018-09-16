@@ -19,10 +19,14 @@ export class Home extends Component {
     return (
       <div className="home">
         <Header currentPage="Home" />
-        <nav>
-          <NavLink to="/hotspots">Nearby Hotspots</NavLink>
-          <NavLink to="/leaderboard">Leaderboard</NavLink>
-        </nav>
+        <main className="main-content">
+          <NavLink to="/hotspots" className="nav-link">
+            Nearby Hotspots
+          </NavLink>
+          <NavLink to="/leaderboard" className="nav-link">
+            Leaderboard
+          </NavLink>
+        </main>
       </div>
     );
   }
