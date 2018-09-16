@@ -1,7 +1,14 @@
 .footer {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   position: fixed;
   bottom: 0;
   width: 375px;
   background: green; }
+  .footer .nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-right: 1px solid black; }
