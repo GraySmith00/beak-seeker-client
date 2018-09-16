@@ -14,9 +14,8 @@ class PostTweet extends Component {
       userId: this.props.currentUser._id,
       status: this.state.tweetText
     };
-    console.log(payload);
     const url = 'http://localhost:5000/twitter/posttweet';
-    const response = await fetch(url, {
+    await fetch(url, {
       method: 'POST',
       body: JSON.stringify(payload),
       headers: {
