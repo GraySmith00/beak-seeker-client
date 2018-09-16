@@ -1,0 +1,9 @@
+.hotspots-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .main-content {
+    margin: 60px auto;
+  }
+}
