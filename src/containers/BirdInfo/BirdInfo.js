@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { getBirdImage, getBirdInfo } from '../../utils/helpers';
+import { getBirdImage, getBirdInfo } from '../../utils/apiCalls';
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
 import { connect } from 'react-redux';
 
