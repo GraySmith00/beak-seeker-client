@@ -15,4 +15,9 @@ const Header = ({ currentPage, history }) => {
   );
 };
 
+Header.propTypes = {
+  currentPage: PropTypes.string.isRequired,
+  history: PropTypes.object.isRequired
+};
+
 export default withRouter(Header);
