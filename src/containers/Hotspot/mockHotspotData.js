@@ -151,3 +151,14 @@ export const mockHotspots = [
     ]
   }
 ];
+
+export const mockCurrentUser = {
+  sightings: [
+    { _id: 1537200989704, locationId: 'L1743685', speciesCode: 'norsho' }
+  ],
+  _id: '5b9fd33136b3ce3cd934d36c',
+  username: 'PLady1224',
+  image:
+    'https://pbs.twimg.com/profile_images/1041718097172811776/59BwnDG__normal.jpg',
+  __v: 0
+};

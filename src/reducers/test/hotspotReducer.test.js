@@ -7,22 +7,6 @@ import * as actions from '../../actions/hotspotActions';
 import { mockHotspots } from './mockReducerData';
 
 describe('hotspotReducer', () => {
-  describe('hotspotsLoadingReducer', () => {
-    it('should return the initial state', () => {
-      const expected = false;
-      const result = hotspotsLoadingReducer(undefined, {});
-      expect(result).toEqual(expected);
-    });
-    it('should return true if the HOTSPOTS_LOADING', () => {
-      const expected = true;
-      const result = hotspotsLoadingReducer(
-        undefined,
-        actions.hotspotsLoading(true)
-      );
-      expect(result).toEqual(expected);
-    });
-  });
-
   describe('hotspotsErroredReducer', () => {
     it('should return the initial state', () => {
       const expected = false;

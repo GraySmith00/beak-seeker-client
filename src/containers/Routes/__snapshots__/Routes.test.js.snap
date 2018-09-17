@@ -16,7 +16,11 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <div>
+      "children": <Unknown>
+        <Route
+                component={[Function]}
+                path="/home"
+        />
         <Route
                 component={[Function]}
                 exact={true}
@@ -33,10 +37,6 @@ ShallowWrapper {
                 render={[Function]}
         />
         <Route
-                component={[Function]}
-                path="/home"
-        />
-        <Route
                 exact={true}
                 path="/hotspots/:location_id"
                 render={[Function]}
@@ -46,15 +46,29 @@ ShallowWrapper {
                 path="/hotspots/:location_id/:speciesCode"
                 render={[Function]}
         />
-</div>,
+        <Route
+                component={[Function]}
+                exact={true}
+                path="/tweet"
+        />
+        <Route
+                exact={true}
+                path="/logout"
+                render={[Function]}
+        />
+</Unknown>,
     },
     "ref": null,
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "function",
       "props": Object {
         "children": Array [
+          <Route
+            component={[Function]}
+            path="/home"
+/>,
           <Route
             component={[Function]}
             exact={true}
@@ -71,10 +85,6 @@ ShallowWrapper {
             render={[Function]}
 />,
           <Route
-            component={[Function]}
-            path="/home"
-/>,
-          <Route
             exact={true}
             path="/hotspots/:location_id"
             render={[Function]}
@@ -84,10 +94,33 @@ ShallowWrapper {
             path="/hotspots/:location_id/:speciesCode"
             render={[Function]}
 />,
+          <Route
+            component={[Function]}
+            exact={true}
+            path="/tweet"
+/>,
+          <Route
+            exact={true}
+            path="/logout"
+            render={[Function]}
+/>,
+          undefined,
         ],
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "path": "/home",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -132,18 +165,6 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "component": [Function],
-            "path": "/home",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
             "exact": true,
             "path": "/hotspots/:location_id",
             "render": [Function],
@@ -165,8 +186,35 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "component": [Function],
+            "exact": true,
+            "path": "/tweet",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "exact": true,
+            "path": "/logout",
+            "render": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        undefined,
       ],
-      "type": "div",
+      "type": Symbol(react.fragment),
     },
     "type": [Function],
   },
@@ -176,7 +224,11 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <div>
+        "children": <Unknown>
+          <Route
+                    component={[Function]}
+                    path="/home"
+          />
           <Route
                     component={[Function]}
                     exact={true}
@@ -193,10 +245,6 @@ ShallowWrapper {
                     render={[Function]}
           />
           <Route
-                    component={[Function]}
-                    path="/home"
-          />
-          <Route
                     exact={true}
                     path="/hotspots/:location_id"
                     render={[Function]}
@@ -206,15 +254,29 @@ ShallowWrapper {
                     path="/hotspots/:location_id/:speciesCode"
                     render={[Function]}
           />
-</div>,
+          <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/tweet"
+          />
+          <Route
+                    exact={true}
+                    path="/logout"
+                    render={[Function]}
+          />
+</Unknown>,
       },
       "ref": null,
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "function",
         "props": Object {
           "children": Array [
+            <Route
+              component={[Function]}
+              path="/home"
+/>,
             <Route
               component={[Function]}
               exact={true}
@@ -231,10 +293,6 @@ ShallowWrapper {
               render={[Function]}
 />,
             <Route
-              component={[Function]}
-              path="/home"
-/>,
-            <Route
               exact={true}
               path="/hotspots/:location_id"
               render={[Function]}
@@ -244,10 +302,33 @@ ShallowWrapper {
               path="/hotspots/:location_id/:speciesCode"
               render={[Function]}
 />,
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/tweet"
+/>,
+            <Route
+              exact={true}
+              path="/logout"
+              render={[Function]}
+/>,
+            undefined,
           ],
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/home",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -292,18 +373,6 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "component": [Function],
-              "path": "/home",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
               "exact": true,
               "path": "/hotspots/:location_id",
               "render": [Function],
@@ -325,8 +394,35 @@ ShallowWrapper {
             "rendered": null,
             "type": [Function],
           },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "exact": true,
+              "path": "/tweet",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "exact": true,
+              "path": "/logout",
+              "render": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          undefined,
         ],
-        "type": "div",
+        "type": Symbol(react.fragment),
       },
       "type": [Function],
     },

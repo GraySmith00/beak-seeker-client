@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 
 import Header from '../../components/Header/Header';
 
+import './PostTweet.css';
+
 class PostTweet extends Component {
   constructor() {
     super();
@@ -42,7 +44,7 @@ class PostTweet extends Component {
 
   render() {
     return (
-      <div>
+      <div className="post-tweet">
         <Header currentPage="Post Tweet" />
         <form onSubmit={this.handleSubmit}>
           <input

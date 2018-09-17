@@ -43,13 +43,11 @@ describe('HotspotsList component', () => {
   describe('mapStateToProps', () => {
     it('should return an object with a hotspots array and a loading boolean', () => {
       const mockStore = {
-        hotspots: mockHotspots,
-        hotspotsLoading: true
+        hotspots: mockHotspots
       };
 
       const expected = {
-        hotspots: mockHotspots,
-        loading: true
+        hotspots: mockHotspots
       };
 
       const mappedProps = mapStateToProps(mockStore);

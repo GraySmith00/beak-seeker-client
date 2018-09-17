@@ -1,5 +1,11 @@
 import { eBirdKey } from '../keys';
 
+export const getPosition = options => {
+  return new Promise((resolve, reject) => {
+    navigator.geolocation.getCurrentPosition(resolve, reject, options);
+  });
+};
+
 export const getHotspotBirds = hotspots => {
   return hotspots.map(async hotspot => {
     const url = `https://ebird.org/ws2.0/data/obs/${hotspot.locID}/recent/`;

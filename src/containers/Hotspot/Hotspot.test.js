@@ -1,14 +1,21 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Hotspot, mapStateToProps } from './Hotspot';
-import { mockHotspot, mockHotspots } from './mockHotspotData';
+import { mockHotspot, mockHotspots, mockCurrentUser } from './mockHotspotData';
 
 describe('Hotspot component', () => {
   let wrapper;
+  let mockToggleBirdSighting;
 
   beforeEach(() => {
+    mockToggleBirdSighting = jest.fn();
     wrapper = shallow(
-      <Hotspot hotspotId={mockHotspot.locId} hotspots={mockHotspots} />
+      <Hotspot
+        hotspotId={mockHotspot.locId}
+        hotspots={mockHotspots}
+        toggleBirdSighting={mockToggleBirdSighting}
+        currentUser={mockCurrentUser}
+      />
     );
   });
 

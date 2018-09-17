@@ -18,92 +18,17 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <nav>
-        <NavLink
-                activeClassName="active"
-                aria-current="page"
-                to="/hotspots"
-        >
-                Nearby Hotspots
-        </NavLink>
-        <NavLink
-                activeClassName="active"
-                aria-current="page"
-                to="/leaderboard"
-        >
-                Leaderboard
-        </NavLink>
-</nav>,
-      "className": "home",
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <NavLink
-            activeClassName="active"
-            aria-current="page"
-            to="/hotspots"
+      "children": Array [
+        <withRouter(Header)
+          currentPage="Home"
+/>,
+        <main
+          className="main-content"
 >
-            Nearby Hotspots
-</NavLink>,
-          <NavLink
-            activeClassName="active"
-            aria-current="page"
-            to="/leaderboard"
->
-            Leaderboard
-</NavLink>,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "activeClassName": "active",
-            "aria-current": "page",
-            "children": "Nearby Hotspots",
-            "to": "/hotspots",
-          },
-          "ref": null,
-          "rendered": "Nearby Hotspots",
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "activeClassName": "active",
-            "aria-current": "page",
-            "children": "Leaderboard",
-            "to": "/leaderboard",
-          },
-          "ref": null,
-          "rendered": "Leaderboard",
-          "type": [Function],
-        },
-      ],
-      "type": "nav",
-    },
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <nav>
           <NavLink
                     activeClassName="active"
                     aria-current="page"
+                    className="nav-link"
                     to="/hotspots"
           >
                     Nearby Hotspots
@@ -111,15 +36,29 @@ ShallowWrapper {
           <NavLink
                     activeClassName="active"
                     aria-current="page"
+                    className="nav-link"
                     to="/leaderboard"
           >
                     Leaderboard
           </NavLink>
-</nav>,
-        "className": "home",
+</main>,
+      ],
+      "className": "home",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "currentPage": "Home",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
       },
-      "ref": null,
-      "rendered": Object {
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
@@ -128,6 +67,7 @@ ShallowWrapper {
             <NavLink
               activeClassName="active"
               aria-current="page"
+              className="nav-link"
               to="/hotspots"
 >
               Nearby Hotspots
@@ -135,11 +75,13 @@ ShallowWrapper {
             <NavLink
               activeClassName="active"
               aria-current="page"
+              className="nav-link"
               to="/leaderboard"
 >
               Leaderboard
 </NavLink>,
           ],
+          "className": "main-content",
         },
         "ref": null,
         "rendered": Array [
@@ -151,6 +93,7 @@ ShallowWrapper {
               "activeClassName": "active",
               "aria-current": "page",
               "children": "Nearby Hotspots",
+              "className": "nav-link",
               "to": "/hotspots",
             },
             "ref": null,
@@ -165,6 +108,7 @@ ShallowWrapper {
               "activeClassName": "active",
               "aria-current": "page",
               "children": "Leaderboard",
+              "className": "nav-link",
               "to": "/leaderboard",
             },
             "ref": null,
@@ -172,8 +116,118 @@ ShallowWrapper {
             "type": [Function],
           },
         ],
-        "type": "nav",
+        "type": "main",
       },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <withRouter(Header)
+            currentPage="Home"
+/>,
+          <main
+            className="main-content"
+>
+            <NavLink
+                        activeClassName="active"
+                        aria-current="page"
+                        className="nav-link"
+                        to="/hotspots"
+            >
+                        Nearby Hotspots
+            </NavLink>
+            <NavLink
+                        activeClassName="active"
+                        aria-current="page"
+                        className="nav-link"
+                        to="/leaderboard"
+            >
+                        Leaderboard
+            </NavLink>
+</main>,
+        ],
+        "className": "home",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "currentPage": "Home",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                className="nav-link"
+                to="/hotspots"
+>
+                Nearby Hotspots
+</NavLink>,
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                className="nav-link"
+                to="/leaderboard"
+>
+                Leaderboard
+</NavLink>,
+            ],
+            "className": "main-content",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "aria-current": "page",
+                "children": "Nearby Hotspots",
+                "className": "nav-link",
+                "to": "/hotspots",
+              },
+              "ref": null,
+              "rendered": "Nearby Hotspots",
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "aria-current": "page",
+                "children": "Leaderboard",
+                "className": "nav-link",
+                "to": "/leaderboard",
+              },
+              "ref": null,
+              "rendered": "Leaderboard",
+              "type": [Function],
+            },
+          ],
+          "type": "main",
+        },
+      ],
       "type": "div",
     },
   ],

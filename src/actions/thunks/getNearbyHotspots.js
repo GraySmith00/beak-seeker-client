@@ -1,13 +1,11 @@
 import { hotspotsErrored, hotspotsSuccess } from '../hotspotActions';
 
-import { getHotspotBirds, getMostActive } from '../../utils/helpers';
+import {
+  getHotspotBirds,
+  getMostActive,
+  getPosition
+} from '../../utils/helpers';
 import { eBirdKey } from '../../keys';
-
-export const getPosition = options => {
-  return new Promise((resolve, reject) => {
-    navigator.geolocation.getCurrentPosition(resolve, reject, options);
-  });
-};
 
 export const getNearbyHotspots = () => async dispatch => {
   const position = await getPosition();
