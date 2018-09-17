@@ -299,3 +299,97 @@ export const mockHotspotsWithBirds = [
     ]
   }
 ];
+
+export const mockBirdImageData = {
+  batchcomplete: '',
+  query: {
+    normalized: [{ from: 'northern shoveler', to: 'Northern shoveler' }],
+    pages: {
+      '226344': {
+        pageid: 226344,
+        ns: 0,
+        title: 'Northern shoveler',
+        thumbnail: {
+          source:
+            'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Northern_shoveler_Steve_Sinclair_outreach_use_only_%2819838806616%29.jpg/200px-Northern_shoveler_Steve_Sinclair_outreach_use_only_%2819838806616%29.jpg',
+          width: 200,
+          height: 160
+        },
+        pageimage:
+          'Northern_shoveler_Steve_Sinclair_outreach_use_only_(19838806616).jpg'
+      }
+    }
+  }
+};
+
+export const mockFailedBirdImageData = {
+  batchcomplete: '',
+  query: {
+    normalized: [{ from: 'rock pigeon', to: 'Rock pigeon' }],
+    pages: { '23483108': { pageid: 23483108, ns: 0, title: 'Rock pigeon' } }
+  }
+};
+
+export const mockFailedBirdImageDataWithHyphen = {
+  batchcomplete: '',
+  query: {
+    normalized: [
+      { from: 'Black-crowned Night-Heron', to: 'Black-crowned Night-Heron' }
+    ],
+    pages: {
+      '23483108': {
+        pageid: 23483108,
+        ns: 0,
+        title: 'Black-crowned Night-Heron'
+      }
+    }
+  }
+};
+
+export const mockBirdInfoData = {
+  batchcomplete: '',
+  query: {
+    normalized: [{ from: 'canada goose', to: 'Canada goose' }],
+    pages: {
+      '218972': {
+        pageid: 218972,
+        ns: 0,
+        title: 'Canada goose',
+        extract:
+          'The Canada goose (Branta canadensis) is a large wild goose species with a black head and neck, white cheeks, white under its chin, and a brown body.'
+      }
+    }
+  }
+};
+
+export const mockBirdInfoNotFoundData = {
+  batchcomplete: '',
+  query: {
+    normalized: [
+      {
+        from: 'graylag x swan goose (domestic type) (hybrid)',
+        to: 'Graylag x swan goose (domestic type) (hybrid)'
+      }
+    ],
+    pages: {
+      '-1': {
+        ns: 0,
+        title: 'Graylag x swan goose (domestic type) (hybrid)',
+        missing: ''
+      }
+    }
+  }
+};
+
+export const mockPosition = {
+  coords: {
+    accuracy: 39,
+    altitude: null,
+    altitudeAccuracy: null,
+    heading: null,
+    latitude: 39,
+    longitude: -104,
+    speed: null
+  },
+  timestamp: 1537217936103
+};

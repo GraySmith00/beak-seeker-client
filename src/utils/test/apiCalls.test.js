@@ -7,11 +7,32 @@ import {
   getBirdImage,
   getBirdInfo
 } from '../apiCalls';
-import { mockHotspots, mockHotspotsWithBirds } from './mockHelpersData';
+import {
+  mockPosition,
+  mockHotspots,
+  mockHotspotsWithBirds,
+  mockBirdImageData,
+  mockFailedBirdImageData,
+  mockFailedBirdImageDataWithHyphen,
+  mockBirdInfoData,
+  mockBirdInfoNotFoundData
+} from './mockHelpersData';
 
 describe('apiCalls', () => {
   describe('getPosition', () => {
-    it.skip('should return a position object', () => {});
+    it.skip('should return a position object', async () => {
+      window.fetch = jest.fn().mockImplementation(() =>
+        Promise.resolve({
+          json: () => Promise.resolve(mockPosition)
+        })
+      );
+
+      const expected = mockPosition;
+
+      const result = await getPosition();
+
+      expect(result).toEqual(expected);
+    });
   });
 
   describe('getHotspotData', () => {
@@ -87,6 +108,92 @@ describe('apiCalls', () => {
     it('should sort the hotspots by the amount of birds that have been recently seen', async () => {
       const result = await getMostActive(mockHotspotsWithBirds);
       expect(result[0].birds.length).toBeGreaterThan(result[1].birds.length);
+    });
+  });
+
+  describe('getBirdImage', () => {
+    beforeEach(() => {
+      window.fetch = jest.fn().mockImplementation(() =>
+        Promise.resolve({
+          json: () => Promise.resolve(mockBirdImageData)
+        })
+      );
+    });
+
+    it('should call fetch with the correct params', async () => {
+      const url =
+        'http://en.wikipedia.org/w/api.php?action=query&origin=*&titles=canada goose&prop=pageimages&format=json&pithumbsize=200/';
+      getBirdImage('Canada Goose');
+      expect(window.fetch).toHaveBeenCalledWith(url);
+    });
+
+    it('should call the method again without the dashes if an image was not found', async () => {
+      window.fetch = jest.fn().mockImplementation(() =>
+        Promise.resolve({
+          json: () => Promise.resolve(mockFailedBirdImageDataWithHyphen)
+        })
+      );
+
+      const result = await getBirdImage('Black-crowned Night-Heron');
+      expect(result).toEqual('');
+    });
+
+    it('should return an empty string if the image was not found', async () => {
+      window.fetch = jest.fn().mockImplementation(() =>
+        Promise.resolve({
+          json: () => Promise.resolve(mockFailedBirdImageData)
+        })
+      );
+      const result = await getBirdImage('Rock Pigeon');
+      expect(result).toEqual('');
+    });
+
+    it('should return this image url if the image was found', async () => {
+      const result = await getBirdImage('Northern shoveler');
+      const expected =
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Northern_shoveler_Steve_Sinclair_outreach_use_only_%2819838806616%29.jpg/200px-Northern_shoveler_Steve_Sinclair_outreach_use_only_%2819838806616%29.jpg';
+      expect(result).toEqual(expected);
+    });
+  });
+
+  describe('getBirdInfo', () => {
+    beforeEach(() => {
+      window.fetch = jest.fn().mockImplementation(() =>
+        Promise.resolve({
+          json: () => Promise.resolve(mockBirdInfoData)
+        })
+      );
+    });
+
+    it('should call fetch with the correct params', async () => {
+      const url =
+        'https://en.wikipedia.org/w/api.php?origin=*&format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles=gadwall';
+      await getBirdInfo('Gadwall');
+      expect(window.fetch).toHaveBeenCalledWith(url);
+    });
+
+    it('should return a description string when the bird info was found', async () => {
+      const expected =
+        'The Canada goose (Branta canadensis) is a large wild goose species with a black head and neck, white cheeks, white under its chin, and a brown body.';
+
+      const result = await getBirdInfo('Canada Goose');
+      expect(result).toEqual(expected);
+    });
+
+    it('should return expected message when the bird info was not found', async () => {
+      window.fetch = jest.fn().mockImplementation(() =>
+        Promise.resolve({
+          json: () => Promise.resolve(mockBirdInfoNotFoundData)
+        })
+      );
+
+      const expected = 'Sorry, no information was found on this bird :(';
+
+      const result = await getBirdInfo(
+        'Graylag x Swan Goose (Domestic type) (hybrid)'
+      );
+
+      expect(result).toEqual(expected);
     });
   });
 });

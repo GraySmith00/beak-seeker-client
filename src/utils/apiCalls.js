@@ -1,7 +1,7 @@
 import { eBirdKey } from '../keys';
 
-export const getPosition = options => {
-  return new Promise((resolve, reject) => {
+export const getPosition = async options => {
+  return await new Promise((resolve, reject) => {
     navigator.geolocation.getCurrentPosition(resolve, reject, options);
   });
 };
@@ -44,6 +44,7 @@ export const getBirdImage = async name => {
   const url = `http://en.wikipedia.org/w/api.php?action=query&origin=*&titles=${name.toLowerCase()}&prop=pageimages&format=json&pithumbsize=200/`;
   const response = await fetch(url);
   const data = await response.json();
+
   const pagesObj = data.query.pages;
   const firstPage = pagesObj[Object.keys(pagesObj)[0]];
   if (!firstPage.thumbnail && !name.includes('-')) {

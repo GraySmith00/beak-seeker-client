@@ -13,7 +13,6 @@ export const getNearbyHotspots = () => async dispatch => {
     const { latitude, longitude } = position.coords;
     const hotspotData = await getHotspotData(latitude, longitude);
     const hotSpotsWithBirds = await getHotspotBirds(hotspotData);
-    console.log(hotSpotsWithBirds);
     const mostActive = getMostActive(hotSpotsWithBirds);
 
     dispatch(hotspotsSuccess(mostActive));
