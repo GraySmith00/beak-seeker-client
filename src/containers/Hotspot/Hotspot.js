@@ -20,7 +20,7 @@ export class Hotspot extends Component {
     const hotspot = this.props.hotspots.find(
       hotspot => hotspot.locId === hotspotId
     );
-    const { locName, birds } = hotspot;
+    const { birds } = hotspot;
 
     const displayBirdLinks = birds
       .map((bird, index) => {
