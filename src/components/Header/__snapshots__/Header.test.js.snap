@@ -3,8 +3,13 @@
 exports[`Header component should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <withRouter(Header)
+  Symbol(enzyme.__unrendered__): <Unknown
     currentPage="Home"
+    history={
+        Object {
+            "goBack": [Function],
+          }
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -16,25 +21,125 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "class",
+    "nodeType": "host",
     "props": Object {
-      "children": [Function],
+      "children": Array [
+        <span
+          className="back-icon"
+          onClick={[Function]}
+>
+          <i
+                    className="fas fa-angle-left"
+          />
+</span>,
+        <h3>
+          Home
+</h3>,
+      ],
+      "className": "header",
     },
     "ref": null,
-    "rendered": [Function],
-    "type": [Function],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <i
+            className="fas fa-angle-left"
+/>,
+          "className": "back-icon",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "fas fa-angle-left",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "i",
+        },
+        "type": "span",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Home",
+        },
+        "ref": null,
+        "rendered": "Home",
+        "type": "h3",
+      },
+    ],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "class",
+      "nodeType": "host",
       "props": Object {
-        "children": [Function],
+        "children": Array [
+          <span
+            className="back-icon"
+            onClick={[Function]}
+>
+            <i
+                        className="fas fa-angle-left"
+            />
+</span>,
+          <h3>
+            Home
+</h3>,
+        ],
+        "className": "header",
       },
       "ref": null,
-      "rendered": [Function],
-      "type": [Function],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <i
+              className="fas fa-angle-left"
+/>,
+            "className": "back-icon",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "fas fa-angle-left",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "i",
+          },
+          "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Home",
+          },
+          "ref": null,
+          "rendered": "Home",
+          "type": "h3",
+        },
+      ],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

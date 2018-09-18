@@ -4,8 +4,7 @@ import { withRouter } from 'react-router';
 
 import './Header.css';
 
-const Header = ({ currentPage, history }) => {
-  console.log(history);
+export const Header = ({ currentPage, history }) => {
   return (
     <div className="header">
       <span onClick={history.goBack} className="back-icon">
