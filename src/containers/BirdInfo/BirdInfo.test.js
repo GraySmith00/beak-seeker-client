@@ -8,6 +8,7 @@ jest.mock('../../utils/apiCalls');
 
 describe('BirdInfo component', () => {
   let wrapper;
+  let expected;
 
   beforeEach(() => {
     wrapper = shallow(
@@ -20,6 +21,15 @@ describe('BirdInfo component', () => {
         disableLifecycleMethods: true
       }
     );
+
+    expected = {
+      birdImage:
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Kanadagans_Branta_canadensis.jpg/200px-Kanadagans_Branta_canadensis.jpg',
+      birdInfo:
+        'The Canada goose (Branta canadensis) is a large wild goose species with a black head and neck, white cheeks, white under its chin, and a brown body.',
+      comName: 'Canada Goose',
+      loading: false
+    };
   });
 
   it('should have an initial local state', () => {
@@ -30,6 +40,11 @@ describe('BirdInfo component', () => {
       loading: true
     };
 
+    expect(wrapper.state()).toEqual(expected);
+  });
+
+  it('should set the state on componentDidMount', async () => {
+    await wrapper.instance().componentDidMount();
     expect(wrapper.state()).toEqual(expected);
   });
 
