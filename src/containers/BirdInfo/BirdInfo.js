@@ -19,6 +19,10 @@ export class BirdInfo extends Component {
     };
   }
   async componentDidMount() {
+    await this.loadBirdInfo();
+  }
+
+  loadBirdInfo = async () => {
     const { locId, speciesCode, hotspots } = this.props;
     const location = hotspots.find(hotspot => hotspot.locId === locId);
 
@@ -34,7 +38,7 @@ export class BirdInfo extends Component {
       birdInfo,
       loading: false
     });
-  }
+  };
 
   render() {
     const { birdImage, birdInfo, loading, comName } = this.state;
