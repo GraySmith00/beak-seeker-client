@@ -106,3 +106,28 @@ export const mockUser = {
     'https://pbs.twimg.com/profile_images/1001553154146615296/Jab4V7G0_normal.jpg',
   __v: 0
 };
+
+export const mockSightings = [
+  { _id: 1537200989704, locationId: 'L1743685', speciesCode: 'norsho' },
+  { _id: 1537202195031, locationId: 'L1743685', speciesCode: 'moudov' },
+  { _id: 1537203456306, locationId: 'L1743685', speciesCode: 'cangoo' },
+  { _id: 1537228328356, locationId: 'L1743685', speciesCode: 'gadwal' }
+];
+
+export const mockNewSighting = {
+  _id: 1537200989704,
+  locationId: 'L1743685',
+  speciesCode: 'norsho'
+};
+
+export const mockUserWithSightings = {
+  sightings: [
+    { _id: 1537200989704, locationId: 'L1743685', speciesCode: 'norsho' }
+  ],
+  _id: '5b98223ce17b1dbfc1b26ada',
+  email: 'greg.smith00@gmail.com',
+  username: 'greg_savoy',
+  image:
+    'https://pbs.twimg.com/profile_images/1001553154146615296/Jab4V7G0_normal.jpg',
+  __v: 0
+};
