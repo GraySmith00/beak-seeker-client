@@ -71,6 +71,19 @@ export const getBirdInfo = async name => {
   }
 };
 
+export const tweetPostRequest = async payload => {
+  const url = 'http://localhost:5000/twitter/posttweet';
+  const response = await fetch(url, {
+    method: 'POST',
+    body: JSON.stringify(payload),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  });
+
+  return response;
+};
+
 // export const dashCaseNameHelper = name => {
 //   return name
 //     .split('(')

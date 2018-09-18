@@ -1,0 +1,352 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostTweet component should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PostTweet
+    currentUser={
+        Object {
+            "__v": 0,
+            "_id": "5b98223ce17b1dbfc1b26ada",
+            "email": "greg.smith00@gmail.com",
+            "image": "https://pbs.twimg.com/profile_images/1001553154146615296/Jab4V7G0_normal.jpg",
+            "sightings": Array [
+              Object {
+                "_id": 1537200989704,
+                "comName": "Canada Goose",
+                "locationId": "L1743685",
+                "speciesCode": "cangoo",
+              },
+            ],
+            "username": "greg_savoy",
+          }
+    }
+    hotspots={
+        Array [
+            Object {
+              "birds": Array [
+                Object {
+                  "comName": "Canada Goose",
+                  "howMany": 10,
+                  "lat": 39.7044793,
+                  "lng": -105.0857735,
+                  "locId": "L1743685",
+                  "locName": "Belmar Park",
+                  "locationPrivate": false,
+                  "obsDt": "2018-09-09 12:15",
+                  "obsReviewed": false,
+                  "obsValid": true,
+                  "sciName": "Branta canadensis",
+                  "speciesCode": "cangoo",
+                },
+                Object {
+                  "comName": "Graylag Goose (Domestic type) x Canada Goose (hybrid)",
+                  "howMany": 1,
+                  "lat": 39.7044793,
+                  "lng": -105.0857735,
+                  "locId": "L1743685",
+                  "locName": "Belmar Park",
+                  "locationPrivate": false,
+                  "obsDt": "2018-09-09 12:15",
+                  "obsReviewed": false,
+                  "obsValid": true,
+                  "sciName": "Anser anser (Domestic type) x Branta canadensis",
+                  "speciesCode": "gragoo4",
+                },
+                Object {
+                  "comName": "Mallard",
+                  "howMany": 14,
+                  "lat": 39.7044793,
+                  "lng": -105.0857735,
+                  "locId": "L1743685",
+                  "locName": "Belmar Park",
+                  "locationPrivate": false,
+                  "obsDt": "2018-09-09 12:15",
+                  "obsReviewed": false,
+                  "obsValid": true,
+                  "sciName": "Anas platyrhynchos",
+                  "speciesCode": "mallar3",
+                },
+                Object {
+                  "comName": "Ring-billed Gull",
+                  "howMany": 2,
+                  "lat": 39.7044793,
+                  "lng": -105.0857735,
+                  "locId": "L1743685",
+                  "locName": "Belmar Park",
+                  "locationPrivate": false,
+                  "obsDt": "2018-09-09 12:15",
+                  "obsReviewed": false,
+                  "obsValid": true,
+                  "sciName": "Larus delawarensis",
+                  "speciesCode": "ribgul",
+                },
+                Object {
+                  "comName": "Double-crested Cormorant",
+                  "howMany": 4,
+                  "lat": 39.7044793,
+                  "lng": -105.0857735,
+                  "locId": "L1743685",
+                  "locName": "Belmar Park",
+                  "locationPrivate": false,
+                  "obsDt": "2018-09-09 12:15",
+                  "obsReviewed": false,
+                  "obsValid": true,
+                  "sciName": "Phalacrocorax auritus",
+                  "speciesCode": "doccor",
+                },
+                Object {
+                  "comName": "Great Blue Heron",
+                  "howMany": 1,
+                  "lat": 39.7044793,
+                  "lng": -105.0857735,
+                  "locId": "L1743685",
+                  "locName": "Belmar Park",
+                  "locationPrivate": false,
+                  "obsDt": "2018-09-09 12:15",
+                  "obsReviewed": false,
+                  "obsValid": true,
+                  "sciName": "Ardea herodias",
+                  "speciesCode": "grbher3",
+                },
+              ],
+              "countryCode": "US",
+              "lat": 39.7044793,
+              "lng": -105.0857735,
+              "locID": "L1743685",
+              "locId": "L1743685",
+              "locName": "Belmar Park",
+              "subnational1Code": "US-CO",
+              "subnational2Code": "US-CO-059",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <withRouter()
+          currentPage="Post Tweet"
+/>,
+        <form
+          className="twitter-form"
+          onSubmit={[Function]}
+>
+          <textarea
+                    name="tweetText"
+                    onChange={[Function]}
+                    rows="6"
+                    type="text"
+                    value="Just spotted a sweet Canada Goose at Belmar Park and logged it on @BeakSeeker!!!"
+          />
+          <button
+                    onClick={[Function]}
+          >
+                    Send Tweet
+          </button>
+</form>,
+      ],
+      "className": "post-tweet",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "currentPage": "Post Tweet",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <textarea
+              name="tweetText"
+              onChange={[Function]}
+              rows="6"
+              type="text"
+              value="Just spotted a sweet Canada Goose at Belmar Park and logged it on @BeakSeeker!!!"
+/>,
+            <button
+              onClick={[Function]}
+>
+              Send Tweet
+</button>,
+          ],
+          "className": "twitter-form",
+          "onSubmit": [Function],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "name": "tweetText",
+              "onChange": [Function],
+              "rows": "6",
+              "type": "text",
+              "value": "Just spotted a sweet Canada Goose at Belmar Park and logged it on @BeakSeeker!!!",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "textarea",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Send Tweet",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Send Tweet",
+            "type": "button",
+          },
+        ],
+        "type": "form",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <withRouter()
+            currentPage="Post Tweet"
+/>,
+          <form
+            className="twitter-form"
+            onSubmit={[Function]}
+>
+            <textarea
+                        name="tweetText"
+                        onChange={[Function]}
+                        rows="6"
+                        type="text"
+                        value="Just spotted a sweet Canada Goose at Belmar Park and logged it on @BeakSeeker!!!"
+            />
+            <button
+                        onClick={[Function]}
+            >
+                        Send Tweet
+            </button>
+</form>,
+        ],
+        "className": "post-tweet",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "currentPage": "Post Tweet",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <textarea
+                name="tweetText"
+                onChange={[Function]}
+                rows="6"
+                type="text"
+                value="Just spotted a sweet Canada Goose at Belmar Park and logged it on @BeakSeeker!!!"
+/>,
+              <button
+                onClick={[Function]}
+>
+                Send Tweet
+</button>,
+            ],
+            "className": "twitter-form",
+            "onSubmit": [Function],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "name": "tweetText",
+                "onChange": [Function],
+                "rows": "6",
+                "type": "text",
+                "value": "Just spotted a sweet Canada Goose at Belmar Park and logged it on @BeakSeeker!!!",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "textarea",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Send Tweet",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Send Tweet",
+              "type": "button",
+            },
+          ],
+          "type": "form",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
