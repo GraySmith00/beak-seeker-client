@@ -9,8 +9,7 @@ import {
 
 export const getNearbyHotspots = () => async dispatch => {
   try {
-    const position = await getPosition();
-    const { latitude, longitude } = position.coords;
+    const { latitude, longitude } = await getPosition();
     const hotspotData = await getHotspotData(latitude, longitude);
     const hotSpotsWithBirds = await getHotspotBirds(hotspotData);
     const mostActive = getMostActive(hotSpotsWithBirds);
