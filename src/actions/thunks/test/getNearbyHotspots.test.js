@@ -49,17 +49,11 @@ describe('getNearbyHotspots', () => {
   it('should dispatch hotspotsSuccess if the response is ok', async () => {
     window.fetch = jest.fn().mockImplementation(() =>
       Promise.resove({
-        ok: true
+        ok: true,
+        json: () => Promise.resolve()
       })
     );
 
-    const thunk = getNearbyHotspots();
-    await thunk(mockDispatch);
-
-    expect(mockDispatch).toHaveBeenCalled();
-  });
-
-  it('should dispatch hasErrored(true) if the response is not ok', async () => {
     const thunk = getNearbyHotspots();
     await thunk(mockDispatch);
 

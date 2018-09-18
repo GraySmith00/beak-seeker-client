@@ -18,15 +18,9 @@ ShallowWrapper {
     "props": Object {
       "children": <img
         alt="Loading..."
-        src="spinner.gif"
-        style={
-                Object {
-                        "display": "block",
-                        "margin": "auto",
-                        "width": "200px",
-                      }
-        }
+        src="birdLoader.gif"
 />,
+      "className": "loading-spinner",
     },
     "ref": null,
     "rendered": Object {
@@ -35,12 +29,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "alt": "Loading...",
-        "src": "spinner.gif",
-        "style": Object {
-          "display": "block",
-          "margin": "auto",
-          "width": "200px",
-        },
+        "src": "birdLoader.gif",
       },
       "ref": null,
       "rendered": null,
@@ -56,15 +45,9 @@ ShallowWrapper {
       "props": Object {
         "children": <img
           alt="Loading..."
-          src="spinner.gif"
-          style={
-                    Object {
-                              "display": "block",
-                              "margin": "auto",
-                              "width": "200px",
-                            }
-          }
+          src="birdLoader.gif"
 />,
+        "className": "loading-spinner",
       },
       "ref": null,
       "rendered": Object {
@@ -73,12 +56,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "alt": "Loading...",
-          "src": "spinner.gif",
-          "style": Object {
-            "display": "block",
-            "margin": "auto",
-            "width": "200px",
-          },
+          "src": "birdLoader.gif",
         },
         "ref": null,
         "rendered": null,
