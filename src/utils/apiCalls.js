@@ -1,9 +1,10 @@
 import { eBirdKey } from '../keys';
 
 export const getPosition = async options => {
-  return await new Promise((resolve, reject) => {
+  const position = await new Promise((resolve, reject) => {
     navigator.geolocation.getCurrentPosition(resolve, reject, options);
   });
+  return position.coords;
 };
 
 export const getHotspotData = async (lat, long) => {
@@ -36,7 +37,7 @@ export const getMostActive = hotspots => {
   const mostActive = hotspots.sort((a, b) => {
     return b.birds.length - a.birds.length;
   });
-
+  console.log();
   return mostActive.slice(0, 10);
 };
 
