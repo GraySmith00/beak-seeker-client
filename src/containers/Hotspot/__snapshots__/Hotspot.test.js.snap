@@ -135,7 +135,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <withRouter(Header)
+        <withRouter()
           currentPage="Hotspot Info"
 />,
         <main
@@ -1038,7 +1038,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <withRouter(Header)
+          <withRouter()
             currentPage="Hotspot Info"
 />,
           <main

@@ -1,10 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`HotspotsList component should match the snapshot when the data is has been populated 1`] = `
+exports[`PostTweet component should match the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <HotspotsList
-    getNearbyHotspots={[Function]}
+  Symbol(enzyme.__unrendered__): <PostTweet
+    currentUser={
+        Object {
+            "__v": 0,
+            "_id": "5b98223ce17b1dbfc1b26ada",
+            "email": "greg.smith00@gmail.com",
+            "image": "https://pbs.twimg.com/profile_images/1001553154146615296/Jab4V7G0_normal.jpg",
+            "sightings": Array [
+              Object {
+                "_id": 1537200989704,
+                "comName": "Canada Goose",
+                "locationId": "L1743685",
+                "speciesCode": "cangoo",
+              },
+            ],
+            "username": "greg_savoy",
+          }
+    }
     hotspots={
         Array [
             Object {
@@ -105,7 +121,6 @@ ShallowWrapper {
             },
           ]
     }
-    loading={false}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -121,21 +136,27 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <withRouter()
-          currentPage="Nearby Hotspots"
+          currentPage="Post Tweet"
 />,
-        <main
-          className="main-content"
+        <form
+          className="twitter-form"
+          onSubmit={[Function]}
 >
-          <Link
-                    className="hotspot"
-                    replace={false}
-                    to="/hotspots/L1743685"
+          <textarea
+                    name="tweetText"
+                    onChange={[Function]}
+                    rows="6"
+                    type="text"
+                    value="Just spotted a sweet Canada Goose at Belmar Park and logged it on @BeakSeeker!!!"
+          />
+          <button
+                    onClick={[Function]}
           >
-                    Belmar Park
-          </Link>
-</main>,
+                    Send Tweet
+          </button>
+</form>,
       ],
-      "className": "hotspots-list",
+      "className": "post-tweet",
     },
     "ref": null,
     "rendered": Array [
@@ -144,7 +165,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "currentPage": "Nearby Hotspots",
+          "currentPage": "Post Tweet",
         },
         "ref": null,
         "rendered": null,
@@ -156,34 +177,53 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <Link
-              className="hotspot"
-              replace={false}
-              to="/hotspots/L1743685"
+            <textarea
+              name="tweetText"
+              onChange={[Function]}
+              rows="6"
+              type="text"
+              value="Just spotted a sweet Canada Goose at Belmar Park and logged it on @BeakSeeker!!!"
+/>,
+            <button
+              onClick={[Function]}
 >
-              Belmar Park
-</Link>,
+              Send Tweet
+</button>,
           ],
-          "className": "main-content",
+          "className": "twitter-form",
+          "onSubmit": [Function],
         },
         "ref": null,
         "rendered": Array [
           Object {
             "instance": null,
-            "key": "L1743685",
-            "nodeType": "class",
+            "key": undefined,
+            "nodeType": "host",
             "props": Object {
-              "children": "Belmar Park",
-              "className": "hotspot",
-              "replace": false,
-              "to": "/hotspots/L1743685",
+              "name": "tweetText",
+              "onChange": [Function],
+              "rows": "6",
+              "type": "text",
+              "value": "Just spotted a sweet Canada Goose at Belmar Park and logged it on @BeakSeeker!!!",
             },
             "ref": null,
-            "rendered": "Belmar Park",
-            "type": [Function],
+            "rendered": null,
+            "type": "textarea",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Send Tweet",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Send Tweet",
+            "type": "button",
           },
         ],
-        "type": "main",
+        "type": "form",
       },
     ],
     "type": "div",
@@ -196,21 +236,27 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <withRouter()
-            currentPage="Nearby Hotspots"
+            currentPage="Post Tweet"
 />,
-          <main
-            className="main-content"
+          <form
+            className="twitter-form"
+            onSubmit={[Function]}
 >
-            <Link
-                        className="hotspot"
-                        replace={false}
-                        to="/hotspots/L1743685"
+            <textarea
+                        name="tweetText"
+                        onChange={[Function]}
+                        rows="6"
+                        type="text"
+                        value="Just spotted a sweet Canada Goose at Belmar Park and logged it on @BeakSeeker!!!"
+            />
+            <button
+                        onClick={[Function]}
             >
-                        Belmar Park
-            </Link>
-</main>,
+                        Send Tweet
+            </button>
+</form>,
         ],
-        "className": "hotspots-list",
+        "className": "post-tweet",
       },
       "ref": null,
       "rendered": Array [
@@ -219,7 +265,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "currentPage": "Nearby Hotspots",
+            "currentPage": "Post Tweet",
           },
           "ref": null,
           "rendered": null,
@@ -231,179 +277,53 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <Link
-                className="hotspot"
-                replace={false}
-                to="/hotspots/L1743685"
+              <textarea
+                name="tweetText"
+                onChange={[Function]}
+                rows="6"
+                type="text"
+                value="Just spotted a sweet Canada Goose at Belmar Park and logged it on @BeakSeeker!!!"
+/>,
+              <button
+                onClick={[Function]}
 >
-                Belmar Park
-</Link>,
+                Send Tweet
+</button>,
             ],
-            "className": "main-content",
+            "className": "twitter-form",
+            "onSubmit": [Function],
           },
           "ref": null,
           "rendered": Array [
             Object {
               "instance": null,
-              "key": "L1743685",
-              "nodeType": "class",
+              "key": undefined,
+              "nodeType": "host",
               "props": Object {
-                "children": "Belmar Park",
-                "className": "hotspot",
-                "replace": false,
-                "to": "/hotspots/L1743685",
+                "name": "tweetText",
+                "onChange": [Function],
+                "rows": "6",
+                "type": "text",
+                "value": "Just spotted a sweet Canada Goose at Belmar Park and logged it on @BeakSeeker!!!",
               },
               "ref": null,
-              "rendered": "Belmar Park",
-              "type": [Function],
+              "rendered": null,
+              "type": "textarea",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Send Tweet",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Send Tweet",
+              "type": "button",
             },
           ],
-          "type": "main",
-        },
-      ],
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-    "attachTo": undefined,
-    "hydrateIn": undefined,
-  },
-}
-`;
-
-exports[`HotspotsList component should match the snapshot when the data is still loading 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <HotspotsList
-    getNearbyHotspots={[Function]}
-    hotspots={Array []}
-    loading={true}
-/>,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        <withRouter()
-          currentPage="Nearby Hotspots"
-/>,
-        <main
-          className="main-content"
->
-          <LoadingSpinner />
-</main>,
-      ],
-      "className": "hotspots-list",
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "currentPage": "Nearby Hotspots",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <LoadingSpinner />,
-          "className": "main-content",
-        },
-        "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        "type": "main",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <withRouter()
-            currentPage="Nearby Hotspots"
-/>,
-          <main
-            className="main-content"
->
-            <LoadingSpinner />
-</main>,
-        ],
-        "className": "hotspots-list",
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "currentPage": "Nearby Hotspots",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <LoadingSpinner />,
-            "className": "main-content",
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          "type": "main",
+          "type": "form",
         },
       ],
       "type": "div",

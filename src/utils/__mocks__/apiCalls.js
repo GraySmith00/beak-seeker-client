@@ -1,9 +1,3 @@
-// export const getPosition = jest.fn();
-// export const getHotspotData = jest.fn();
-// export const getHotspotBirds = jest.fn();
-// export const getMostActive = jest.fn();
-// export const getBirdImage = jest.fn();
-// export const getBirdInfo = jest.fn();
 import {
   mockPosition,
   mockHotspots,
@@ -28,6 +22,8 @@ export const getHotspotBirds = jest
 export const getMostActive = jest
   .fn()
   .mockImplementation(() => Promise.resolve(mockMostActive));
+
+export const tweetPostRequest = jest.fn();
 
 export const getBirdImage = () => {
   return 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Kanadagans_Branta_canadensis.jpg/200px-Kanadagans_Branta_canadensis.jpg';

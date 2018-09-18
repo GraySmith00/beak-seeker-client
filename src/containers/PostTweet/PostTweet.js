@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
+import { tweetPostRequest } from '../../utils/apiCalls';
 import Header from '../../components/Header/Header';
 
 import './PostTweet.css';
 
-class PostTweet extends Component {
+export class PostTweet extends Component {
   constructor() {
     super();
     this.state = {
@@ -36,14 +37,12 @@ class PostTweet extends Component {
       userId: this.props.currentUser._id,
       status: this.state.tweetText
     };
-    const url = 'http://localhost:5000/twitter/posttweet';
-    await fetch(url, {
-      method: 'POST',
-      body: JSON.stringify(payload),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    });
+
+    try {
+      await tweetPostRequest(payload);
+    } catch (error) {
+      console.log(error.message);
+    }
   };
 
   handleSubmit = e => {

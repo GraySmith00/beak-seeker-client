@@ -10,9 +10,13 @@ import Header from '../../components/Header/Header';
 import './Home.css';
 
 export class Home extends Component {
-  componentDidMount() {
+  async componentDidMount() {
     const id = window.location.search.slice(4);
-    this.props.setCurrentUser(id);
+    try {
+      await this.props.setCurrentUser(id);
+    } catch (error) {
+      console.log(error.message);
+    }
   }
 
   render() {

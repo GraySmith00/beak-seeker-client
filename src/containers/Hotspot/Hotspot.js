@@ -19,11 +19,10 @@ export class Hotspot extends Component {
     };
   }
 
+
   componentDidMount() {
-    const { hotspotId, currentUser } = this.props;
-    const hotspot = this.props.hotspots.find(
-      hotspot => hotspot.locId === hotspotId
-    );
+    const { hotspotId, hotspots } = this.props;
+    const hotspot = hotspots.find(hotspot => hotspot.locId === hotspotId);
 
     this.setState({ hotspot, loading: false });
   }
