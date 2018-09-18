@@ -12,6 +12,7 @@ import './Hotspot.css';
 export class Hotspot extends Component {
   handleChange = bird => {
     const { hotspotId, currentUser, toggleBirdSighting } = this.props;
+    console.log(this.props);
     toggleBirdSighting(currentUser, hotspotId, bird.speciesCode);
   };
 
