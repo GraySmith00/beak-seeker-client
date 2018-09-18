@@ -19,8 +19,15 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <withRouter(Header)
-          currentPage="Home"
+        <withRouter()
+          currentPage={
+                    <p>
+                              <i
+                                        className="fas fa-home"
+                              />
+                               Home
+                    </p>
+          }
 />,
         <main
           className="main-content"
@@ -31,7 +38,10 @@ ShallowWrapper {
                     className="nav-link"
                     to="/hotspots"
           >
-                    Nearby Hotspots
+                    <i
+                              className="fas fa-map-marked-alt"
+                    />
+                     Nearby Hotspots
           </NavLink>
           <NavLink
                     activeClassName="active"
@@ -39,7 +49,10 @@ ShallowWrapper {
                     className="nav-link"
                     to="/leaderboard"
           >
-                    Leaderboard
+                    <i
+                              className="fas fa-trophy"
+                    />
+                     Leaderboard
           </NavLink>
 </main>,
       ],
@@ -52,7 +65,12 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "currentPage": "Home",
+          "currentPage": <p>
+            <i
+                        className="fas fa-home"
+            />
+             Home
+</p>,
         },
         "ref": null,
         "rendered": null,
@@ -70,7 +88,10 @@ ShallowWrapper {
               className="nav-link"
               to="/hotspots"
 >
-              Nearby Hotspots
+              <i
+                            className="fas fa-map-marked-alt"
+              />
+               Nearby Hotspots
 </NavLink>,
             <NavLink
               activeClassName="active"
@@ -78,7 +99,10 @@ ShallowWrapper {
               className="nav-link"
               to="/leaderboard"
 >
-              Leaderboard
+              <i
+                            className="fas fa-trophy"
+              />
+               Leaderboard
 </NavLink>,
           ],
           "className": "main-content",
@@ -92,12 +116,30 @@ ShallowWrapper {
             "props": Object {
               "activeClassName": "active",
               "aria-current": "page",
-              "children": "Nearby Hotspots",
+              "children": Array [
+                <i
+                  className="fas fa-map-marked-alt"
+/>,
+                " Nearby Hotspots",
+              ],
               "className": "nav-link",
               "to": "/hotspots",
             },
             "ref": null,
-            "rendered": "Nearby Hotspots",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-map-marked-alt",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              " Nearby Hotspots",
+            ],
             "type": [Function],
           },
           Object {
@@ -107,12 +149,30 @@ ShallowWrapper {
             "props": Object {
               "activeClassName": "active",
               "aria-current": "page",
-              "children": "Leaderboard",
+              "children": Array [
+                <i
+                  className="fas fa-trophy"
+/>,
+                " Leaderboard",
+              ],
               "className": "nav-link",
               "to": "/leaderboard",
             },
             "ref": null,
-            "rendered": "Leaderboard",
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-trophy",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              " Leaderboard",
+            ],
             "type": [Function],
           },
         ],
@@ -128,8 +188,15 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <withRouter(Header)
-            currentPage="Home"
+          <withRouter()
+            currentPage={
+                        <p>
+                                    <i
+                                                className="fas fa-home"
+                                    />
+                                     Home
+                        </p>
+            }
 />,
           <main
             className="main-content"
@@ -140,7 +207,10 @@ ShallowWrapper {
                         className="nav-link"
                         to="/hotspots"
             >
-                        Nearby Hotspots
+                        <i
+                                    className="fas fa-map-marked-alt"
+                        />
+                         Nearby Hotspots
             </NavLink>
             <NavLink
                         activeClassName="active"
@@ -148,7 +218,10 @@ ShallowWrapper {
                         className="nav-link"
                         to="/leaderboard"
             >
-                        Leaderboard
+                        <i
+                                    className="fas fa-trophy"
+                        />
+                         Leaderboard
             </NavLink>
 </main>,
         ],
@@ -161,7 +234,12 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "currentPage": "Home",
+            "currentPage": <p>
+              <i
+                            className="fas fa-home"
+              />
+               Home
+</p>,
           },
           "ref": null,
           "rendered": null,
@@ -179,7 +257,10 @@ ShallowWrapper {
                 className="nav-link"
                 to="/hotspots"
 >
-                Nearby Hotspots
+                <i
+                                className="fas fa-map-marked-alt"
+                />
+                 Nearby Hotspots
 </NavLink>,
               <NavLink
                 activeClassName="active"
@@ -187,7 +268,10 @@ ShallowWrapper {
                 className="nav-link"
                 to="/leaderboard"
 >
-                Leaderboard
+                <i
+                                className="fas fa-trophy"
+                />
+                 Leaderboard
 </NavLink>,
             ],
             "className": "main-content",
@@ -201,12 +285,30 @@ ShallowWrapper {
               "props": Object {
                 "activeClassName": "active",
                 "aria-current": "page",
-                "children": "Nearby Hotspots",
+                "children": Array [
+                  <i
+                    className="fas fa-map-marked-alt"
+/>,
+                  " Nearby Hotspots",
+                ],
                 "className": "nav-link",
                 "to": "/hotspots",
               },
               "ref": null,
-              "rendered": "Nearby Hotspots",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-map-marked-alt",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                " Nearby Hotspots",
+              ],
               "type": [Function],
             },
             Object {
@@ -216,12 +318,30 @@ ShallowWrapper {
               "props": Object {
                 "activeClassName": "active",
                 "aria-current": "page",
-                "children": "Leaderboard",
+                "children": Array [
+                  <i
+                    className="fas fa-trophy"
+/>,
+                  " Leaderboard",
+                ],
                 "className": "nav-link",
                 "to": "/leaderboard",
               },
               "ref": null,
-              "rendered": "Leaderboard",
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-trophy",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                " Leaderboard",
+              ],
               "type": [Function],
             },
           ],

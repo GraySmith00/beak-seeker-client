@@ -10,21 +10,30 @@ import Header from '../../components/Header/Header';
 import './Home.css';
 
 export class Home extends Component {
-  componentDidMount() {
+  async componentDidMount() {
     const id = window.location.search.slice(4);
-    this.props.setCurrentUser(id);
+    try {
+      await this.props.setCurrentUser(id);
+    } catch (error) {
+      console.log(error.message);
+    }
   }
 
   render() {
+    const currentPage = (
+      <p>
+        <i className="fas fa-home" /> Home
+      </p>
+    );
     return (
       <div className="home">
-        <Header currentPage="Home" />
+        <Header currentPage={currentPage} />
         <main className="main-content">
           <NavLink to="/hotspots" className="nav-link">
-            Nearby Hotspots
+            <i className="fas fa-map-marked-alt" /> Nearby Hotspots
           </NavLink>
           <NavLink to="/leaderboard" className="nav-link">
-            Leaderboard
+            <i className="fas fa-trophy" /> Leaderboard
           </NavLink>
         </main>
       </div>
