@@ -135,12 +135,15 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <withRouter(Header)
+        <withRouter()
           currentPage="Hotspot Info"
 />,
         <main
           className="main-content"
 >
+          <h2>
+                    Belmar Park
+          </h2>
           <div
                     className="birds"
           >
@@ -157,6 +160,7 @@ ShallowWrapper {
                                         </Link>
                                         <input
                                                   checked={false}
+                                                  className="checkbox-input"
                                                   name="cangoo"
                                                   onChange={[Function]}
                                                   type="checkbox"
@@ -174,6 +178,7 @@ ShallowWrapper {
                                         </Link>
                                         <input
                                                   checked={false}
+                                                  className="checkbox-input"
                                                   name="gragoo4"
                                                   onChange={[Function]}
                                                   type="checkbox"
@@ -191,6 +196,7 @@ ShallowWrapper {
                                         </Link>
                                         <input
                                                   checked={false}
+                                                  className="checkbox-input"
                                                   name="mallar3"
                                                   onChange={[Function]}
                                                   type="checkbox"
@@ -208,6 +214,7 @@ ShallowWrapper {
                                         </Link>
                                         <input
                                                   checked={false}
+                                                  className="checkbox-input"
                                                   name="ribgul"
                                                   onChange={[Function]}
                                                   type="checkbox"
@@ -225,6 +232,7 @@ ShallowWrapper {
                                         </Link>
                                         <input
                                                   checked={false}
+                                                  className="checkbox-input"
                                                   name="doccor"
                                                   onChange={[Function]}
                                                   type="checkbox"
@@ -242,6 +250,7 @@ ShallowWrapper {
                                         </Link>
                                         <input
                                                   checked={false}
+                                                  className="checkbox-input"
                                                   name="grbher3"
                                                   onChange={[Function]}
                                                   type="checkbox"
@@ -254,7 +263,7 @@ ShallowWrapper {
                     replace={false}
                     to="/tweet"
           >
-                    Post a Tweet!
+                    Tweet Recent Sighting!
           </Link>
 </main>,
       ],
@@ -279,6 +288,9 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
+            <h2>
+              Belmar Park
+</h2>,
             <div
               className="birds"
 >
@@ -295,6 +307,7 @@ ShallowWrapper {
                                           </Link>
                                           <input
                                                         checked={false}
+                                                        className="checkbox-input"
                                                         name="cangoo"
                                                         onChange={[Function]}
                                                         type="checkbox"
@@ -312,6 +325,7 @@ ShallowWrapper {
                                           </Link>
                                           <input
                                                         checked={false}
+                                                        className="checkbox-input"
                                                         name="gragoo4"
                                                         onChange={[Function]}
                                                         type="checkbox"
@@ -329,6 +343,7 @@ ShallowWrapper {
                                           </Link>
                                           <input
                                                         checked={false}
+                                                        className="checkbox-input"
                                                         name="mallar3"
                                                         onChange={[Function]}
                                                         type="checkbox"
@@ -346,6 +361,7 @@ ShallowWrapper {
                                           </Link>
                                           <input
                                                         checked={false}
+                                                        className="checkbox-input"
                                                         name="ribgul"
                                                         onChange={[Function]}
                                                         type="checkbox"
@@ -363,6 +379,7 @@ ShallowWrapper {
                                           </Link>
                                           <input
                                                         checked={false}
+                                                        className="checkbox-input"
                                                         name="doccor"
                                                         onChange={[Function]}
                                                         type="checkbox"
@@ -380,6 +397,7 @@ ShallowWrapper {
                                           </Link>
                                           <input
                                                         checked={false}
+                                                        className="checkbox-input"
                                                         name="grbher3"
                                                         onChange={[Function]}
                                                         type="checkbox"
@@ -392,13 +410,24 @@ ShallowWrapper {
               replace={false}
               to="/tweet"
 >
-              Post a Tweet!
+              Tweet Recent Sighting!
 </Link>,
           ],
           "className": "main-content",
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Belmar Park",
+            },
+            "ref": null,
+            "rendered": "Belmar Park",
+            "type": "h2",
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -417,6 +446,7 @@ ShallowWrapper {
                                 </Link>
                                 <input
                                                 checked={false}
+                                                className="checkbox-input"
                                                 name="cangoo"
                                                 onChange={[Function]}
                                                 type="checkbox"
@@ -434,6 +464,7 @@ ShallowWrapper {
                                 </Link>
                                 <input
                                                 checked={false}
+                                                className="checkbox-input"
                                                 name="gragoo4"
                                                 onChange={[Function]}
                                                 type="checkbox"
@@ -451,6 +482,7 @@ ShallowWrapper {
                                 </Link>
                                 <input
                                                 checked={false}
+                                                className="checkbox-input"
                                                 name="mallar3"
                                                 onChange={[Function]}
                                                 type="checkbox"
@@ -468,6 +500,7 @@ ShallowWrapper {
                                 </Link>
                                 <input
                                                 checked={false}
+                                                className="checkbox-input"
                                                 name="ribgul"
                                                 onChange={[Function]}
                                                 type="checkbox"
@@ -485,6 +518,7 @@ ShallowWrapper {
                                 </Link>
                                 <input
                                                 checked={false}
+                                                className="checkbox-input"
                                                 name="doccor"
                                                 onChange={[Function]}
                                                 type="checkbox"
@@ -502,6 +536,7 @@ ShallowWrapper {
                                 </Link>
                                 <input
                                                 checked={false}
+                                                className="checkbox-input"
                                                 name="grbher3"
                                                 onChange={[Function]}
                                                 type="checkbox"
@@ -529,6 +564,7 @@ ShallowWrapper {
                     </Link>
                     <input
                                         checked={false}
+                                        className="checkbox-input"
                                         name="cangoo"
                                         onChange={[Function]}
                                         type="checkbox"
@@ -546,6 +582,7 @@ ShallowWrapper {
                     </Link>
                     <input
                                         checked={false}
+                                        className="checkbox-input"
                                         name="gragoo4"
                                         onChange={[Function]}
                                         type="checkbox"
@@ -563,6 +600,7 @@ ShallowWrapper {
                     </Link>
                     <input
                                         checked={false}
+                                        className="checkbox-input"
                                         name="mallar3"
                                         onChange={[Function]}
                                         type="checkbox"
@@ -580,6 +618,7 @@ ShallowWrapper {
                     </Link>
                     <input
                                         checked={false}
+                                        className="checkbox-input"
                                         name="ribgul"
                                         onChange={[Function]}
                                         type="checkbox"
@@ -597,6 +636,7 @@ ShallowWrapper {
                     </Link>
                     <input
                                         checked={false}
+                                        className="checkbox-input"
                                         name="doccor"
                                         onChange={[Function]}
                                         type="checkbox"
@@ -614,6 +654,7 @@ ShallowWrapper {
                     </Link>
                     <input
                                         checked={false}
+                                        className="checkbox-input"
                                         name="grbher3"
                                         onChange={[Function]}
                                         type="checkbox"
@@ -638,6 +679,7 @@ ShallowWrapper {
 </Link>,
                       <input
                         checked={false}
+                        className="checkbox-input"
                         name="cangoo"
                         onChange={[Function]}
                         type="checkbox"
@@ -667,6 +709,7 @@ ShallowWrapper {
                       "nodeType": "host",
                       "props": Object {
                         "checked": false,
+                        "className": "checkbox-input",
                         "name": "cangoo",
                         "onChange": [Function],
                         "type": "checkbox",
@@ -693,6 +736,7 @@ ShallowWrapper {
 </Link>,
                       <input
                         checked={false}
+                        className="checkbox-input"
                         name="gragoo4"
                         onChange={[Function]}
                         type="checkbox"
@@ -722,6 +766,7 @@ ShallowWrapper {
                       "nodeType": "host",
                       "props": Object {
                         "checked": false,
+                        "className": "checkbox-input",
                         "name": "gragoo4",
                         "onChange": [Function],
                         "type": "checkbox",
@@ -748,6 +793,7 @@ ShallowWrapper {
 </Link>,
                       <input
                         checked={false}
+                        className="checkbox-input"
                         name="mallar3"
                         onChange={[Function]}
                         type="checkbox"
@@ -777,6 +823,7 @@ ShallowWrapper {
                       "nodeType": "host",
                       "props": Object {
                         "checked": false,
+                        "className": "checkbox-input",
                         "name": "mallar3",
                         "onChange": [Function],
                         "type": "checkbox",
@@ -803,6 +850,7 @@ ShallowWrapper {
 </Link>,
                       <input
                         checked={false}
+                        className="checkbox-input"
                         name="ribgul"
                         onChange={[Function]}
                         type="checkbox"
@@ -832,6 +880,7 @@ ShallowWrapper {
                       "nodeType": "host",
                       "props": Object {
                         "checked": false,
+                        "className": "checkbox-input",
                         "name": "ribgul",
                         "onChange": [Function],
                         "type": "checkbox",
@@ -858,6 +907,7 @@ ShallowWrapper {
 </Link>,
                       <input
                         checked={false}
+                        className="checkbox-input"
                         name="doccor"
                         onChange={[Function]}
                         type="checkbox"
@@ -887,6 +937,7 @@ ShallowWrapper {
                       "nodeType": "host",
                       "props": Object {
                         "checked": false,
+                        "className": "checkbox-input",
                         "name": "doccor",
                         "onChange": [Function],
                         "type": "checkbox",
@@ -913,6 +964,7 @@ ShallowWrapper {
 </Link>,
                       <input
                         checked={false}
+                        className="checkbox-input"
                         name="grbher3"
                         onChange={[Function]}
                         type="checkbox"
@@ -942,6 +994,7 @@ ShallowWrapper {
                       "nodeType": "host",
                       "props": Object {
                         "checked": false,
+                        "className": "checkbox-input",
                         "name": "grbher3",
                         "onChange": [Function],
                         "type": "checkbox",
@@ -963,13 +1016,13 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": "Post a Tweet!",
+              "children": "Tweet Recent Sighting!",
               "className": "twitter-button",
               "replace": false,
               "to": "/tweet",
             },
             "ref": null,
-            "rendered": "Post a Tweet!",
+            "rendered": "Tweet Recent Sighting!",
             "type": [Function],
           },
         ],
@@ -985,12 +1038,15 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <withRouter(Header)
+          <withRouter()
             currentPage="Hotspot Info"
 />,
           <main
             className="main-content"
 >
+            <h2>
+                        Belmar Park
+            </h2>
             <div
                         className="birds"
             >
@@ -1007,6 +1063,7 @@ ShallowWrapper {
                                                 </Link>
                                                 <input
                                                             checked={false}
+                                                            className="checkbox-input"
                                                             name="cangoo"
                                                             onChange={[Function]}
                                                             type="checkbox"
@@ -1024,6 +1081,7 @@ ShallowWrapper {
                                                 </Link>
                                                 <input
                                                             checked={false}
+                                                            className="checkbox-input"
                                                             name="gragoo4"
                                                             onChange={[Function]}
                                                             type="checkbox"
@@ -1041,6 +1099,7 @@ ShallowWrapper {
                                                 </Link>
                                                 <input
                                                             checked={false}
+                                                            className="checkbox-input"
                                                             name="mallar3"
                                                             onChange={[Function]}
                                                             type="checkbox"
@@ -1058,6 +1117,7 @@ ShallowWrapper {
                                                 </Link>
                                                 <input
                                                             checked={false}
+                                                            className="checkbox-input"
                                                             name="ribgul"
                                                             onChange={[Function]}
                                                             type="checkbox"
@@ -1075,6 +1135,7 @@ ShallowWrapper {
                                                 </Link>
                                                 <input
                                                             checked={false}
+                                                            className="checkbox-input"
                                                             name="doccor"
                                                             onChange={[Function]}
                                                             type="checkbox"
@@ -1092,6 +1153,7 @@ ShallowWrapper {
                                                 </Link>
                                                 <input
                                                             checked={false}
+                                                            className="checkbox-input"
                                                             name="grbher3"
                                                             onChange={[Function]}
                                                             type="checkbox"
@@ -1104,7 +1166,7 @@ ShallowWrapper {
                         replace={false}
                         to="/tweet"
             >
-                        Post a Tweet!
+                        Tweet Recent Sighting!
             </Link>
 </main>,
         ],
@@ -1129,6 +1191,9 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+              <h2>
+                Belmar Park
+</h2>,
               <div
                 className="birds"
 >
@@ -1145,6 +1210,7 @@ ShallowWrapper {
                                                 </Link>
                                                 <input
                                                                 checked={false}
+                                                                className="checkbox-input"
                                                                 name="cangoo"
                                                                 onChange={[Function]}
                                                                 type="checkbox"
@@ -1162,6 +1228,7 @@ ShallowWrapper {
                                                 </Link>
                                                 <input
                                                                 checked={false}
+                                                                className="checkbox-input"
                                                                 name="gragoo4"
                                                                 onChange={[Function]}
                                                                 type="checkbox"
@@ -1179,6 +1246,7 @@ ShallowWrapper {
                                                 </Link>
                                                 <input
                                                                 checked={false}
+                                                                className="checkbox-input"
                                                                 name="mallar3"
                                                                 onChange={[Function]}
                                                                 type="checkbox"
@@ -1196,6 +1264,7 @@ ShallowWrapper {
                                                 </Link>
                                                 <input
                                                                 checked={false}
+                                                                className="checkbox-input"
                                                                 name="ribgul"
                                                                 onChange={[Function]}
                                                                 type="checkbox"
@@ -1213,6 +1282,7 @@ ShallowWrapper {
                                                 </Link>
                                                 <input
                                                                 checked={false}
+                                                                className="checkbox-input"
                                                                 name="doccor"
                                                                 onChange={[Function]}
                                                                 type="checkbox"
@@ -1230,6 +1300,7 @@ ShallowWrapper {
                                                 </Link>
                                                 <input
                                                                 checked={false}
+                                                                className="checkbox-input"
                                                                 name="grbher3"
                                                                 onChange={[Function]}
                                                                 type="checkbox"
@@ -1242,13 +1313,24 @@ ShallowWrapper {
                 replace={false}
                 to="/tweet"
 >
-                Post a Tweet!
+                Tweet Recent Sighting!
 </Link>,
             ],
             "className": "main-content",
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Belmar Park",
+              },
+              "ref": null,
+              "rendered": "Belmar Park",
+              "type": "h2",
+            },
             Object {
               "instance": null,
               "key": undefined,
@@ -1267,6 +1349,7 @@ ShallowWrapper {
                                     </Link>
                                     <input
                                                       checked={false}
+                                                      className="checkbox-input"
                                                       name="cangoo"
                                                       onChange={[Function]}
                                                       type="checkbox"
@@ -1284,6 +1367,7 @@ ShallowWrapper {
                                     </Link>
                                     <input
                                                       checked={false}
+                                                      className="checkbox-input"
                                                       name="gragoo4"
                                                       onChange={[Function]}
                                                       type="checkbox"
@@ -1301,6 +1385,7 @@ ShallowWrapper {
                                     </Link>
                                     <input
                                                       checked={false}
+                                                      className="checkbox-input"
                                                       name="mallar3"
                                                       onChange={[Function]}
                                                       type="checkbox"
@@ -1318,6 +1403,7 @@ ShallowWrapper {
                                     </Link>
                                     <input
                                                       checked={false}
+                                                      className="checkbox-input"
                                                       name="ribgul"
                                                       onChange={[Function]}
                                                       type="checkbox"
@@ -1335,6 +1421,7 @@ ShallowWrapper {
                                     </Link>
                                     <input
                                                       checked={false}
+                                                      className="checkbox-input"
                                                       name="doccor"
                                                       onChange={[Function]}
                                                       type="checkbox"
@@ -1352,6 +1439,7 @@ ShallowWrapper {
                                     </Link>
                                     <input
                                                       checked={false}
+                                                      className="checkbox-input"
                                                       name="grbher3"
                                                       onChange={[Function]}
                                                       type="checkbox"
@@ -1379,6 +1467,7 @@ ShallowWrapper {
                       </Link>
                       <input
                                             checked={false}
+                                            className="checkbox-input"
                                             name="cangoo"
                                             onChange={[Function]}
                                             type="checkbox"
@@ -1396,6 +1485,7 @@ ShallowWrapper {
                       </Link>
                       <input
                                             checked={false}
+                                            className="checkbox-input"
                                             name="gragoo4"
                                             onChange={[Function]}
                                             type="checkbox"
@@ -1413,6 +1503,7 @@ ShallowWrapper {
                       </Link>
                       <input
                                             checked={false}
+                                            className="checkbox-input"
                                             name="mallar3"
                                             onChange={[Function]}
                                             type="checkbox"
@@ -1430,6 +1521,7 @@ ShallowWrapper {
                       </Link>
                       <input
                                             checked={false}
+                                            className="checkbox-input"
                                             name="ribgul"
                                             onChange={[Function]}
                                             type="checkbox"
@@ -1447,6 +1539,7 @@ ShallowWrapper {
                       </Link>
                       <input
                                             checked={false}
+                                            className="checkbox-input"
                                             name="doccor"
                                             onChange={[Function]}
                                             type="checkbox"
@@ -1464,6 +1557,7 @@ ShallowWrapper {
                       </Link>
                       <input
                                             checked={false}
+                                            className="checkbox-input"
                                             name="grbher3"
                                             onChange={[Function]}
                                             type="checkbox"
@@ -1488,6 +1582,7 @@ ShallowWrapper {
 </Link>,
                         <input
                           checked={false}
+                          className="checkbox-input"
                           name="cangoo"
                           onChange={[Function]}
                           type="checkbox"
@@ -1517,6 +1612,7 @@ ShallowWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "checked": false,
+                          "className": "checkbox-input",
                           "name": "cangoo",
                           "onChange": [Function],
                           "type": "checkbox",
@@ -1543,6 +1639,7 @@ ShallowWrapper {
 </Link>,
                         <input
                           checked={false}
+                          className="checkbox-input"
                           name="gragoo4"
                           onChange={[Function]}
                           type="checkbox"
@@ -1572,6 +1669,7 @@ ShallowWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "checked": false,
+                          "className": "checkbox-input",
                           "name": "gragoo4",
                           "onChange": [Function],
                           "type": "checkbox",
@@ -1598,6 +1696,7 @@ ShallowWrapper {
 </Link>,
                         <input
                           checked={false}
+                          className="checkbox-input"
                           name="mallar3"
                           onChange={[Function]}
                           type="checkbox"
@@ -1627,6 +1726,7 @@ ShallowWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "checked": false,
+                          "className": "checkbox-input",
                           "name": "mallar3",
                           "onChange": [Function],
                           "type": "checkbox",
@@ -1653,6 +1753,7 @@ ShallowWrapper {
 </Link>,
                         <input
                           checked={false}
+                          className="checkbox-input"
                           name="ribgul"
                           onChange={[Function]}
                           type="checkbox"
@@ -1682,6 +1783,7 @@ ShallowWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "checked": false,
+                          "className": "checkbox-input",
                           "name": "ribgul",
                           "onChange": [Function],
                           "type": "checkbox",
@@ -1708,6 +1810,7 @@ ShallowWrapper {
 </Link>,
                         <input
                           checked={false}
+                          className="checkbox-input"
                           name="doccor"
                           onChange={[Function]}
                           type="checkbox"
@@ -1737,6 +1840,7 @@ ShallowWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "checked": false,
+                          "className": "checkbox-input",
                           "name": "doccor",
                           "onChange": [Function],
                           "type": "checkbox",
@@ -1763,6 +1867,7 @@ ShallowWrapper {
 </Link>,
                         <input
                           checked={false}
+                          className="checkbox-input"
                           name="grbher3"
                           onChange={[Function]}
                           type="checkbox"
@@ -1792,6 +1897,7 @@ ShallowWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "checked": false,
+                          "className": "checkbox-input",
                           "name": "grbher3",
                           "onChange": [Function],
                           "type": "checkbox",
@@ -1813,13 +1919,13 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": "Post a Tweet!",
+                "children": "Tweet Recent Sighting!",
                 "className": "twitter-button",
                 "replace": false,
                 "to": "/tweet",
               },
               "ref": null,
-              "rendered": "Post a Tweet!",
+              "rendered": "Tweet Recent Sighting!",
               "type": [Function],
             },
           ],

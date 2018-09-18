@@ -1,24 +1,29 @@
 .hotspot {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 2rem;
+  height: 100%;
+  background: url("./birdBackground4.jpg");
+  background-size: cover;
+  background-position: top center; }
   .hotspot .main-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
-    overflow: scroll;
+    padding-top: 4.5rem;
     width: 80%; }
   .hotspot .birds {
     width: 100%; }
   .hotspot .bird {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0.5rem auto;
     padding: 0.5rem;
     width: 100%;
-    background: crimson;
+    background: rgba(0, 0, 0, 0.75);
     border-radius: 5px;
     -webkit-box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.43);
     -moz-box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.43);
@@ -26,10 +31,14 @@
   .hotspot .bird-link {
     text-decoration: none;
     color: #fff; }
+  .hotspot .checkbox-input {
+    transform: scale(1.5);
+    border: none; }
   .hotspot .twitter-button {
     padding: 1rem;
     text-decoration: none;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 6rem;
     width: 100%;
     text-align: center;
     border-radius: 5px;
