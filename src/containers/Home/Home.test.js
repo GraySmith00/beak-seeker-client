@@ -4,6 +4,8 @@ import { Home, mapDispatchToProps } from './Home';
 import { setCurrentUser } from '../../actions/thunks/setCurrentUser';
 import { mockUser } from './mockHomeData';
 
+jest.mock('../../actions/thunks/setCurrentUser');
+
 describe('Home component', () => {
   let wrapper;
   let setCurrentUser;
@@ -17,7 +19,7 @@ describe('Home component', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it.skip('should dispatch setCurrentUser using a function from mapDispatchToProps', async () => {
+  it('should dispatch setCurrentUser using a function from mapDispatchToProps', async () => {
     // setup
     const mockDispatch = jest.fn();
     const acitonToDispatch = setCurrentUser(mockUser._id);
