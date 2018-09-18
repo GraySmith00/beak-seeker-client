@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { getBirdImage, getBirdInfo } from '../../utils/helpers';
+import { getBirdImage, getBirdInfo } from '../../utils/apiCalls';
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
 import { connect } from 'react-redux';
 
@@ -19,6 +19,10 @@ export class BirdInfo extends Component {
     };
   }
   async componentDidMount() {
+    await this.loadBirdInfo();
+  }
+
+  loadBirdInfo = async () => {
     const { locId, speciesCode, hotspots } = this.props;
     const location = hotspots.find(hotspot => hotspot.locId === locId);
 
@@ -34,7 +38,7 @@ export class BirdInfo extends Component {
       birdInfo,
       loading: false
     });
-  }
+  };
 
   render() {
     const { birdImage, birdInfo, loading, comName } = this.state;

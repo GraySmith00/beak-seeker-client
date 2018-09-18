@@ -1,7 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Hotspot, mapStateToProps } from './Hotspot';
+import { Hotspot, mapStateToProps, mapDispatchToProps } from './Hotspot';
 import { mockHotspot, mockHotspots, mockCurrentUser } from './mockHotspotData';
+
+import { toggleBirdSighting } from '../../actions/thunks/toggleBirdSighting';
+
+jest.mock('../../actions/thunks/toggleBirdSighting');
 
 describe('Hotspot component', () => {
   let wrapper;
@@ -35,6 +39,23 @@ describe('Hotspot component', () => {
       const mappedProps = mapStateToProps(mockStore);
 
       expect(mappedProps).toEqual(expected);
+    });
+  });
+
+  describe('mapDispatchToProps', () => {
+    it('should dispatch a toggleBirdSighting function from mapDispatchToProps', () => {
+      const mockDispatch = jest.fn();
+      const actionToDispatch = toggleBirdSighting(
+        mockCurrentUser,
+        'L1743685',
+        'norsho'
+      );
+
+      const mappedProps = mapDispatchToProps(mockDispatch);
+
+      mappedProps.toggleBirdSighting(mockCurrentUser, 'L1743685', 'norsho');
+
+      expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
     });
   });
 });

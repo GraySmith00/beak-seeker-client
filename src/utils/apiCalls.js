@@ -1,13 +1,25 @@
 import { eBirdKey } from '../keys';
 
-export const getPosition = options => {
-  return new Promise((resolve, reject) => {
+export const getPosition = async options => {
+  const position = await new Promise((resolve, reject) => {
     navigator.geolocation.getCurrentPosition(resolve, reject, options);
   });
+  return position.coords;
 };
 
-export const getHotspotBirds = hotspots => {
-  return hotspots.map(async hotspot => {
+export const getHotspotData = async (lat, long) => {
+  const url = `https://ebird.org/ws2.0/ref/hotspot/geo?lat=${lat}&lng=${long}&fmt=json&dist=10`;
+  const response = await fetch(url, {
+    headers: {
+      'x-ebirdapitoken': eBirdKey
+    }
+  });
+  const hotspotData = await response.json();
+  return hotspotData;
+};
+
+export const getHotspotBirds = async hotspots => {
+  const unresolvedPromises = hotspots.map(async hotspot => {
     const url = `https://ebird.org/ws2.0/data/obs/${hotspot.locID}/recent/`;
     const response = await fetch(url, {
       headers: {
@@ -17,31 +29,23 @@ export const getHotspotBirds = hotspots => {
     const birds = await response.json();
     return { ...hotspot, birds };
   });
+
+  return await Promise.all(unresolvedPromises);
 };
 
 export const getMostActive = hotspots => {
   const mostActive = hotspots.sort((a, b) => {
     return b.birds.length - a.birds.length;
   });
-
+  console.log();
   return mostActive.slice(0, 10);
-};
-
-export const dashCaseNameHelper = name => {
-  return name
-    .split('(')
-    .join('')
-    .split(')')
-    .join('')
-    .split(' ')
-    .join('-')
-    .toLowerCase();
 };
 
 export const getBirdImage = async name => {
   const url = `http://en.wikipedia.org/w/api.php?action=query&origin=*&titles=${name.toLowerCase()}&prop=pageimages&format=json&pithumbsize=200/`;
   const response = await fetch(url);
   const data = await response.json();
+
   const pagesObj = data.query.pages;
   const firstPage = pagesObj[Object.keys(pagesObj)[0]];
   if (!firstPage.thumbnail && !name.includes('-')) {
@@ -66,3 +70,14 @@ export const getBirdInfo = async name => {
     return firstPage.extract;
   }
 };
+
+// export const dashCaseNameHelper = name => {
+//   return name
+//     .split('(')
+//     .join('')
+//     .split(')')
+//     .join('')
+//     .split(' ')
+//     .join('-')
+//     .toLowerCase();
+// };
