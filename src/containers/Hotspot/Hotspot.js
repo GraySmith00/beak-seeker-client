@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import { toggleBirdSighting } from '../../actions/thunks/toggleBirdSighting';
 
 import Header from '../../components/Header/Header';
+import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
 
 import './Hotspot.css';
 
@@ -17,6 +18,7 @@ export class Hotspot extends Component {
       loading: true
     };
   }
+
 
   componentDidMount() {
     const { hotspotId, hotspots } = this.props;
