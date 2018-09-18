@@ -1,15 +1,17 @@
 import { toggleBirdSightingState } from '../userActions';
 
-export const toggleBirdSighting = (
+export const toggleBirdSighting = ({
   user,
   locationId,
-  speciesCode
-) => async dispatch => {
+  speciesCode,
+  comName
+}) => async dispatch => {
   // create and add a new sighting to state
   const newSighting = {
     _id: Date.now(),
     locationId,
-    speciesCode
+    speciesCode,
+    comName
   };
 
   // check whether sighting already exists
@@ -47,7 +49,6 @@ export const toggleBirdSighting = (
         'Content-Type': 'application/json'
       }
     });
-    console.log(response);
   } catch (error) {
     console.log(error.message);
   }

@@ -6,60 +6,87 @@ import { connect } from 'react-redux';
 import { toggleBirdSighting } from '../../actions/thunks/toggleBirdSighting';
 
 import Header from '../../components/Header/Header';
+import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
 
 import './Hotspot.css';
 
 export class Hotspot extends Component {
-  handleChange = bird => {
-    const { hotspotId, currentUser, toggleBirdSighting } = this.props;
-    toggleBirdSighting(currentUser, hotspotId, bird.speciesCode);
-  };
+  constructor() {
+    super();
+    this.state = {
+      hotspot: {},
+      loading: true
+    };
+  }
 
-  render() {
+  componentDidMount() {
     const { hotspotId, currentUser } = this.props;
     const hotspot = this.props.hotspots.find(
       hotspot => hotspot.locId === hotspotId
     );
-    const { birds } = hotspot;
 
-    const displayBirdLinks = birds
-      .map((bird, index) => {
-        let birdSeen = currentUser.sightings.find(
-          sighting =>
-            sighting.locationId === hotspot.locId &&
-            sighting.speciesCode === bird.speciesCode
-        );
+    this.setState({ hotspot, loading: false });
+  }
 
-        birdSeen ? (birdSeen = true) : (birdSeen = false);
+  handleChange = bird => {
+    const { hotspotId, currentUser, toggleBirdSighting } = this.props;
+    const newSighting = {
+      user: currentUser,
+      locationId: hotspotId,
+      speciesCode: bird.speciesCode,
+      comName: bird.comName
+    };
+    toggleBirdSighting(newSighting);
+  };
 
-        return (
-          <div key={`${index}-${bird.speciesCode}`} className="bird">
-            <Link
-              to={`/hotspots/${hotspot.locId}/${bird.speciesCode}`}
-              className="bird-link"
-            >
-              {bird.comName}
-            </Link>
-            <input
-              onChange={() => this.handleChange(bird)}
-              type="checkbox"
-              name={bird.speciesCode}
-              checked={birdSeen}
-            />
-          </div>
-        );
-      })
-      .slice(0, 10);
+  render() {
+    const { currentUser } = this.props;
+    const { hotspot, loading } = this.state;
+    const { birds } = this.state.hotspot;
+    let displayBirdLinks;
+
+    if (!loading) {
+      displayBirdLinks = birds
+        .map((bird, index) => {
+          let birdSeen = currentUser.sightings.find(
+            sighting =>
+              sighting.locationId === hotspot.locId &&
+              sighting.speciesCode === bird.speciesCode
+          );
+
+          birdSeen ? (birdSeen = true) : (birdSeen = false);
+
+          return (
+            <div key={`${index}-${bird.speciesCode}`} className="bird">
+              <Link
+                to={`/hotspots/${hotspot.locId}/${bird.speciesCode}`}
+                className="bird-link"
+              >
+                {bird.comName}
+              </Link>
+              <input
+                onChange={() => this.handleChange(bird)}
+                type="checkbox"
+                name={bird.speciesCode}
+                checked={birdSeen}
+                className="checkbox-input"
+              />
+            </div>
+          );
+        })
+        .slice(0, 10);
+    }
 
     return (
       <div className="hotspot">
         <Header currentPage="Hotspot Info" />
         <main className="main-content">
+          <h2>{this.state.hotspot.locName}</h2>
           <div className="birds">
             <form>{displayBirdLinks}</form>
           </div>
           <Link to={`/tweet`} className="twitter-button">
-            Post a Tweet!
+            Tweet Recent Sighting!
           </Link>
         </main>
       </div>

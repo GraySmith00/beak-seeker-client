@@ -25,7 +25,7 @@
     "func-call-spacing": ["error", "never"],
     "keyword-spacing": ["error", { "before": true, "after": true }],
     "no-duplicate-imports": "error",
-    "id-blacklist": ["error", "err", "cb", "callback", "payload", "obj", "arr"],
+    "id-blacklist": ["error", "err", "cb", "callback", "obj", "arr"],
     "max-depth": ["warn", 4]
   },
   "globals": {

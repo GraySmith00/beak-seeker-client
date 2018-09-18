@@ -1,7 +1,12 @@
 .home {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 2rem;
+  background: url("./birdBackground2.jpg");
+  background-size: cover;
+  background-position: top center;
+  height: 100%; }
   .home .main-content {
     display: flex;
     flex-direction: column;
@@ -12,14 +17,18 @@
     width: 100%; }
   .home .nav-link {
     display: flex;
+    align-items: center;
     justify-content: center;
     margin: 1rem auto;
     padding: 1rem;
     width: 80%;
-    background: crimson;
+    background: rgba(0, 0, 0, 0.75);
     text-decoration: none;
     color: #fff;
     border-radius: 5px;
+    font-size: 1.3rem;
     -webkit-box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.43);
     -moz-box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.43);
     box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.43); }
+  .home i {
+    margin-right: 10px; }

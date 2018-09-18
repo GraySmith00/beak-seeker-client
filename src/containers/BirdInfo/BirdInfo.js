@@ -56,8 +56,10 @@ export class BirdInfo extends Component {
               Sorry, we could not find an image of this bird at this time :(
             </p>
           )}
-          <h3>{comName}</h3>
-          <p>{birdInfo}</p>
+          <div className="info">
+            <h3>{comName}</h3>
+            <p>{birdInfo}</p>
+          </div>
         </div>
       );
     }

@@ -16,15 +16,20 @@ export class Home extends Component {
   }
 
   render() {
+    const currentPage = (
+      <p>
+        <i className="fas fa-home" /> Home
+      </p>
+    );
     return (
       <div className="home">
-        <Header currentPage="Home" />
+        <Header currentPage={currentPage} />
         <main className="main-content">
           <NavLink to="/hotspots" className="nav-link">
-            Nearby Hotspots
+            <i className="fas fa-map-marked-alt" /> Nearby Hotspots
           </NavLink>
           <NavLink to="/leaderboard" className="nav-link">
-            Leaderboard
+            <i className="fas fa-trophy" /> Leaderboard
           </NavLink>
         </main>
       </div>
