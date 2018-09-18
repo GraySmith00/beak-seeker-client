@@ -25,4 +25,12 @@ describe('userActions', () => {
 
     expect(result).toEqual(expected);
   });
+
+  it('should return an object with a type of LOGOUT', () => {
+    const expected = {
+      type: 'LOGOUT'
+    };
+    const result = actions.logout();
+    expect(result).toEqual(expected);
+  });
 });
