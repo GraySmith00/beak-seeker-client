@@ -1,15 +1,17 @@
 import { toggleBirdSightingState } from '../userActions';
 
-export const toggleBirdSighting = (
+export const toggleBirdSighting = ({
   user,
   locationId,
-  speciesCode
-) => async dispatch => {
+  speciesCode,
+  comName
+}) => async dispatch => {
   // create and add a new sighting to state
   const newSighting = {
     _id: Date.now(),
     locationId,
-    speciesCode
+    speciesCode,
+    comName
   };
 
   // check whether sighting already exists
@@ -40,14 +42,13 @@ export const toggleBirdSighting = (
   // put request to update backend
   const url = `http://localhost:5000/api/users/${user._id}`;
   try {
-    const response = await fetch(url, {
+    await fetch(url, {
       method: 'PUT',
       body: JSON.stringify(newUser),
       headers: {
         'Content-Type': 'application/json'
       }
     });
-    console.log(response);
   } catch (error) {
     console.log(error.message);
   }
