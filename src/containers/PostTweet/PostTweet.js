@@ -46,13 +46,15 @@ class PostTweet extends Component {
     return (
       <div className="post-tweet">
         <Header currentPage="Post Tweet" />
-        <form onSubmit={this.handleSubmit}>
-          <input
+        <form onSubmit={this.handleSubmit} className="twitter-form">
+          <textarea
             onChange={this.handleChange}
             type="text"
             name="tweetText"
-            value={this.state.tweetText}
-          />
+            rows="10"
+          >
+            {this.state.tweetText}
+          </textarea>
           <button onClick={this.postTweet}>Tweet this</button>
         </form>
       </div>

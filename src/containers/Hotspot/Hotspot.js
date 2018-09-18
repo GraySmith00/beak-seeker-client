@@ -59,7 +59,7 @@ export class Hotspot extends Component {
             <form>{displayBirdLinks}</form>
           </div>
           <Link to={`/tweet`} className="twitter-button">
-            Post a Tweet!
+            Tweet Recent Sighting!
           </Link>
         </main>
       </div>
