@@ -1,0 +1,432 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignIn component should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <SignIn />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="hero"
+>
+          <div
+                    className="overlay"
+          >
+                    <div
+                              className="welcome-text"
+                    >
+                              <h3>
+                                        Welcome to
+                              </h3>
+                              <h2>
+                                        <i
+                                                  className="fas fa-dove"
+                                        />
+                                        BeakSeeker
+                              </h2>
+                    </div>
+          </div>
+</div>,
+        <div
+          className="app-description"
+>
+          <p>
+                    Readymade literally sartorial keytar narwhal, tofu everyday carry fingerstache vice whatever hashtag put a bird on it. Gastropub poutine helvetica, lyft letterpress hexagon slow-carb XOXO. Migas fixie lomo, swag stumptown +1 put a bird on it wolf tilde PBR&B try-hard subway tile chicharrones typewriter.
+          </p>
+</div>,
+        <a
+          className="twitter-button"
+          href="http://localhost:5000/twitter/login"
+>
+          Sign in with Twitter
+</a>,
+      ],
+      "className": "sign-in",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="overlay"
+>
+            <div
+                        className="welcome-text"
+            >
+                        <h3>
+                                    Welcome to
+                        </h3>
+                        <h2>
+                                    <i
+                                                className="fas fa-dove"
+                                    />
+                                    BeakSeeker
+                        </h2>
+            </div>
+</div>,
+          "className": "hero",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="welcome-text"
+>
+              <h3>
+                            Welcome to
+              </h3>
+              <h2>
+                            <i
+                                          className="fas fa-dove"
+                            />
+                            BeakSeeker
+              </h2>
+</div>,
+            "className": "overlay",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h3>
+                  Welcome to
+</h3>,
+                <h2>
+                  <i
+                                    className="fas fa-dove"
+                  />
+                  BeakSeeker
+</h2>,
+              ],
+              "className": "welcome-text",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Welcome to",
+                },
+                "ref": null,
+                "rendered": "Welcome to",
+                "type": "h3",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <i
+                      className="fas fa-dove"
+/>,
+                    "BeakSeeker",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "fas fa-dove",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "i",
+                  },
+                  "BeakSeeker",
+                ],
+                "type": "h2",
+              },
+            ],
+            "type": "div",
+          },
+          "type": "div",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <p>
+            Readymade literally sartorial keytar narwhal, tofu everyday carry fingerstache vice whatever hashtag put a bird on it. Gastropub poutine helvetica, lyft letterpress hexagon slow-carb XOXO. Migas fixie lomo, swag stumptown +1 put a bird on it wolf tilde PBR&B try-hard subway tile chicharrones typewriter.
+</p>,
+          "className": "app-description",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Readymade literally sartorial keytar narwhal, tofu everyday carry fingerstache vice whatever hashtag put a bird on it. Gastropub poutine helvetica, lyft letterpress hexagon slow-carb XOXO. Migas fixie lomo, swag stumptown +1 put a bird on it wolf tilde PBR&B try-hard subway tile chicharrones typewriter.",
+          },
+          "ref": null,
+          "rendered": "Readymade literally sartorial keytar narwhal, tofu everyday carry fingerstache vice whatever hashtag put a bird on it. Gastropub poutine helvetica, lyft letterpress hexagon slow-carb XOXO. Migas fixie lomo, swag stumptown +1 put a bird on it wolf tilde PBR&B try-hard subway tile chicharrones typewriter.",
+          "type": "p",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Sign in with Twitter",
+          "className": "twitter-button",
+          "href": "http://localhost:5000/twitter/login",
+        },
+        "ref": null,
+        "rendered": "Sign in with Twitter",
+        "type": "a",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="hero"
+>
+            <div
+                        className="overlay"
+            >
+                        <div
+                                    className="welcome-text"
+                        >
+                                    <h3>
+                                                Welcome to
+                                    </h3>
+                                    <h2>
+                                                <i
+                                                            className="fas fa-dove"
+                                                />
+                                                BeakSeeker
+                                    </h2>
+                        </div>
+            </div>
+</div>,
+          <div
+            className="app-description"
+>
+            <p>
+                        Readymade literally sartorial keytar narwhal, tofu everyday carry fingerstache vice whatever hashtag put a bird on it. Gastropub poutine helvetica, lyft letterpress hexagon slow-carb XOXO. Migas fixie lomo, swag stumptown +1 put a bird on it wolf tilde PBR&B try-hard subway tile chicharrones typewriter.
+            </p>
+</div>,
+          <a
+            className="twitter-button"
+            href="http://localhost:5000/twitter/login"
+>
+            Sign in with Twitter
+</a>,
+        ],
+        "className": "sign-in",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <div
+              className="overlay"
+>
+              <div
+                            className="welcome-text"
+              >
+                            <h3>
+                                          Welcome to
+                            </h3>
+                            <h2>
+                                          <i
+                                                        className="fas fa-dove"
+                                          />
+                                          BeakSeeker
+                            </h2>
+              </div>
+</div>,
+            "className": "hero",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <div
+                className="welcome-text"
+>
+                <h3>
+                                Welcome to
+                </h3>
+                <h2>
+                                <i
+                                                className="fas fa-dove"
+                                />
+                                BeakSeeker
+                </h2>
+</div>,
+              "className": "overlay",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h3>
+                    Welcome to
+</h3>,
+                  <h2>
+                    <i
+                                        className="fas fa-dove"
+                    />
+                    BeakSeeker
+</h2>,
+                ],
+                "className": "welcome-text",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Welcome to",
+                  },
+                  "ref": null,
+                  "rendered": "Welcome to",
+                  "type": "h3",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <i
+                        className="fas fa-dove"
+/>,
+                      "BeakSeeker",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "fas fa-dove",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "i",
+                    },
+                    "BeakSeeker",
+                  ],
+                  "type": "h2",
+                },
+              ],
+              "type": "div",
+            },
+            "type": "div",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <p>
+              Readymade literally sartorial keytar narwhal, tofu everyday carry fingerstache vice whatever hashtag put a bird on it. Gastropub poutine helvetica, lyft letterpress hexagon slow-carb XOXO. Migas fixie lomo, swag stumptown +1 put a bird on it wolf tilde PBR&B try-hard subway tile chicharrones typewriter.
+</p>,
+            "className": "app-description",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Readymade literally sartorial keytar narwhal, tofu everyday carry fingerstache vice whatever hashtag put a bird on it. Gastropub poutine helvetica, lyft letterpress hexagon slow-carb XOXO. Migas fixie lomo, swag stumptown +1 put a bird on it wolf tilde PBR&B try-hard subway tile chicharrones typewriter.",
+            },
+            "ref": null,
+            "rendered": "Readymade literally sartorial keytar narwhal, tofu everyday carry fingerstache vice whatever hashtag put a bird on it. Gastropub poutine helvetica, lyft letterpress hexagon slow-carb XOXO. Migas fixie lomo, swag stumptown +1 put a bird on it wolf tilde PBR&B try-hard subway tile chicharrones typewriter.",
+            "type": "p",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Sign in with Twitter",
+            "className": "twitter-button",
+            "href": "http://localhost:5000/twitter/login",
+          },
+          "ref": null,
+          "rendered": "Sign in with Twitter",
+          "type": "a",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
