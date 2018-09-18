@@ -1,13 +1,21 @@
 .bird-info {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 2rem; }
   .bird-info .main-content {
-    margin: 60px auto; }
+    margin: 59px auto; }
   .bird-info .bird-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 85vh;
-    overflow: scroll; }
+    width: 100%; }
+    .bird-info .bird-content .info {
+      width: 90%; }
+    .bird-info .bird-content img {
+      width: 100%; }
+    .bird-info .bird-content h3 {
+      margin: 0.5rem 0;
+      font-size: 1.8rem; }
+    .bird-info .bird-content p {
+      margin-top: 0; }
