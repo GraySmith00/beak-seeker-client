@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import Header from '../../components/Header/Header';
@@ -12,6 +13,23 @@ class PostTweet extends Component {
       tweetText: ''
     };
   }
+
+  componentDidMount() {
+    this.populateTweet();
+  }
+
+  populateTweet = () => {
+    const { currentUser, hotspots } = this.props;
+    const { comName, locationId } = currentUser.sightings[
+      currentUser.sightings.length - 1
+    ];
+
+    const { locName } = hotspots.find(hotspot => hotspot.locId === locationId);
+
+    const tweetText = `Just spotted a sweet ${comName} at ${locName} and logged it on @BeakSeeker!!!`;
+
+    this.setState({ tweetText });
+  };
 
   postTweet = async () => {
     const payload = {
@@ -51,19 +69,24 @@ class PostTweet extends Component {
             onChange={this.handleChange}
             type="text"
             name="tweetText"
-            rows="10"
-          >
-            {this.state.tweetText}
-          </textarea>
-          <button onClick={this.postTweet}>Tweet this</button>
+            rows="6"
+            value={this.state.tweetText}
+          />
+          <button onClick={this.postTweet}>Send Tweet</button>
         </form>
       </div>
     );
   }
 }
 
+PostTweet.propTypes = {
+  currentUser: PropTypes.object.isRequired,
+  hotspots: PropTypes.array.isRequired
+};
+
 const mapStateToProps = state => ({
-  currentUser: state.currentUser
+  currentUser: state.currentUser,
+  hotspots: state.hotspots
 });
 
 export default connect(mapStateToProps)(PostTweet);
