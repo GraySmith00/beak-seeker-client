@@ -1,14 +1,12 @@
 import React from 'react';
-import spinner from './spinner.gif';
+import birdLoader from './birdLoader.gif';
+
+import './LoadingSpinner.css';
 
 const LoadingSpinner = () => {
   return (
-    <div>
-      <img
-        src={spinner}
-        alt="Loading..."
-        style={{ width: '200px', margin: 'auto', display: 'block' }}
-      />
+    <div className="loading-spinner">
+      <img src={birdLoader} alt="Loading..." />
     </div>
   );
 };
