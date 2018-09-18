@@ -70,11 +70,9 @@ export class Routes extends Component {
 }
 
 Routes.propTypes = {
-  logout: PropTypes.func.isRequired
-};
-
-Routes.propTypes = {
-  currentUser: PropTypes.object
+  logout: PropTypes.func,
+  currentUser: PropTypes.object,
+  hotspots: PropTypes.array
 };
 
 const mapStateToProps = state => ({
