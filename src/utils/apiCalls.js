@@ -37,7 +37,6 @@ export const getMostActive = hotspots => {
   const mostActive = hotspots.sort((a, b) => {
     return b.birds.length - a.birds.length;
   });
-  console.log();
   return mostActive.slice(0, 10);
 };
 

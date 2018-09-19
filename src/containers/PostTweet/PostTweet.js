@@ -11,7 +11,8 @@ export class PostTweet extends Component {
   constructor() {
     super();
     this.state = {
-      tweetText: ''
+      tweetText: '',
+      error: ''
     };
   }
 
@@ -32,24 +33,21 @@ export class PostTweet extends Component {
     this.setState({ tweetText });
   };
 
-  postTweet = async () => {
+  postTweet = () => {
     const payload = {
       userId: this.props.currentUser._id,
       status: this.state.tweetText
     };
 
-    try {
-      await tweetPostRequest(payload);
-    } catch (error) {
-      console.log(error.message);
-    }
+    tweetPostRequest(payload);
   };
 
   handleSubmit = e => {
     e.preventDefault();
     this.postTweet();
     this.setState({
-      tweetText: ''
+      tweetText:
+        'Tweet sent! Tweet @BeakSeeker about another bird sighting if you want!'
     });
   };
 
@@ -65,6 +63,7 @@ export class PostTweet extends Component {
         <Header currentPage="Post Tweet" />
         <form onSubmit={this.handleSubmit} className="twitter-form">
           <textarea
+            className="text-box"
             onChange={this.handleChange}
             type="text"
             name="tweetText"
@@ -83,7 +82,7 @@ PostTweet.propTypes = {
   hotspots: PropTypes.array.isRequired
 };
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   currentUser: state.currentUser,
   hotspots: state.hotspots
 });

@@ -23,6 +23,7 @@
     border-radius: 5px;
     padding: 1rem;
     font-size: 1.5rem;
+    color: rgb(68, 68, 68);
   }
 
   button {
@@ -37,6 +38,7 @@
     border: none;
     outline: none;
     font-size: 1.5rem;
+    cursor: pointer;
 
     background: #00c6ff; /* fallback for old browsers */
     background: -webkit-linear-gradient(

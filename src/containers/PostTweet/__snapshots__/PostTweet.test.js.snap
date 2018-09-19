@@ -143,6 +143,7 @@ ShallowWrapper {
           onSubmit={[Function]}
 >
           <textarea
+                    className="text-box"
                     name="tweetText"
                     onChange={[Function]}
                     rows="6"
@@ -178,6 +179,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <textarea
+              className="text-box"
               name="tweetText"
               onChange={[Function]}
               rows="6"
@@ -200,6 +202,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
+              "className": "text-box",
               "name": "tweetText",
               "onChange": [Function],
               "rows": "6",
@@ -243,6 +246,7 @@ ShallowWrapper {
             onSubmit={[Function]}
 >
             <textarea
+                        className="text-box"
                         name="tweetText"
                         onChange={[Function]}
                         rows="6"
@@ -278,6 +282,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <textarea
+                className="text-box"
                 name="tweetText"
                 onChange={[Function]}
                 rows="6"
@@ -300,6 +305,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
+                "className": "text-box",
                 "name": "tweetText",
                 "onChange": [Function],
                 "rows": "6",

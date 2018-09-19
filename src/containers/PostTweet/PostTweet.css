@@ -18,7 +18,8 @@
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 5px;
     padding: 1rem;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    color: #444444; }
   .twitter-form button {
     padding: 1rem;
     text-decoration: none;
@@ -30,6 +31,7 @@
     border: none;
     outline: none;
     font-size: 1.5rem;
+    cursor: pointer;
     background: #00c6ff;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);

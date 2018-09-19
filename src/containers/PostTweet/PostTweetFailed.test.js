@@ -16,5 +16,10 @@ describe('PostTweet component', () => {
     );
   });
 
-  it.skip('should set the error state when the tweet post has been rejected', () => {});
+  it('should set the error state when the tweet post has been rejected', () => {
+    window.fetch = jest
+      .fn()
+      .mockImplementation(() => Promise.reject(new Error('failed to fetch')));
+    expect(wrapper.state().error).toEqual('');
+  });
 });
