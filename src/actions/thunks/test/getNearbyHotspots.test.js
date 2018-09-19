@@ -5,10 +5,7 @@ import {
   getMostActive
 } from '../../../utils/apiCalls';
 
-import * as actions from '../../hotspotActions';
-import { mockMostActive } from './mockThunksData';
 import { getNearbyHotspots } from '../getNearbyHotspots';
-import thunk from 'redux-thunk';
 
 jest.mock('../../../utils/apiCalls');
 
@@ -54,7 +51,7 @@ describe('getNearbyHotspots', () => {
       })
     );
 
-    const thunk = getNearbyHotspots();
+    thunk = getNearbyHotspots();
     await thunk(mockDispatch);
 
     expect(mockDispatch).toHaveBeenCalled();

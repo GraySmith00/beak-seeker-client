@@ -52,7 +52,7 @@ export class BirdInfo extends Component {
           {birdImage ? (
             <img src={birdImage} alt="bird" />
           ) : (
-            <p>
+            <p className="not-found-text">
               Sorry, we could not find an image of this bird at this time :(
             </p>
           )}
@@ -78,7 +78,7 @@ BirdInfo.propTypes = {
   speciesCode: PropTypes.string.isRequired
 };
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   hotspots: state.hotspots
 });
 

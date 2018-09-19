@@ -10,12 +10,19 @@ import Header from '../../components/Header/Header';
 import './Home.css';
 
 export class Home extends Component {
+  constructor() {
+    super();
+    this.state = {
+      error: ''
+    };
+  }
+
   async componentDidMount() {
     const id = window.location.search.slice(4);
     try {
       await this.props.setCurrentUser(id);
     } catch (error) {
-      console.log(error.message);
+      this.setState({ error: error.message });
     }
   }
 

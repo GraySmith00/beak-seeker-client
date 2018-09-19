@@ -2,9 +2,7 @@ import {
   mockPosition,
   mockHotspots,
   mockHotspotsWithBirds,
-  mockMostActive,
-  mockBirdImage,
-  mockGetBirdInfo
+  mockMostActive
 } from './mockApiCallsData';
 
 export const getPosition = jest

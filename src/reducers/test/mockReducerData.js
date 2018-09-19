@@ -109,9 +109,24 @@ export const mockUser = {
 
 export const mockSightings = [
   { _id: 1537200989704, locationId: 'L1743685', speciesCode: 'norsho' },
-  { _id: 1537202195031, locationId: 'L1743685', speciesCode: 'moudov' },
-  { _id: 1537203456306, locationId: 'L1743685', speciesCode: 'cangoo' },
-  { _id: 1537228328356, locationId: 'L1743685', speciesCode: 'gadwal' }
+  {
+    _id: 1537202195031,
+    locationId: 'L1743685',
+    speciesCode: 'moudov',
+    comName: 'Canada Goose'
+  },
+  {
+    _id: 1537203456306,
+    locationId: 'L1743685',
+    speciesCode: 'cangoo',
+    comName: 'Canada Goose'
+  },
+  {
+    _id: 1537228328356,
+    locationId: 'L1743685',
+    speciesCode: 'gadwal',
+    comName: 'Canada Goose'
+  }
 ];
 
 export const mockNewSighting = {

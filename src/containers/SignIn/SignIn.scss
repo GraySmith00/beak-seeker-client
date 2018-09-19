@@ -36,8 +36,6 @@
   }
 
   .app-description {
-    position: absolute;
-    top: 30%;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.75);
     width: 75%;
@@ -48,7 +46,8 @@
 
   .twitter-button {
     padding: 1rem;
-    margin: 5rem auto;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
     text-decoration: none;
     width: 75%;
     text-align: center;

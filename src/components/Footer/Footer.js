@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 import './Footer.css';
 
-const Footer = props => {
+const Footer = () => {
   return (
     <footer className="footer">
       <NavLink exact to={'/home'} className="nav-link">

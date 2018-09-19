@@ -1,14 +1,6 @@
-import {
-  getPosition,
-  getHotspotData,
-  getHotspotBirds,
-  getMostActive
-} from '../../../utils/apiCalls';
-
 import * as actions from '../../hotspotActions';
-import { mockMostActive } from './mockThunksData';
+
 import { getNearbyHotspots } from '../getNearbyHotspots';
-import thunk from 'redux-thunk';
 
 describe('getNearbyHotspots', () => {
   let mockDispatch;
@@ -24,7 +16,7 @@ describe('getNearbyHotspots', () => {
     //   .fn()
     //   .mockImplementation(() => Promise.reject(new Error('failed to fetch')));
 
-    const thunk = getNearbyHotspots();
+    thunk = getNearbyHotspots();
     await thunk(mockDispatch);
 
     expect(mockDispatch).toHaveBeenCalledWith(actions.hotspotsErrored(true));

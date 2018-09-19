@@ -7,6 +7,7 @@ export const toggleBirdSighting = ({
   comName
 }) => async dispatch => {
   // create and add a new sighting to state
+
   const newSighting = {
     _id: Date.now(),
     locationId,
@@ -50,6 +51,6 @@ export const toggleBirdSighting = ({
       }
     });
   } catch (error) {
-    console.log(error.message);
+    return error.message;
   }
 };

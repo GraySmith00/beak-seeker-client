@@ -1,7 +1,6 @@
 import { setCurrentUser } from '../setCurrentUser';
 import * as actions from '../../userActions';
 import { mockUserWithSightings } from './mockThunksData';
-import thunk from 'redux-thunk';
 
 describe('setCurrentUser thunk', () => {
   let mockDispatch;
@@ -19,7 +18,7 @@ describe('setCurrentUser thunk', () => {
       })
     );
 
-    const thunk = setCurrentUser(mockUserWithSightings._id);
+    thunk = setCurrentUser(mockUserWithSightings._id);
     await thunk(mockDispatch);
 
     expect(mockDispatch).toHaveBeenCalledWith(

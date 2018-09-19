@@ -19,11 +19,10 @@ class SignIn extends Component {
         </div>
         <div className="app-description">
           <p>
-            Readymade literally sartorial keytar narwhal, tofu everyday carry
-            fingerstache vice whatever hashtag put a bird on it. Gastropub
-            poutine helvetica, lyft letterpress hexagon slow-carb XOXO. Migas
-            fixie lomo, swag stumptown +1 put a bird on it wolf tilde PBR&B
-            try-hard subway tile chicharrones typewriter.
+            BeakSeeker is the most fun way to go birding! Find the best local
+            hotspots. See which birds have been recently seen in your area. Earn
+            badges for spotting birds and compete against your fellow birders to
+            see who is the ultimate beak seeker!
           </p>
         </div>
         <a

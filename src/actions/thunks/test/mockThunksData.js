@@ -1,6 +1,11 @@
 export const mockUserWithSightings = {
   sightings: [
-    { _id: 1537200989704, locationId: 'L1743685', speciesCode: 'norsho' }
+    {
+      _id: 1537200989704,
+      locationId: 'L1743685',
+      speciesCode: 'norsho',
+      comName: 'Northern shoveler'
+    }
   ],
   _id: '5b98223ce17b1dbfc1b26ada',
   email: 'greg.smith00@gmail.com',

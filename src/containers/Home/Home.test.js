@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Home, mapDispatchToProps } from './Home';
-import { setCurrentUser } from '../../actions/thunks/setCurrentUser';
+
 import { mockUser } from './mockHomeData';
 
 jest.mock('../../actions/thunks/setCurrentUser');
@@ -19,16 +19,18 @@ describe('Home component', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should dispatch setCurrentUser using a function from mapDispatchToProps', async () => {
-    // setup
-    const mockDispatch = jest.fn();
-    const acitonToDispatch = setCurrentUser(mockUser._id);
+  describe('mapDispatchToProps', () => {
+    it('should dispatch setCurrentUser using a function from mapDispatchToProps', async () => {
+      // setup
+      const mockDispatch = jest.fn();
+      const acitonToDispatch = setCurrentUser(mockUser._id);
 
-    // expectution
-    const mappedProps = mapDispatchToProps(mockDispatch);
-    mappedProps.setCurrentUser(mockUser._id);
+      // expectution
+      const mappedProps = mapDispatchToProps(mockDispatch);
+      mappedProps.setCurrentUser(mockUser._id);
 
-    // expectation
-    expect(mockDispatch).toHaveBeenCalledWith(acitonToDispatch);
+      // expectation
+      expect(mockDispatch).toHaveBeenCalledWith(acitonToDispatch);
+    });
   });
 });

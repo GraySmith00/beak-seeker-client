@@ -14,7 +14,8 @@ export class HotspotsList extends Component {
   constructor() {
     super();
     this.state = {
-      loading: true
+      loading: true,
+      error: ''
     };
   }
 
@@ -25,7 +26,7 @@ export class HotspotsList extends Component {
       try {
         await this.props.getNearbyHotspots();
       } catch (error) {
-        console.log(error);
+        this.setState({ error: error.message });
       }
     }
 
