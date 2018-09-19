@@ -20,7 +20,7 @@ class SignIn extends Component {
         <div className="app-description">
           <p>
             BeakSeeker is the most fun way to go birding! Find the best local
-            hotspots. See which birds have been recently in your area. Earn
+            hotspots. See which birds have been recently seen in your area. Earn
             badges for spotting birds and compete against your fellow birders to
             see who is the ultimate beak seeker!
           </p>
