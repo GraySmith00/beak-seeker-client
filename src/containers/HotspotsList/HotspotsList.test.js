@@ -7,7 +7,6 @@ import {
   mapDispatchToProps
 } from './HotspotsList';
 import { mockHotspots } from './mockHotspotsListData';
-import { getNearbyHotspots } from '../../actions/thunks/getNearbyHotspots';
 
 describe('HotspotsList component', () => {
   let wrapper;

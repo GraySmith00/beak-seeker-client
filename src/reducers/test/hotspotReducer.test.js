@@ -1,8 +1,4 @@
-import {
-  hotspotsLoadingReducer,
-  hotspotsErroredReducer,
-  hotspotReducer
-} from '../hotspotReducer';
+import { hotspotsErroredReducer, hotspotReducer } from '../hotspotReducer';
 import * as actions from '../../actions/hotspotActions';
 import { mockHotspots } from './mockReducerData';
 

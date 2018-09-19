@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Home, mapDispatchToProps } from './Home';
-import { setCurrentUser } from '../../actions/thunks/setCurrentUser';
+
 import { mockUser } from './mockHomeData';
 
 jest.mock('../../actions/thunks/setCurrentUser');

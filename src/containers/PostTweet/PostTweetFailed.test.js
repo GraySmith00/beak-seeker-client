@@ -3,7 +3,6 @@ import { shallow } from 'enzyme';
 
 import { PostTweet } from './PostTweet';
 import { mockUserWithSightings, mockHotspots } from './mockPostTweetData';
-import { tweetPostRequest } from '../../utils/apiCalls';
 
 jest.mock('../../utils/apiCalls');
 

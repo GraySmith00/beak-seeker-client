@@ -10,7 +10,7 @@ describe('userReducer', () => {
   it('should return the initial state', () => {
     const expected = null;
     const result = userReducer(undefined, {});
-    expect(result).toEqual(null);
+    expect(result).toEqual(expected);
   });
 
   it('should return the proper state if a new user is set', () => {
@@ -38,6 +38,6 @@ describe('userReducer', () => {
       actions.toggleBirdSightingState([mockNewSighting])
     );
 
-    expect(result).toEqual(mockUserWithSightings);
+    expect(result).toEqual(expected);
   });
 });
