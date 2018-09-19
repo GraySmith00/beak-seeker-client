@@ -19,16 +19,18 @@ describe('Home component', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it('should dispatch setCurrentUser using a function from mapDispatchToProps', async () => {
-    // setup
-    const mockDispatch = jest.fn();
-    const acitonToDispatch = setCurrentUser(mockUser._id);
+  describe('mapDispatchToProps', () => {
+    it('should dispatch setCurrentUser using a function from mapDispatchToProps', async () => {
+      // setup
+      const mockDispatch = jest.fn();
+      const acitonToDispatch = setCurrentUser(mockUser._id);
 
-    // expectution
-    const mappedProps = mapDispatchToProps(mockDispatch);
-    mappedProps.setCurrentUser(mockUser._id);
+      // expectution
+      const mappedProps = mapDispatchToProps(mockDispatch);
+      mappedProps.setCurrentUser(mockUser._id);
 
-    // expectation
-    expect(mockDispatch).toHaveBeenCalledWith(acitonToDispatch);
+      // expectation
+      expect(mockDispatch).toHaveBeenCalledWith(acitonToDispatch);
+    });
   });
 });
