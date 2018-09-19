@@ -10,7 +10,7 @@
   .hotspot .main-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding-top: 4.5rem;
     width: 80%; }

@@ -40,6 +40,18 @@ describe('Hotspot component', () => {
 
       expect(mappedProps).toEqual(expected);
     });
+
+    it('should return an object with a currentUser object', () => {
+      const mockStore = {
+        currentUser: mockCurrentUser
+      };
+      const expected = {
+        currentUser: mockCurrentUser
+      };
+
+      const mappedProps = mapStateToProps(mockStore);
+      expect(mappedProps).toEqual(expected);
+    });
   });
 
   describe('mapDispatchToProps', () => {
