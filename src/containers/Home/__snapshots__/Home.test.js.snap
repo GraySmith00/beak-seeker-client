@@ -19,9 +19,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-
         <withRouter()
-
           currentPage={
                     <p>
                               <i
@@ -190,9 +188,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-
           <withRouter()
-
             currentPage={
                         <p>
                                     <i
