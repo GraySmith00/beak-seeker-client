@@ -42,7 +42,7 @@ ShallowWrapper {
           className="app-description"
 >
           <p>
-                    BeakSeeker is the most fun way to go birding! Find the best local hotspots. See which birds have been recently in your area. Earn badges for spotting birds and compete against your fellow birders to see who is the ultimate beak seeker!
+                    BeakSeeker is the most fun way to go birding! Find the best local hotspots. See which birds have been recently seen in your area. Earn badges for spotting birds and compete against your fellow birders to see who is the ultimate beak seeker!
           </p>
 </div>,
         <a
@@ -175,7 +175,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <p>
-            BeakSeeker is the most fun way to go birding! Find the best local hotspots. See which birds have been recently in your area. Earn badges for spotting birds and compete against your fellow birders to see who is the ultimate beak seeker!
+            BeakSeeker is the most fun way to go birding! Find the best local hotspots. See which birds have been recently seen in your area. Earn badges for spotting birds and compete against your fellow birders to see who is the ultimate beak seeker!
 </p>,
           "className": "app-description",
         },
@@ -185,10 +185,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "BeakSeeker is the most fun way to go birding! Find the best local hotspots. See which birds have been recently in your area. Earn badges for spotting birds and compete against your fellow birders to see who is the ultimate beak seeker!",
+            "children": "BeakSeeker is the most fun way to go birding! Find the best local hotspots. See which birds have been recently seen in your area. Earn badges for spotting birds and compete against your fellow birders to see who is the ultimate beak seeker!",
           },
           "ref": null,
-          "rendered": "BeakSeeker is the most fun way to go birding! Find the best local hotspots. See which birds have been recently in your area. Earn badges for spotting birds and compete against your fellow birders to see who is the ultimate beak seeker!",
+          "rendered": "BeakSeeker is the most fun way to go birding! Find the best local hotspots. See which birds have been recently seen in your area. Earn badges for spotting birds and compete against your fellow birders to see who is the ultimate beak seeker!",
           "type": "p",
         },
         "type": "div",
@@ -241,7 +241,7 @@ ShallowWrapper {
             className="app-description"
 >
             <p>
-                        BeakSeeker is the most fun way to go birding! Find the best local hotspots. See which birds have been recently in your area. Earn badges for spotting birds and compete against your fellow birders to see who is the ultimate beak seeker!
+                        BeakSeeker is the most fun way to go birding! Find the best local hotspots. See which birds have been recently seen in your area. Earn badges for spotting birds and compete against your fellow birders to see who is the ultimate beak seeker!
             </p>
 </div>,
           <a
@@ -374,7 +374,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <p>
-              BeakSeeker is the most fun way to go birding! Find the best local hotspots. See which birds have been recently in your area. Earn badges for spotting birds and compete against your fellow birders to see who is the ultimate beak seeker!
+              BeakSeeker is the most fun way to go birding! Find the best local hotspots. See which birds have been recently seen in your area. Earn badges for spotting birds and compete against your fellow birders to see who is the ultimate beak seeker!
 </p>,
             "className": "app-description",
           },
@@ -384,10 +384,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "BeakSeeker is the most fun way to go birding! Find the best local hotspots. See which birds have been recently in your area. Earn badges for spotting birds and compete against your fellow birders to see who is the ultimate beak seeker!",
+              "children": "BeakSeeker is the most fun way to go birding! Find the best local hotspots. See which birds have been recently seen in your area. Earn badges for spotting birds and compete against your fellow birders to see who is the ultimate beak seeker!",
             },
             "ref": null,
-            "rendered": "BeakSeeker is the most fun way to go birding! Find the best local hotspots. See which birds have been recently in your area. Earn badges for spotting birds and compete against your fellow birders to see who is the ultimate beak seeker!",
+            "rendered": "BeakSeeker is the most fun way to go birding! Find the best local hotspots. See which birds have been recently seen in your area. Earn badges for spotting birds and compete against your fellow birders to see who is the ultimate beak seeker!",
             "type": "p",
           },
           "type": "div",
