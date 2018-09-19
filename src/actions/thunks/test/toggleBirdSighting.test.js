@@ -35,7 +35,6 @@ describe('toggleBirdSighting thunk', () => {
       comName: 'Northern shoveler'
     });
     await thunk(mockDispatch);
-
     expect(mockDispatch).toHaveBeenCalled();
   });
 });
