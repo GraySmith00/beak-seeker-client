@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import { setCurrentUser } from '../../actions/thunks/setCurrentUser';
+import { getUser } from '../../utils/apiCalls';
 
 import Header from '../../components/Header/Header';
 
@@ -13,7 +14,8 @@ export class Home extends Component {
   constructor() {
     super();
     this.state = {
-      error: ''
+      error: '',
+      user: {}
     };
   }
 
@@ -21,16 +23,27 @@ export class Home extends Component {
     const id = window.location.search.slice(4);
     try {
       await this.props.setCurrentUser(id);
+      const user = await getUser(id);
+      this.setState({ user });
     } catch (error) {
       this.setState({ error: error.message });
     }
   }
 
   render() {
+    const { user } = this.state;
     return (
       <div className="home">
         <Header currentPage="Home" />
         <main className="main-content">
+          {user && (
+            <section>
+              <div className="greeting">
+                <img src={user.image} alt="" />
+              </div>
+              <h2>{`Welcome Back ${user.username}`}</h2>
+            </section>
+          )}
           <NavLink to="/hotspots" className="nav-link">
             <i className="fas fa-map-marked-alt" /> Nearby Hotspots
           </NavLink>

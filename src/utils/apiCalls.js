@@ -94,3 +94,10 @@ export const getLeaderboard = async () => {
   const leaderboard = users.sort((a, b) => b.numSightings - a.numSightings);
   return leaderboard;
 };
+
+export const getUser = async id => {
+  const url = `http://localhost:5000/api/users/${id}`;
+  const response = await fetch(url);
+  const user = await response.json();
+  return user;
+};

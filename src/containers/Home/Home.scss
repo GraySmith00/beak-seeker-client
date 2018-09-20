@@ -15,10 +15,22 @@
     align-items: center;
     justify-content: center;
 
-    margin-top: 80px;
+    margin-top: 90px;
 
     overflow: scroll;
     width: 100%;
+  }
+
+  .greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .greeting img {
+    width: 100px;
+    border-radius: 50%;
   }
 
   .nav-link {
