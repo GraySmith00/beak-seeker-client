@@ -27,14 +27,9 @@ export class Home extends Component {
   }
 
   render() {
-    const currentPage = (
-      <p>
-        <i className="fas fa-home" /> Home
-      </p>
-    );
     return (
       <div className="home">
-        <Header currentPage={currentPage} />
+        <Header currentPage="Home" />
         <main className="main-content">
           <NavLink to="/hotspots" className="nav-link">
             <i className="fas fa-map-marked-alt" /> Nearby Hotspots
