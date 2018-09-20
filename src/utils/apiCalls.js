@@ -83,13 +83,14 @@ export const tweetPostRequest = async payload => {
   return response;
 };
 
-// export const dashCaseNameHelper = name => {
-//   return name
-//     .split('(')
-//     .join('')
-//     .split(')')
-//     .join('')
-//     .split(' ')
-//     .join('-')
-//     .toLowerCase();
-// };
+export const getLeaderboard = async () => {
+  const url = 'http://localhost:5000/api/users';
+  const response = await fetch(url);
+  let users = await response.json();
+  users = users.map(user => ({
+    name: user.username,
+    numSightings: user.sightings.length
+  }));
+  const leaderboard = users.sort((a, b) => b.numSightings - a.numSightings);
+  return leaderboard;
+};
