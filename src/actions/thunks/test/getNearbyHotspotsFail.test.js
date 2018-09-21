@@ -12,10 +12,6 @@ describe('getNearbyHotspots', () => {
   });
 
   it('should dispatch hasErrored(true) if the response is not ok', async () => {
-    // window.fetch = jest
-    //   .fn()
-    //   .mockImplementation(() => Promise.reject(new Error('failed to fetch')));
-
     thunk = getNearbyHotspots();
     await thunk(mockDispatch);
 

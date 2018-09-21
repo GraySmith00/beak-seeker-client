@@ -1,12 +1,12 @@
-.hotspot {
+.leaderboard {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 2rem;
   height: 100%;
-  background: url('./birdBackground4.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('./birdBackground6.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: top center;
 
   .main-content {
@@ -15,26 +15,27 @@
     align-items: flex-start;
     justify-content: center;
 
-    padding-top: 7rem;
+    padding-top: 4.5rem;
     width: 80%;
-    height: 100%;
   }
 
-  .birds {
+  .leader-table {
     width: 100%;
   }
 
-  .bird {
+  .leader-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     margin: 0.5rem auto;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
 
     width: 100%;
     background: rgba(0, 0, 0, 0.75);
     border-radius: 5px;
+
+    color: #fff;
 
     -webkit-box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.43);
     -moz-box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.43);
@@ -42,8 +43,6 @@
   }
 
   .bird-link {
-    text-decoration: none;
-    color: #fff;
   }
 
   .checkbox-input {

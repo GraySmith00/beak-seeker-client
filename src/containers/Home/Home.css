@@ -5,16 +5,26 @@
   margin-bottom: 2rem;
   background: url("./birdBackground2.jpg");
   background-size: cover;
-  background-position: top center;
+  background-repeat: no-repeat;
+  background-position: bottom center;
   height: 100%; }
   .home .main-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 90px;
     overflow: scroll;
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
+  .home .greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .home .greeting img {
+    width: 100px;
+    border-radius: 50%; }
   .home .nav-link {
     display: flex;
     align-items: center;

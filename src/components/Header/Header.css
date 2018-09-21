@@ -14,3 +14,8 @@
     left: 20px;
     font-size: 1.8rem;
     cursor: pointer; }
+  .header h3 {
+    display: flex;
+    align-items: center; }
+  .header i {
+    margin-right: 1rem; }

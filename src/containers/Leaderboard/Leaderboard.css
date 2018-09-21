@@ -1,81 +1,52 @@
-.hotspot {
+.leaderboard {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 2rem;
   height: 100%;
-  background: url('./birdBackground4.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./birdBackground6.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-
-  .main-content {
+  background-position: top center; }
+  .leaderboard .main-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-
-    padding-top: 7rem;
-    width: 80%;
-    height: 100%;
-  }
-
-  .birds {
-    width: 100%;
-  }
-
-  .bird {
+    padding-top: 4.5rem;
+    width: 80%; }
+  .leaderboard .leader-table {
+    width: 100%; }
+  .leaderboard .leader-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     margin: 0.5rem auto;
-    padding: 0.5rem;
-
+    padding: 0.5rem 1rem;
     width: 100%;
     background: rgba(0, 0, 0, 0.75);
     border-radius: 5px;
-
+    color: #fff;
     -webkit-box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.43);
     -moz-box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.43);
-    box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.43);
-  }
-
-  .bird-link {
-    text-decoration: none;
-    color: #fff;
-  }
-
-  .checkbox-input {
+    box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.43); }
+  .leaderboard .checkbox-input {
     transform: scale(1.5);
-    border: none;
-  }
-
-  .twitter-button {
+    border: none; }
+  .leaderboard .twitter-button {
     padding: 1rem;
     text-decoration: none;
     margin-top: 1.5rem;
     margin-bottom: 6rem;
     width: 100%;
     text-align: center;
-
     border-radius: 5px;
     color: #fff;
-
-    background: #00c6ff; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #0072ff,
-      #00c6ff
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #0072ff,
-      #00c6ff
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #00c6ff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     -webkit-box-shadow: 10px 10px 43px -8px rgba(0, 0, 0, 0.43);
     -moz-box-shadow: 10px 10px 43px -8px rgba(0, 0, 0, 0.43);
-    box-shadow: 10px 10px 43px -8px rgba(0, 0, 0, 0.43);
-  }
-}
+    box-shadow: 10px 10px 43px -8px rgba(0, 0, 0, 0.43); }
