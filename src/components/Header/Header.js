@@ -45,6 +45,14 @@ export const Header = ({ currentPage, history }) => {
       );
       break;
 
+    case 'Post Tweet':
+      displayCurrentPage = (
+        <span>
+          <i className="fab fa-twitter" /> Post Tweet
+        </span>
+      );
+      break;
+
     default:
       break;
   }

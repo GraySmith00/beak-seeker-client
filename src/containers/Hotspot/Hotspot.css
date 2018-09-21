@@ -6,6 +6,7 @@
   height: 100%;
   background: url("./birdBackground4.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: top center; }
   .hotspot .main-content {
     display: flex;
@@ -13,7 +14,8 @@
     align-items: flex-start;
     justify-content: center;
     padding-top: 7rem;
-    width: 80%; }
+    width: 80%;
+    height: 100%; }
   .hotspot .birds {
     width: 100%; }
   .hotspot .bird {

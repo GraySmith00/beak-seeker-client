@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  background-color: #fff; }
   .bird-info .main-content {
     margin: 59px auto; }
   .bird-info .bird-content {

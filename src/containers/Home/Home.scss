@@ -6,7 +6,8 @@
   margin-bottom: 2rem;
   background: url('./birdBackground2.jpg');
   background-size: cover;
-  background-position: top center;
+  background-repeat: no-repeat;
+  background-position: bottom center;
   height: 100%;
 
   .main-content {
@@ -19,6 +20,7 @@
 
     overflow: scroll;
     width: 100%;
+    height: 100%;
   }
 
   .greeting {
