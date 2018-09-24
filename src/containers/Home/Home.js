@@ -21,17 +21,22 @@ export class Home extends Component {
 
   async componentDidMount() {
     const id = window.location.search.slice(4);
-    try {
-      await this.props.setCurrentUser(id);
-      const user = await getUser(id);
-      this.setState({ user });
-    } catch (error) {
-      this.setState({ error: error.message });
+
+    if (this.props.currentUser) {
+      this.setState({ user: this.props.currentUser });
+    } else {
+      try {
+        await this.props.setCurrentUser(id);
+        const user = await getUser(id);
+        this.setState({ user });
+      } catch (error) {
+        this.setState({ error: error.message });
+      }
     }
   }
 
   render() {
-    const { user } = this.state;
+    const user = this.state.user;
     return (
       <div className="home">
         <Header currentPage="Home" />
@@ -60,14 +65,19 @@ export class Home extends Component {
 }
 
 Home.propTypes = {
-  setCurrentUser: PropTypes.func.isRequired
+  setCurrentUser: PropTypes.func.isRequired,
+  currentUser: PropTypes.object
 };
+
+export const mapStateToProps = state => ({
+  currentUser: state.currentUser
+});
 
 export const mapDispatchToProps = dispatch => ({
   setCurrentUser: id => dispatch(setCurrentUser(id))
 });
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(Home);
