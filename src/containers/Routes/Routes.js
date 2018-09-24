@@ -13,6 +13,7 @@ import Hotspot from '../Hotspot/Hotspot';
 import BirdInfo from '../BirdInfo/BirdInfo';
 import PostTweet from '../PostTweet/PostTweet';
 import Footer from '../../components/Footer/Footer';
+import MyHotspots from '../MyHotspots/MyHotspots';
 
 export class Routes extends Component {
   render() {
@@ -63,6 +64,7 @@ export class Routes extends Component {
             }}
           />
           {currentUser && <Footer />}
+          <Route exact path="/myhotspots" component={MyHotspots} />
         </Fragment>
       </Router>
     );
