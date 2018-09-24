@@ -50,6 +50,9 @@ export class Home extends Component {
           <NavLink to="/leaderboard" className="nav-link">
             <i className="fas fa-trophy" /> Leaderboard
           </NavLink>
+          <NavLink to="/myhotspots" className="nav-link">
+            <i className="fas fa-fire" /> My Hotspots
+          </NavLink>
         </main>
       </div>
     );
