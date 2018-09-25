@@ -7,6 +7,7 @@ import { getNearbyHotspots } from '../../actions/thunks/getNearbyHotspots';
 
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
 import Header from '../../components/Header/Header';
+import HotspotsMap from '../HotspotsMap/HotspotsMap';
 
 import './HotspotsList.css';
 
@@ -54,6 +55,7 @@ export class HotspotsList extends Component {
     return (
       <div className="hotspots-list">
         <Header currentPage="Nearby Hotspots" />
+        <HotspotsMap />
         <main className="main-content">{displayHotspotLinks}</main>
       </div>
     );
