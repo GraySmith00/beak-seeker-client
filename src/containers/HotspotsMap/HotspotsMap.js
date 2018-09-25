@@ -28,21 +28,30 @@ class HotspotsMap extends Component {
       left: '-50%'
     };
 
-    const { location, google } = this.props;
+    const { location, google, hotspots } = this.props;
+
+    const displayMarkers = hotspots.map((hotspot, i) => (
+      <Marker
+        key={`${hotspot.locId}-${i}`}
+        title={'The marker`s title will appear as a tooltip.'}
+        name={hotspot.locName}
+        position={{ lat: hotspot.lat, lng: hotspot.lng }}
+      />
+    ));
 
     return (
       <div>
         {location && (
           <Map
             google={google}
-            zoom={12}
+            zoom={11}
             style={style}
             initialCenter={{
               lat: location.latitude,
               lng: location.longitude
             }}
           >
-            <Marker onClick={this.onMarkerClick} name={'Current location'} />
+            {displayMarkers}
             <InfoWindow onClose={this.onInfoWindowClose}>
               <div>
                 <h1>San Francisco</h1>

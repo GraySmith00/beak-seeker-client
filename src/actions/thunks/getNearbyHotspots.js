@@ -18,6 +18,6 @@ export const getNearbyHotspots = () => async dispatch => {
 
     dispatch(hotspotsSuccess(mostActive));
   } catch (error) {
-    dispatch(hotspotsErrored(true));
+    dispatch(hotspotsErrored(error.message));
   }
 };
