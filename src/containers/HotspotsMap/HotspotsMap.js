@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
+import { connect } from 'react-redux';
 import './HotspotsMap.css';
 
 class HotspotsMap extends Component {
-  // componentDidMount() {
-  //   this.renderMap();
-  // }
-
   // renderMap = () => {
   //   const url = `https://maps.googleapis.com/maps/api/js?key=${
   //     process.env.REACT_APP_MAP_KEY
@@ -30,26 +27,38 @@ class HotspotsMap extends Component {
       top: '60px',
       left: '-50%'
     };
+
+    const { location, google } = this.props;
+
     return (
-      <Map
-        google={this.props.google}
-        zoom={12}
-        style={style}
-        initialCenter={{
-          lat: 40.854885,
-          lng: -88.081807
-        }}
-      >
-        <Marker onClick={this.onMarkerClick} name={'Current location'} />
-        <InfoWindow onClose={this.onInfoWindowClose}>
-          <div>
-            <h1>San Francisco</h1>
-          </div>
-        </InfoWindow>
-      </Map>
+      <div>
+        {location && (
+          <Map
+            google={google}
+            zoom={12}
+            style={style}
+            initialCenter={{
+              lat: location.latitude,
+              lng: location.longitude
+            }}
+          >
+            <Marker onClick={this.onMarkerClick} name={'Current location'} />
+            <InfoWindow onClose={this.onInfoWindowClose}>
+              <div>
+                <h1>San Francisco</h1>
+              </div>
+            </InfoWindow>
+          </Map>
+        )}
+      </div>
     );
   }
 }
+
+export const mapStateToProps = state => ({
+  hotspots: state.hotspots,
+  location: state.location
+});
 
 // function loadScript(url) {
 //   const index = window.document.getElementsByTagName('script')[0];
@@ -62,4 +71,4 @@ class HotspotsMap extends Component {
 
 export default GoogleApiWrapper({
   apiKey: process.env.REACT_APP_MAP_KEY
-})(HotspotsMap);
+})(connect(mapStateToProps)(HotspotsMap));
