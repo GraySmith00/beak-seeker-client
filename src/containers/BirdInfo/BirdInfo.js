@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { getBirdImage, getBirdInfo } from '../../utils/apiCalls';
-import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner';
+import LoadingSpinner2 from '../../components/LoadingSpinner2/LoadingSpinner2';
 import { connect } from 'react-redux';
 
 import Header from '../../components/Header/Header';
@@ -45,7 +45,7 @@ export class BirdInfo extends Component {
     let birdContent;
 
     if (loading) {
-      birdContent = <LoadingSpinner />;
+      birdContent = <LoadingSpinner2 />;
     } else {
       birdContent = (
         <div className="bird-content">

@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  position: relative;
   overflow: scroll;
   background: url('./beachBirds.jpg');
   background-size: cover;
@@ -13,7 +15,7 @@
     align-items: center;
     justify-content: center;
 
-    margin-top: 70px;
+    margin-top: 375px;
 
     width: 100%;
   }
