@@ -13,8 +13,7 @@ class HotspotsMap extends Component {
     };
   }
 
-  onMarkerClick = (props, marker, e) => {
-    console.log(marker);
+  onMarkerClick = (props, marker) => {
     this.setState({
       selectedPlace: props,
       activeMarker: marker,
