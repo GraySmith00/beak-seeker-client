@@ -4,21 +4,32 @@ import { connect } from 'react-redux';
 import './HotspotsMap.css';
 
 class HotspotsMap extends Component {
-  // renderMap = () => {
-  //   const url = `https://maps.googleapis.com/maps/api/js?key=${
-  //     process.env.REACT_APP_MAP_KEY
-  //   }&callback=initMap`;
-  //   loadScript(url);
-  //   window.initMap = this.initMap;
-  // };
+  constructor() {
+    super();
+    this.state = {
+      showingInfoWindow: false,
+      activeMarker: {},
+      selectedPlace: {}
+    };
+  }
 
-  // initMap = () => {
-  //   const map = new window.google.maps.Map(document.getElementById('map'), {
-  //     center: { lat: -34.397, lng: 150.644 },
-  //     zoom: 8
-  //   });
-  //   return map;
-  // };
+  onMarkerClick = (props, marker, e) => {
+    console.log(marker);
+    this.setState({
+      selectedPlace: props,
+      activeMarker: marker,
+      showingInfoWindow: true
+    });
+  };
+
+  onMapClicked = props => {
+    if (this.state.showingInfoWindow) {
+      this.setState({
+        showingInfoWindow: false,
+        activeMarker: null
+      });
+    }
+  };
 
   render() {
     const style = {
@@ -36,6 +47,7 @@ class HotspotsMap extends Component {
         title={'The marker`s title will appear as a tooltip.'}
         name={hotspot.locName}
         position={{ lat: hotspot.lat, lng: hotspot.lng }}
+        onClick={this.onMarkerClick}
       />
     ));
 
@@ -52,9 +64,12 @@ class HotspotsMap extends Component {
             }}
           >
             {displayMarkers}
-            <InfoWindow onClose={this.onInfoWindowClose}>
+            <InfoWindow
+              marker={this.state.activeMarker}
+              visible={this.state.showingInfoWindow}
+            >
               <div>
-                <h1>San Francisco</h1>
+                <h5>{this.state.selectedPlace.name}</h5>
               </div>
             </InfoWindow>
           </Map>
@@ -68,15 +83,6 @@ export const mapStateToProps = state => ({
   hotspots: state.hotspots,
   location: state.location
 });
-
-// function loadScript(url) {
-//   const index = window.document.getElementsByTagName('script')[0];
-//   const script = window.document.createElement('script');
-//   script.src = url;
-//   script.async = true;
-//   script.defer = true;
-//   index.parentNode.insertBefore(script, index);
-// }
 
 export default GoogleApiWrapper({
   apiKey: process.env.REACT_APP_MAP_KEY
