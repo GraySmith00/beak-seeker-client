@@ -55,7 +55,7 @@ export class HotspotsList extends Component {
     return (
       <div className="hotspots-list">
         <Header currentPage="Nearby Hotspots" />
-        <HotspotsMap />
+        {!loading && <HotspotsMap />}
         <main className="main-content">{displayHotspotLinks}</main>
       </div>
     );
