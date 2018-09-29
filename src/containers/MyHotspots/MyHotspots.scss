@@ -1,3 +1,20 @@
 .my-hotspots {
-  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 60px;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('./birdsBackground5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  .main-content {
+    width: 85%;
+
+    h1 {
+      color: crimson;
+    }
+  }
 }
