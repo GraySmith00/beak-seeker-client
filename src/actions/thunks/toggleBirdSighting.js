@@ -3,6 +3,7 @@ import { toggleBirdSightingState } from '../userActions';
 export const toggleBirdSighting = ({
   user,
   locationId,
+  locationName,
   speciesCode,
   comName
 }) => async dispatch => {
@@ -11,6 +12,7 @@ export const toggleBirdSighting = ({
   const newSighting = {
     _id: Date.now(),
     locationId,
+    locationName,
     speciesCode,
     comName
   };
