@@ -53,6 +53,14 @@ export const Header = ({ currentPage, history }) => {
       );
       break;
 
+    case 'My Hotspots':
+      displayCurrentPage = (
+        <span>
+          <i className="fas fa-fire" /> My Hotspots
+        </span>
+      );
+      break;
+
     default:
       break;
   }
