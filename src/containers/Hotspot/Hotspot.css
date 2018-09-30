@@ -13,9 +13,16 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding-top: 7rem;
+    position: relative;
+    padding-top: 8rem;
     width: 80%;
     height: 100%; }
+  .hotspot-show .badges {
+    display: flex;
+    margin-bottom: 2rem; }
+  .hotspot-show .fa-trophy {
+    font-size: 1.5rem;
+    margin-right: 1rem; }
   .hotspot-show .birds {
     width: 100%; }
   .hotspot-show .bird {
