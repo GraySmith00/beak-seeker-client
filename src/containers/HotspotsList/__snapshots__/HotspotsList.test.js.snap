@@ -123,6 +123,7 @@ ShallowWrapper {
         <withRouter()
           currentPage="Nearby Hotspots"
 />,
+        <Wrapper />,
         <main
           className="main-content"
 >
@@ -146,6 +147,15 @@ ShallowWrapper {
         "props": Object {
           "currentPage": "Nearby Hotspots",
         },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -198,6 +208,7 @@ ShallowWrapper {
           <withRouter()
             currentPage="Nearby Hotspots"
 />,
+          <Wrapper />,
           <main
             className="main-content"
 >
@@ -221,6 +232,15 @@ ShallowWrapper {
           "props": Object {
             "currentPage": "Nearby Hotspots",
           },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -310,6 +330,7 @@ ShallowWrapper {
         <withRouter()
           currentPage="Nearby Hotspots"
 />,
+        false,
         <main
           className="main-content"
 >
@@ -331,6 +352,7 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      false,
       Object {
         "instance": null,
         "key": undefined,
@@ -364,6 +386,7 @@ ShallowWrapper {
           <withRouter()
             currentPage="Nearby Hotspots"
 />,
+          false,
           <main
             className="main-content"
 >
@@ -385,6 +408,7 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
+        false,
         Object {
           "instance": null,
           "key": undefined,

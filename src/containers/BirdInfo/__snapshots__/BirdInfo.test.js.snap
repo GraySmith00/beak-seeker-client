@@ -286,7 +286,7 @@ ShallowWrapper {
         <main
           className="main-content"
 >
-          <LoadingSpinner />
+          <LoadingSpinner2 />
 </main>,
       ],
       "className": "bird-info",
@@ -309,7 +309,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <LoadingSpinner />,
+          "children": <LoadingSpinner2 />,
           "className": "main-content",
         },
         "ref": null,
@@ -340,7 +340,7 @@ ShallowWrapper {
           <main
             className="main-content"
 >
-            <LoadingSpinner />
+            <LoadingSpinner2 />
 </main>,
         ],
         "className": "bird-info",
@@ -363,7 +363,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": <LoadingSpinner />,
+            "children": <LoadingSpinner2 />,
             "className": "main-content",
           },
           "ref": null,
