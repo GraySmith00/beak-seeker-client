@@ -9,6 +9,13 @@ import Header from '../../components/Header/Header';
 import './MyHotspots.css';
 
 class MyHotspots extends Component {
+  constructor() {
+    super();
+    this.state = {
+      loading: true
+    };
+  }
+
   async componentDidMount() {
     const { currentUser } = this.props;
     const ids = currentUser.sightings.reduce((ids, sighting) => {
@@ -17,21 +24,28 @@ class MyHotspots extends Component {
       }
       return ids;
     }, {});
-    await getMyHotspots(Object.keys(ids));
+    await this.props.getMyHotspots(Object.keys(ids));
+    this.setState({ loading: false });
   }
 
   render() {
-    const { currentUser } = this.props;
+    const { currentUser, myHotspots } = this.props;
+    const { loading } = this.state;
+    let displayHotspotLinks;
 
-    const displayHotspotLinks = currentUser.sightings.map((sighting, i) => (
-      <Link
-        key={`${sighting.locationId}-${i}`}
-        className="hotspot"
-        to={`/hotspots/${sighting.locationId}`}
-      >
-        {sighting.locationName}
-      </Link>
-    ));
+    if (loading) {
+      displayHotspotLinks = <p>Loading...</p>;
+    } else {
+      displayHotspotLinks = myHotspots.map((hotspot, i) => (
+        <Link
+          key={`${hotspot.locId}-${i}`}
+          className="hotspot"
+          to={`/hotspots/${hotspot.locId}`}
+        >
+          {hotspot.locName}
+        </Link>
+      ));
+    }
 
     return (
       <div className="my-hotspots">
@@ -46,7 +60,15 @@ class MyHotspots extends Component {
 }
 
 export const mapStateToProps = state => ({
-  currentUser: state.currentUser
+  currentUser: state.currentUser,
+  myHotspots: state.myHotspots
 });
 
-export default connect(mapStateToProps)(MyHotspots);
+export const mapDispatchToProps = dispatch => ({
+  getMyHotspots: locIds => dispatch(getMyHotspots(locIds))
+});
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(MyHotspots);
