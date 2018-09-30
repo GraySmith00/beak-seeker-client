@@ -1,0 +1,12 @@
+.badge-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  height: 200px;
+  width: 100%;
+  background-color: crimson;
+  z-index: 99;
+  border-radius: 5px; }
