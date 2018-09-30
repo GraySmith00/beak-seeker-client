@@ -19,8 +19,10 @@ export class Hotspot extends Component {
   }
 
   async componentDidMount() {
-    const { hotspotId, hotspots } = this.props;
-    let hotspot = hotspots.find(hotspot => hotspot.locId === hotspotId);
+    const { hotspotId, hotspots, myHotspots } = this.props;
+    let hotspot =
+      hotspots.find(hotspot => hotspot.locId === hotspotId) ||
+      myHotspots.find(hotspot => hotspot.locId === hotspotId);
 
     this.setState({ hotspot, loading: false });
   }
@@ -104,7 +106,8 @@ Hotspot.propTypes = {
 
 export const mapStateToProps = state => ({
   hotspots: state.hotspots,
-  currentUser: state.currentUser
+  currentUser: state.currentUser,
+  myHotspots: state.myHotspots
 });
 
 export const mapDispatchToProps = dispatch => ({
