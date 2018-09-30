@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { getMyHotspots } from '../../actions/thunks/getMyHotspots';
 
 import Header from '../../components/Header/Header';
+import LoadingSpinner2 from '../../components/LoadingSpinner2/LoadingSpinner2';
 import './MyHotspots.css';
 
 class MyHotspots extends Component {
@@ -24,22 +25,27 @@ class MyHotspots extends Component {
       }
       return ids;
     }, {});
+
     await this.props.getMyHotspots(Object.keys(ids));
     this.setState({ loading: false });
   }
 
   render() {
-    const { currentUser, myHotspots } = this.props;
+    const { myHotspots } = this.props;
     const { loading } = this.state;
     let displayHotspotLinks;
 
     if (loading) {
-      displayHotspotLinks = <p>Loading...</p>;
+      displayHotspotLinks = (
+        <div style={{ marginLeft: '130px' }}>
+          <LoadingSpinner2 />;
+        </div>
+      );
     } else {
       displayHotspotLinks = myHotspots.map((hotspot, i) => (
         <Link
           key={`${hotspot.locId}-${i}`}
-          className="hotspot"
+          className="hotspot-link"
           to={`/hotspots/${hotspot.locId}`}
         >
           {hotspot.locName}
@@ -50,14 +56,17 @@ class MyHotspots extends Component {
     return (
       <div className="my-hotspots">
         <Header currentPage="My Hotspots" />
-        <main className="main-content">
-          <h1>My Hotspots</h1>
-          {displayHotspotLinks}
-        </main>
+        <main className="main-content">{displayHotspotLinks}</main>
       </div>
     );
   }
 }
+
+MyHotspots.propTypes = {
+  myHotspots: PropTypes.array.isRequired,
+  getMyHotspots: PropTypes.func.isRequired,
+  currentUser: PropTypes.object.isRequired
+};
 
 export const mapStateToProps = state => ({
   currentUser: state.currentUser,
