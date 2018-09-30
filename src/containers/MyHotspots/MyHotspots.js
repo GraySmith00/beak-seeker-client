@@ -18,7 +18,7 @@ class MyHotspots extends Component {
   }
 
   async componentDidMount() {
-    const { currentUser } = this.props;
+    const { currentUser, myHotspots } = this.props;
     const ids = currentUser.sightings.reduce((ids, sighting) => {
       if (!ids[sighting.locationId]) {
         ids[sighting.locationId] = null;
@@ -26,7 +26,10 @@ class MyHotspots extends Component {
       return ids;
     }, {});
 
-    await this.props.getMyHotspots(Object.keys(ids));
+    if (Object.keys(myHotspots).length === 0) {
+      await this.props.getMyHotspots(Object.keys(ids));
+    }
+
     this.setState({ loading: false });
   }
 
