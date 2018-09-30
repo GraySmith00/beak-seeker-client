@@ -1,3 +1,39 @@
 .my-hotspots {
-  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 60px;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('./birdsBackground5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  .main-content {
+    width: 85%;
+
+    h1 {
+      color: crimson;
+    }
+
+    .hotspot-link {
+      display: flex;
+      justify-content: center;
+
+      margin: 1rem auto;
+      padding: 0.8rem;
+
+      background: rgba(0, 0, 0, 0.75);
+      text-decoration: none;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+
+      -webkit-box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.43);
+      -moz-box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.43);
+      box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.43);
+    }
+  }
 }

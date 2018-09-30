@@ -101,3 +101,19 @@ export const getUser = async id => {
   const user = await response.json();
   return user;
 };
+
+export const getMyHotspotsData = async locIds => {
+  const unresolvedPromises = locIds.map(async locId => {
+    const url = `https://ebird.org/ws2.0/ref/hotspot/${locId}?fmt=json`;
+    const response = await fetch(url, {
+      headers: {
+        'x-ebirdapitoken': eBirdKey
+      }
+    });
+    const hotspotData = await response.json();
+    return hotspotData;
+  });
+
+  const hotspots = await Promise.all(unresolvedPromises);
+  return hotspots.map(hotspot => hotspot[0]);
+};

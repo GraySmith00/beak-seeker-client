@@ -18,21 +18,27 @@ export class Hotspot extends Component {
     };
   }
 
-  componentDidMount() {
-    const { hotspotId, hotspots } = this.props;
-    const hotspot = hotspots.find(hotspot => hotspot.locId === hotspotId);
+  async componentDidMount() {
+    const { hotspotId, hotspots, myHotspots } = this.props;
+    let hotspot =
+      hotspots.find(hotspot => hotspot.locId === hotspotId) ||
+      myHotspots.find(hotspot => hotspot.locId === hotspotId);
 
     this.setState({ hotspot, loading: false });
   }
 
   handleChange = bird => {
     const { hotspotId, currentUser, toggleBirdSighting } = this.props;
+    const { hotspot } = this.state;
+
     const newSighting = {
       user: currentUser,
       locationId: hotspotId,
+      locationName: hotspot.locName,
       speciesCode: bird.speciesCode,
       comName: bird.comName
     };
+
     toggleBirdSighting(newSighting);
   };
 
@@ -100,7 +106,8 @@ Hotspot.propTypes = {
 
 export const mapStateToProps = state => ({
   hotspots: state.hotspots,
-  currentUser: state.currentUser
+  currentUser: state.currentUser,
+  myHotspots: state.myHotspots
 });
 
 export const mapDispatchToProps = dispatch => ({
