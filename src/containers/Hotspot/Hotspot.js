@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { toggleBirdSighting } from '../../actions/thunks/toggleBirdSighting';
 
 import Header from '../../components/Header/Header';
-
+import ProgressBar from '../../components/ProgressBar/ProgressBar';
 import './Hotspot.css';
 
 export class Hotspot extends Component {
@@ -14,20 +14,25 @@ export class Hotspot extends Component {
     super();
     this.state = {
       hotspot: {},
-      loading: true
+      loading: true,
+      numSighted: 0
     };
   }
 
   async componentDidMount() {
-    const { hotspotId, hotspots, myHotspots } = this.props;
+    const { hotspotId, hotspots, myHotspots, currentUser } = this.props;
     let hotspot =
       hotspots.find(hotspot => hotspot.locId === hotspotId) ||
       myHotspots.find(hotspot => hotspot.locId === hotspotId);
 
-    this.setState({ hotspot, loading: false });
+    const numSighted = currentUser.sightings.filter(
+      sighting => sighting.locationId === hotspot.locId
+    ).length;
+
+    this.setState({ hotspot, numSighted, loading: false });
   }
 
-  handleChange = bird => {
+  handleChange = async bird => {
     const { hotspotId, currentUser, toggleBirdSighting } = this.props;
     const { hotspot } = this.state;
 
@@ -39,12 +44,18 @@ export class Hotspot extends Component {
       comName: bird.comName
     };
 
-    toggleBirdSighting(newSighting);
+    const newSightings = toggleBirdSighting(newSighting);
+
+    const numSighted = newSightings.filter(
+      sighting => sighting.locationId === hotspot.locId
+    ).length;
+
+    this.setState({ numSighted });
   };
 
   render() {
     const { currentUser } = this.props;
-    const { hotspot, loading } = this.state;
+    const { hotspot, loading, numSighted } = this.state;
     const { birds } = this.state.hotspot;
     let displayBirdLinks;
 
@@ -60,7 +71,10 @@ export class Hotspot extends Component {
           birdSeen ? (birdSeen = true) : (birdSeen = false);
 
           return (
-            <div key={`${index}-${bird.speciesCode}`} className="bird">
+            <div
+              key={`${index}-${bird.speciesCode}`}
+              className={`bird ${birdSeen}`}
+            >
               <Link
                 to={`/hotspots/${hotspot.locId}/${bird.speciesCode}`}
                 className="bird-link"
@@ -81,10 +95,11 @@ export class Hotspot extends Component {
     }
 
     return (
-      <div className="hotspot">
+      <div className="hotspot-show">
         <Header currentPage="Hotspot Info" />
         <main className="main-content">
           <h2>{this.state.hotspot.locName}</h2>
+          {!loading && <ProgressBar numSighted={numSighted} />}
           <div className="birds">
             <form>{displayBirdLinks}</form>
           </div>

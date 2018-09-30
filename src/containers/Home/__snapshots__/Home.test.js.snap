@@ -20,18 +20,24 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <withRouter()
-          currentPage={
-                    <p>
-                              <i
-                                        className="fas fa-home"
-                              />
-                               Home
-                    </p>
-          }
+          currentPage="Home"
 />,
         <main
           className="main-content"
 >
+          <section>
+                    <div
+                              className="greeting"
+                    >
+                              <img
+                                        alt=""
+                                        src={undefined}
+                              />
+                    </div>
+                    <h2>
+                              Welcome Back undefined
+                    </h2>
+          </section>
           <NavLink
                     activeClassName="active"
                     aria-current="page"
@@ -54,6 +60,17 @@ ShallowWrapper {
                     />
                      Leaderboard
           </NavLink>
+          <NavLink
+                    activeClassName="active"
+                    aria-current="page"
+                    className="nav-link"
+                    to="/myhotspots"
+          >
+                    <i
+                              className="fas fa-fire"
+                    />
+                     My Hotspots
+          </NavLink>
 </main>,
       ],
       "className": "home",
@@ -65,12 +82,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "currentPage": <p>
-            <i
-                        className="fas fa-home"
-            />
-             Home
-</p>,
+          "currentPage": "Home",
         },
         "ref": null,
         "rendered": null,
@@ -82,6 +94,19 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
+            <section>
+              <div
+                            className="greeting"
+              >
+                            <img
+                                          alt=""
+                                          src={undefined}
+                            />
+              </div>
+              <h2>
+                            Welcome Back undefined
+              </h2>
+</section>,
             <NavLink
               activeClassName="active"
               aria-current="page"
@@ -104,11 +129,83 @@ ShallowWrapper {
               />
                Leaderboard
 </NavLink>,
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              className="nav-link"
+              to="/myhotspots"
+>
+              <i
+                            className="fas fa-fire"
+              />
+               My Hotspots
+</NavLink>,
           ],
           "className": "main-content",
         },
         "ref": null,
         "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="greeting"
+>
+                  <img
+                                    alt=""
+                                    src={undefined}
+                  />
+</div>,
+                <h2>
+                  Welcome Back undefined
+</h2>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <img
+                    alt=""
+                    src={undefined}
+/>,
+                  "className": "greeting",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "",
+                    "src": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+                "type": "div",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Welcome Back undefined",
+                },
+                "ref": null,
+                "rendered": "Welcome Back undefined",
+                "type": "h2",
+              },
+            ],
+            "type": "section",
+          },
           Object {
             "instance": null,
             "key": undefined,
@@ -175,6 +272,39 @@ ShallowWrapper {
             ],
             "type": [Function],
           },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "aria-current": "page",
+              "children": Array [
+                <i
+                  className="fas fa-fire"
+/>,
+                " My Hotspots",
+              ],
+              "className": "nav-link",
+              "to": "/myhotspots",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-fire",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              " My Hotspots",
+            ],
+            "type": [Function],
+          },
         ],
         "type": "main",
       },
@@ -189,18 +319,24 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <withRouter()
-            currentPage={
-                        <p>
-                                    <i
-                                                className="fas fa-home"
-                                    />
-                                     Home
-                        </p>
-            }
+            currentPage="Home"
 />,
           <main
             className="main-content"
 >
+            <section>
+                        <div
+                                    className="greeting"
+                        >
+                                    <img
+                                                alt=""
+                                                src={undefined}
+                                    />
+                        </div>
+                        <h2>
+                                    Welcome Back undefined
+                        </h2>
+            </section>
             <NavLink
                         activeClassName="active"
                         aria-current="page"
@@ -223,6 +359,17 @@ ShallowWrapper {
                         />
                          Leaderboard
             </NavLink>
+            <NavLink
+                        activeClassName="active"
+                        aria-current="page"
+                        className="nav-link"
+                        to="/myhotspots"
+            >
+                        <i
+                                    className="fas fa-fire"
+                        />
+                         My Hotspots
+            </NavLink>
 </main>,
         ],
         "className": "home",
@@ -234,12 +381,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "currentPage": <p>
-              <i
-                            className="fas fa-home"
-              />
-               Home
-</p>,
+            "currentPage": "Home",
           },
           "ref": null,
           "rendered": null,
@@ -251,6 +393,19 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+              <section>
+                <div
+                                className="greeting"
+                >
+                                <img
+                                                alt=""
+                                                src={undefined}
+                                />
+                </div>
+                <h2>
+                                Welcome Back undefined
+                </h2>
+</section>,
               <NavLink
                 activeClassName="active"
                 aria-current="page"
@@ -273,11 +428,83 @@ ShallowWrapper {
                 />
                  Leaderboard
 </NavLink>,
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                className="nav-link"
+                to="/myhotspots"
+>
+                <i
+                                className="fas fa-fire"
+                />
+                 My Hotspots
+</NavLink>,
             ],
             "className": "main-content",
           },
           "ref": null,
           "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <div
+                    className="greeting"
+>
+                    <img
+                                        alt=""
+                                        src={undefined}
+                    />
+</div>,
+                  <h2>
+                    Welcome Back undefined
+</h2>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <img
+                      alt=""
+                      src={undefined}
+/>,
+                    "className": "greeting",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "",
+                      "src": undefined,
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                  "type": "div",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Welcome Back undefined",
+                  },
+                  "ref": null,
+                  "rendered": "Welcome Back undefined",
+                  "type": "h2",
+                },
+              ],
+              "type": "section",
+            },
             Object {
               "instance": null,
               "key": undefined,
@@ -341,6 +568,39 @@ ShallowWrapper {
                   "type": "i",
                 },
                 " Leaderboard",
+              ],
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "aria-current": "page",
+                "children": Array [
+                  <i
+                    className="fas fa-fire"
+/>,
+                  " My Hotspots",
+                ],
+                "className": "nav-link",
+                "to": "/myhotspots",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-fire",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                " My Hotspots",
               ],
               "type": [Function],
             },
