@@ -6,7 +6,7 @@ export const toggleBirdSighting = ({
   locationName,
   speciesCode,
   comName
-}) => async dispatch => {
+}) => dispatch => {
   // create and add a new sighting to state
 
   const newSighting = {
@@ -45,7 +45,7 @@ export const toggleBirdSighting = ({
   // put request to update backend
   const url = `http://localhost:5000/api/users/${user._id}`;
   try {
-    await fetch(url, {
+    fetch(url, {
       method: 'PUT',
       body: JSON.stringify(newUser),
       headers: {
@@ -55,4 +55,6 @@ export const toggleBirdSighting = ({
   } catch (error) {
     return error.message;
   }
+
+  return newSightings;
 };
