@@ -114,5 +114,6 @@ export const getMyHotspotsData = async locIds => {
     return hotspotData;
   });
 
-  return await Promise.all(unresolvedPromises);
+  const hotspots = await Promise.all(unresolvedPromises);
+  return hotspots.map(hotspot => hotspot[0]);
 };
