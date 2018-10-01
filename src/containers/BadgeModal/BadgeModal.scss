@@ -20,8 +20,7 @@
     position: relative;
 
     width: 90%;
-    height: 300px;
-    margin-top: 30%;
+    margin-top: 15%;
 
     border-radius: 10px;
 
@@ -38,6 +37,10 @@
       #2980b9
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+    -webkit-box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.43);
+    box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.43);
+
     .fa-trophy {
       font-size: 2.5rem;
       margin-bottom: 1rem;
@@ -52,8 +55,91 @@
     }
 
     .modal-buttons {
+      // display: flex;
+      // justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+      margin-bottom: 0.8rem;
+    }
+
+    .modal-buttons > * {
+      border-radius: 5px;
+      border: none;
+      padding: 0.2rem;
+      color: #fff;
+    }
+
+    .close {
+      background: #ff416c; /* fallback for old browsers */
+      background: -webkit-linear-gradient(
+        to right,
+        #ff4b2b,
+        #ff416c
+      ); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+        to right,
+        #ff4b2b,
+        #ff416c
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      cursor: pointer;
+    }
+
+    .view-badges {
+      background: #00f260; /* fallback for old browsers */
+      background: -webkit-linear-gradient(
+        to right,
+        #0575e6,
+        #00f260
+      ); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+        to right,
+        #0575e6,
+        #00f260
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      cursor: pointer;
+    }
+
+    textarea {
+      margin-bottom: 0.8rem;
+      padding: 0.7rem;
+      font-size: 1rem;
+      color: rgb(114, 114, 114);
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 5px;
+    }
+
+    .tweet-badge {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
+    }
+
+    .tweet-button {
+      padding: 0.7rem;
+      text-decoration: none;
+      width: 100%;
+      text-align: center;
+
+      border-radius: 5px;
+      color: #fff;
+      font-size: 1.3rem;
+      cursor: pointer;
+
+      background: #00c6ff; /* fallback for old browsers */
+      background: -webkit-linear-gradient(
+        to right,
+        #0072ff,
+        #00c6ff
+      ); /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(
+        to right,
+        #0072ff,
+        #00c6ff
+      ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+      -webkit-box-shadow: 10px 10px 43px -8px rgba(0, 0, 0, 0.43);
+      -moz-box-shadow: 10px 10px 43px -8px rgba(0, 0, 0, 0.43);
+      box-shadow: 10px 10px 43px -8px rgba(0, 0, 0, 0.43);
     }
   }
 }
