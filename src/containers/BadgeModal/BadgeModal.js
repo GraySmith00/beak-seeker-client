@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './BadgeModal.css';
+import { connect } from 'react-redux';
+import { tweetPostRequest } from '../../utils/apiCalls';
 
 class BadgeModal extends Component {
   constructor() {
@@ -26,6 +28,25 @@ class BadgeModal extends Component {
     this.setState({ tweetText, badge });
   }
 
+  handleChange = e => {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  };
+
+  postTweet = () => {
+    const payload = {
+      userId: this.props.currentUser._id,
+      status: this.state.tweetText
+    };
+
+    tweetPostRequest(payload);
+
+    this.setState({
+      tweetText: 'Tweet sent!'
+    });
+  };
+
   render() {
     const { numSighted, handleModalClose, locName } = this.props;
     const { badge } = this.state;
@@ -40,7 +61,7 @@ class BadgeModal extends Component {
             >{`You've earned a ${badge} badge for sighting ${numSighted} birds at ${locName}!`}</p>
             <div className="modal-buttons">
               <button onClick={handleModalClose} className="close">
-                Close
+                X Close
               </button>
               <button className="view-badges">View my Badges</button>
             </div>
@@ -53,7 +74,9 @@ class BadgeModal extends Component {
                 rows="3"
                 value={this.state.tweetText}
               />
-              <button className="tweet-button">Tweet this Badge</button>
+              <button onClick={this.postTweet} className="tweet-button">
+                Tweet this Badge
+              </button>
             </div>
           </div>
         </div>
@@ -62,4 +85,8 @@ class BadgeModal extends Component {
   }
 }
 
-export default BadgeModal;
+export const mapStateToProps = state => ({
+  currentUser: state.currentUser
+});
+
+export default connect(mapStateToProps)(BadgeModal);
