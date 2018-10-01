@@ -4,6 +4,8 @@ import './BadgeModal.css';
 import { connect } from 'react-redux';
 import { tweetPostRequest } from '../../utils/apiCalls';
 
+import ConfettiComp from '../../components/ConfettiComp/ConfettiComp';
+
 class BadgeModal extends Component {
   constructor() {
     super();
@@ -53,7 +55,7 @@ class BadgeModal extends Component {
 
     return (
       <div className="badge-modal">
-        <div className="modal-inner">
+        <div className="modal-inner" style={{ zIndex: '150' }}>
           <h1>Congratulations!</h1>
           <i className="fas fa-trophy" style={{ color: badge }} />
           <div className="modal-card-bottom">
@@ -79,6 +81,9 @@ class BadgeModal extends Component {
               </button>
             </div>
           </div>
+        </div>
+        <div className="confetti" style={{ zIndex: '90', width: '100%' }}>
+          <ConfettiComp />
         </div>
       </div>
     );
