@@ -21,12 +21,14 @@ export class PostTweet extends Component {
   }
 
   populateTweet = () => {
-    const { currentUser, hotspots } = this.props;
+    const { currentUser, hotspots, myHotspots } = this.props;
     const { comName, locationId } = currentUser.sightings[
       currentUser.sightings.length - 1
     ];
 
-    const { locName } = hotspots.find(hotspot => hotspot.locId === locationId);
+    const { locName } =
+      hotspots.find(hotspot => hotspot.locId === locationId) ||
+      myHotspots.find(hotspot => hotspot.locId === locationId);
 
     const tweetText = `Just spotted a sweet ${comName} at ${locName} and logged it on @BeakSeeker!!!`;
 
@@ -84,7 +86,8 @@ PostTweet.propTypes = {
 
 export const mapStateToProps = state => ({
   currentUser: state.currentUser,
-  hotspots: state.hotspots
+  hotspots: state.hotspots,
+  myHotspots: state.myHotspots
 });
 
 export default connect(mapStateToProps)(PostTweet);

@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import ReactDOM from 'react-dom';
 import sizeMe from 'react-sizeme';
 import Confetti from 'react-confetti';
 
