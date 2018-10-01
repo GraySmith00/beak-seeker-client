@@ -24,10 +24,13 @@ export class Hotspot extends Component {
 
   async componentDidMount() {
     const { hotspotId, hotspots, myHotspots, currentUser } = this.props;
+
+    // find hotspot from nearby or myHotspots
     let hotspot =
       hotspots.find(hotspot => hotspot.locId === hotspotId) ||
       myHotspots.find(hotspot => hotspot.locId === hotspotId);
 
+    // find the number of sighted birds at this hotspot
     const numSighted = currentUser.sightings.filter(
       sighting => sighting.locationId === hotspot.locId
     ).length;
