@@ -23,8 +23,10 @@ export class BirdInfo extends Component {
   }
 
   loadBirdInfo = async () => {
-    const { locId, speciesCode, hotspots } = this.props;
-    const location = hotspots.find(hotspot => hotspot.locId === locId);
+    const { locId, speciesCode, hotspots, myHotspots } = this.props;
+    const location =
+      hotspots.find(hotspot => hotspot.locId === locId) ||
+      myHotspots.find(hotspot => hotspot.locId === locId);
 
     const bird = location.birds.find(bird => bird.speciesCode === speciesCode);
     const { comName } = bird;
@@ -79,7 +81,8 @@ BirdInfo.propTypes = {
 };
 
 export const mapStateToProps = state => ({
-  hotspots: state.hotspots
+  hotspots: state.hotspots,
+  myHotspots: state.myHotspots
 });
 
 export default connect(mapStateToProps)(BirdInfo);
