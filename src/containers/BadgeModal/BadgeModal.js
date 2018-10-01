@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import './BadgeModal.css';
 import { connect } from 'react-redux';
 import { tweetPostRequest } from '../../utils/apiCalls';
@@ -84,6 +84,13 @@ class BadgeModal extends Component {
     );
   }
 }
+
+BadgeModal.propTypes = {
+  currentUser: PropTypes.object.isRequired,
+  handleModalClose: PropTypes.func.isRequired,
+  numSighted: PropTypes.number.isRequired,
+  locName: PropTypes.string.isRequired
+};
 
 export const mapStateToProps = state => ({
   currentUser: state.currentUser
