@@ -5,6 +5,7 @@
   height: 100vh;
   margin-top: 60px;
 
+  position: relative;
   background: url('./birdBackground4.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,8 +16,6 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-
-    position: relative;
 
     padding-top: 8rem;
     width: 80%;
