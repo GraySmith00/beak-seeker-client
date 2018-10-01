@@ -5,6 +5,7 @@
   height: 100vh;
   margin-top: 60px;
 
+  position: relative;
   background: url('./birdBackground4.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,9 +17,19 @@
     align-items: flex-start;
     justify-content: center;
 
-    padding-top: 7rem;
+    padding-top: 8rem;
     width: 80%;
     height: 100%;
+  }
+
+  .badges {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+
+  .fa-trophy {
+    font-size: 1.5rem;
+    margin-right: 1rem;
   }
 
   .birds {

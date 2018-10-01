@@ -18,6 +18,10 @@ class ProgressBar extends Component {
   }
 }
 
+ProgressBar.propTypes = {
+  numSighted: PropTypes.number.isRequired
+};
+
 export const mapStateToProps = state => ({
   currentUser: state.currentUser
 });

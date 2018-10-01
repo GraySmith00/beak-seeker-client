@@ -7,6 +7,8 @@ import { toggleBirdSighting } from '../../actions/thunks/toggleBirdSighting';
 
 import Header from '../../components/Header/Header';
 import ProgressBar from '../../components/ProgressBar/ProgressBar';
+import BadgeModal from '../BadgeModal/BadgeModal';
+
 import './Hotspot.css';
 
 export class Hotspot extends Component {
@@ -15,16 +17,20 @@ export class Hotspot extends Component {
     this.state = {
       hotspot: {},
       loading: true,
-      numSighted: 0
+      numSighted: 0,
+      modalOpen: false
     };
   }
 
   async componentDidMount() {
     const { hotspotId, hotspots, myHotspots, currentUser } = this.props;
+
+    // find hotspot from nearby or myHotspots
     let hotspot =
       hotspots.find(hotspot => hotspot.locId === hotspotId) ||
       myHotspots.find(hotspot => hotspot.locId === hotspotId);
 
+    // find the number of sighted birds at this hotspot
     const numSighted = currentUser.sightings.filter(
       sighting => sighting.locationId === hotspot.locId
     ).length;
@@ -50,12 +56,23 @@ export class Hotspot extends Component {
       sighting => sighting.locationId === hotspot.locId
     ).length;
 
-    this.setState({ numSighted });
+    if (numSighted === 6) {
+      this.setState({ numSighted, modalOpen: true });
+    } else if (numSighted === 8) {
+      this.setState({ numSighted, modalOpen: true });
+    } else {
+      this.setState({ numSighted });
+    }
+  };
+
+  handleModalClose = e => {
+    e.stopPropagation();
+    this.setState({ modalOpen: false });
   };
 
   render() {
     const { currentUser } = this.props;
-    const { hotspot, loading, numSighted } = this.state;
+    const { hotspot, loading, numSighted, modalOpen } = this.state;
     const { birds } = this.state.hotspot;
     let displayBirdLinks;
 
@@ -97,9 +114,24 @@ export class Hotspot extends Component {
     return (
       <div className="hotspot-show">
         <Header currentPage="Hotspot Info" />
+        {modalOpen && (
+          <BadgeModal
+            handleModalClose={this.handleModalClose}
+            numSighted={numSighted}
+            locName={hotspot.locName}
+          />
+        )}
         <main className="main-content">
           <h2>{this.state.hotspot.locName}</h2>
           {!loading && <ProgressBar numSighted={numSighted} />}
+          {numSighted >= 6 && (
+            <div className="badges">
+              <i className="fas fa-trophy" style={{ color: 'silver' }} />
+              {numSighted >= 8 && (
+                <i className="fas fa-trophy" style={{ color: 'gold' }} />
+              )}
+            </div>
+          )}
           <div className="birds">
             <form>{displayBirdLinks}</form>
           </div>
