@@ -111,8 +111,14 @@ export class Hotspot extends Component {
     return (
       <div className="hotspot-show">
         <Header currentPage="Hotspot Info" />
+        {modalOpen && (
+          <BadgeModal
+            handleModalClose={this.handleModalClose}
+            numSighted={numSighted}
+            locName={hotspot.locName}
+          />
+        )}
         <main className="main-content">
-          {modalOpen && <BadgeModal handleModalClose={this.handleModalClose} />}
           <h2>{this.state.hotspot.locName}</h2>
           {!loading && <ProgressBar numSighted={numSighted} />}
           {numSighted >= 6 && (
