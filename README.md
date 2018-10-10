@@ -4,12 +4,8 @@ Made by Gray Smith
 
 BeakSeeker is the most fun way to go birding! Find the best local hotspots. See which birds have been recently seen in your area. Earn badges for spotting birds and compete against your fellow birders to see who is the ultimate beak seeker!
 
-<img src="https://i.imgur.com/kqrC0Zi.png" alt="beakSeeker" width="300px"/>
-<img src="https://i.imgur.com/HCshfco.png" alt="beakSeeker" width="300px"/>
-<img src="https://i.imgur.com/bIG4zF2.png" alt="beakSeeker" width="300px"/>
-<img src="https://i.imgur.com/PdCc4Mz.png" alt="beakSeeker" width="300px"/>
-<img src="https://i.imgur.com/9BzMaRw.png" alt="beakSeeker" width="300px"/>
-<img src="https://i.imgur.com/5p0d33E.png" alt="beakSeeker" width="300px"/>
+<img src="https://i.imgur.com/aP5LpKU.png" alt="beakSeeker" width="800px"/>
+
 
 ### To run BeakSeeker on your local machine:
 
