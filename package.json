@@ -29,7 +29,8 @@
     "eject": "react-scripts eject",
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
-    "eslint": "eslint src/"
+    "eslint": "eslint src/",
+    "heroku-postbuild": "npm run build"
   },
   "devDependencies": {
     "enzyme": "^3.5.0",
