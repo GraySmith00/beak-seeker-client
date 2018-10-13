@@ -1,4 +1,3 @@
-import { eBirdKey } from '../../keys';
 import {
   getPosition,
   getHotspotData,
@@ -48,7 +47,7 @@ describe('apiCalls', () => {
       getHotspotData(39.7506463, -104.9966687);
       const url = [
         'https://ebird.org/ws2.0/ref/hotspot/geo?lat=39.7506463&lng=-104.9966687&fmt=json&dist=10',
-        { headers: { 'x-ebirdapitoken': eBirdKey } }
+        { headers: { 'x-ebirdapitoken': process.env.REACT_APP_EBIRD_KEY } }
       ];
 
       expect(window.fetch).toHaveBeenCalledWith(...url);
@@ -84,7 +83,7 @@ describe('apiCalls', () => {
       getHotspotBirds(mockHotspots);
       const url = [
         `https://ebird.org/ws2.0/data/obs/L4174538/recent/`,
-        { headers: { 'x-ebirdapitoken': eBirdKey } }
+        { headers: { 'x-ebirdapitoken': process.env.REACT_APP_EBIRD_KEY } }
       ];
       expect(window.fetch).toHaveBeenCalledWith(...url);
     });

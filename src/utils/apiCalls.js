@@ -1,5 +1,3 @@
-import { eBirdKey } from '../keys';
-
 export const getPosition = async options => {
   const position = await new Promise((resolve, reject) => {
     navigator.geolocation.getCurrentPosition(resolve, reject, options);
@@ -11,7 +9,7 @@ export const getHotspotData = async (lat, long) => {
   const url = `https://ebird.org/ws2.0/ref/hotspot/geo?lat=${lat}&lng=${long}&fmt=json&dist=10`;
   const response = await fetch(url, {
     headers: {
-      'x-ebirdapitoken': eBirdKey
+      'x-ebirdapitoken': process.env.REACT_APP_EBIRD_KEY
     }
   });
   const hotspotData = await response.json();
@@ -23,7 +21,7 @@ export const getHotspotBirds = async hotspots => {
     const url = `https://ebird.org/ws2.0/data/obs/${hotspot.locID}/recent/`;
     const response = await fetch(url, {
       headers: {
-        'x-ebirdapitoken': eBirdKey
+        'x-ebirdapitoken': process.env.REACT_APP_EBIRD_KEY
       }
     });
     const birds = await response.json();
@@ -107,7 +105,7 @@ export const getMyHotspotsData = async locIds => {
     const url = `https://ebird.org/ws2.0/ref/hotspot/${locId}?fmt=json`;
     const response = await fetch(url, {
       headers: {
-        'x-ebirdapitoken': eBirdKey
+        'x-ebirdapitoken': process.env.REACT_APP_EBIRD_KEY
       }
     });
     const hotspotData = await response.json();
