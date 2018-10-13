@@ -61,7 +61,7 @@ export const getBirdInfo = async name => {
 };
 
 export const tweetPostRequest = async payload => {
-  const url = 'http://localhost:5000/twitter/posttweet';
+  const url = 'https://gs-beakseeker-server.herokuapp.com/twitter/posttweet';
   const response = await fetch(url, {
     method: 'POST',
     body: JSON.stringify(payload),
@@ -74,7 +74,7 @@ export const tweetPostRequest = async payload => {
 };
 
 export const getLeaderboard = async () => {
-  const url = 'http://localhost:5000/api/users';
+  const url = 'https://gs-beakseeker-server.herokuapp.com/api/users';
   const response = await fetch(url);
   let users = await response.json();
   users = users.map(user => ({
@@ -86,7 +86,7 @@ export const getLeaderboard = async () => {
 };
 
 export const getUser = async id => {
-  const url = `http://localhost:5000/api/users/${id}`;
+  const url = `https://gs-beakseeker-server.herokuapp.com/api/users/${id}`;
   const response = await fetch(url);
   const user = await response.json();
   return user;

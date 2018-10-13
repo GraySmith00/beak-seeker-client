@@ -47,7 +47,7 @@ ShallowWrapper {
 </div>,
         <a
           className="twitter-button"
-          href="http://localhost:5000/twitter/login"
+          href="https://gs-beakseeker-server.herokuapp.com/twitter/login"
 >
           Sign in with Twitter
 </a>,
@@ -200,7 +200,7 @@ ShallowWrapper {
         "props": Object {
           "children": "Sign in with Twitter",
           "className": "twitter-button",
-          "href": "http://localhost:5000/twitter/login",
+          "href": "https://gs-beakseeker-server.herokuapp.com/twitter/login",
         },
         "ref": null,
         "rendered": "Sign in with Twitter",
@@ -246,7 +246,7 @@ ShallowWrapper {
 </div>,
           <a
             className="twitter-button"
-            href="http://localhost:5000/twitter/login"
+            href="https://gs-beakseeker-server.herokuapp.com/twitter/login"
 >
             Sign in with Twitter
 </a>,
@@ -399,7 +399,7 @@ ShallowWrapper {
           "props": Object {
             "children": "Sign in with Twitter",
             "className": "twitter-button",
-            "href": "http://localhost:5000/twitter/login",
+            "href": "https://gs-beakseeker-server.herokuapp.com/twitter/login",
           },
           "ref": null,
           "rendered": "Sign in with Twitter",

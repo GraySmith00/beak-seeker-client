@@ -26,7 +26,7 @@ class SignIn extends Component {
           </p>
         </div>
         <a
-          href="http://localhost:5000/twitter/login"
+          href="https://gs-beakseeker-server.herokuapp.com/twitter/login"
           className="twitter-button"
         >
           Sign in with Twitter
