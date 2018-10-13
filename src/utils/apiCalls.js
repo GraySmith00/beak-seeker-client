@@ -6,26 +6,16 @@ export const getPosition = async options => {
 };
 
 export const getHotspotData = async (lat, long) => {
-  const url = `https://ebird.org/ws2.0/ref/hotspot/geo?lat=${lat}&lng=${long}&fmt=json&dist=10`;
-  const response = await fetch(url, {
-    headers: {
-      'x-ebirdapitoken': process.env.REACT_APP_EBIRD_KEY,
-      'mode': 'no-cors'
-    }
-  });
+  const url = `https://cors-anywhere.herokuapp.com/https://ebird.org/ws2.0/ref/hotspot/geo?key=${process.env.REACT_APP_EBIRD_KEY}&lat=${lat}&lng=${long}&fmt=json&dist=10`;
+  const response = await fetch(url);
   const hotspotData = await response.json();
   return hotspotData;
 };
 
 export const getHotspotBirds = async hotspots => {
   const unresolvedPromises = hotspots.map(async hotspot => {
-    const url = `https://ebird.org/ws2.0/data/obs/${hotspot.locID}/recent/`;
-    const response = await fetch(url, {
-      headers: {
-        'x-ebirdapitoken': process.env.REACT_APP_EBIRD_KEY,
-        'mode': 'no-cors'
-      }
-    });
+    const url = `https://cors-anywhere.herokuapp.com/https://ebird.org/ws2.0/data/obs/${hotspot.locID}/recent?key=${process.env.REACT_APP_EBIRD_KEY}`;
+    const response = await fetch(url);
     const birds = await response.json();
     return { ...hotspot, birds };
   });
@@ -104,13 +94,8 @@ export const getUser = async id => {
 
 export const getMyHotspotsData = async locIds => {
   const unresolvedPromises = locIds.map(async locId => {
-    const url = `https://ebird.org/ws2.0/ref/hotspot/${locId}?fmt=json`;
-    const response = await fetch(url, {
-      headers: {
-        'x-ebirdapitoken': process.env.REACT_APP_EBIRD_KEY,
-        'mode': 'no-cors'
-      }
-    });
+    const url = `https://cors-anywhere.herokuapp.com/https://ebird.org/ws2.0/ref/hotspot/${locId}?key=${process.env.REACT_APP_EBIRD_KEY}&fmt=json`;
+    const response = await fetch(url);
     const hotspotData = await response.json();
     return hotspotData;
   });
