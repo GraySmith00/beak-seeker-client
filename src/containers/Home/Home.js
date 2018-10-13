@@ -58,6 +58,9 @@ export class Home extends Component {
           <NavLink to="/myhotspots" className="nav-link">
             <i className="fas fa-fire" /> My Hotspots
           </NavLink>
+          <NavLink to="/mysightings" className="nav-link">
+            <i className="fas fa-crow" /> My Sightings
+          </NavLink>
         </main>
       </div>
     );

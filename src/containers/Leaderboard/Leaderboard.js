@@ -20,6 +20,7 @@ class Leaderboard extends Component {
       this.setState({ error: error.message });
     }
   }
+
   render() {
     const { leaderboard, loading } = this.state;
     let displayLeaderboard;

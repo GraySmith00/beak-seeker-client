@@ -61,6 +61,14 @@ export const Header = ({ currentPage, history }) => {
       );
       break;
 
+    case 'My Sightings':
+      displayCurrentPage = (
+        <span>
+          <i className="fas fa-crow" /> My Sightings
+        </span>
+      );
+      break;
+
     default:
       break;
   }
