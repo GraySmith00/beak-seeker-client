@@ -31,7 +31,7 @@ export const getMostActive = hotspots => {
 };
 
 export const getBirdImage = async name => {
-  const url = `http://en.wikipedia.org/w/api.php?action=query&origin=*&titles=${name.toLowerCase()}&prop=pageimages&format=json&pithumbsize=200/`;
+  const url = `https://en.wikipedia.org/w/api.php?action=query&origin=*&titles=${name.toLowerCase()}&prop=pageimages&format=json&pithumbsize=200/`;
   const response = await fetch(url);
   const data = await response.json();
 
