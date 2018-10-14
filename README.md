@@ -11,7 +11,7 @@ BeakSeeker is the most fun way to go birding! Find the best local hotspots. See 
 
 ### To run BeakSeeker on your local machine:
 
-(note: you will likely need keys for Twitter API, MLab, Wikipedia API, and eBird API to run this application locally)
+(note: you will likely need keys for Twitter API, MLab, and eBird API to run this application locally)
 
 First you'll need to install and run the server:
 
