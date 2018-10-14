@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import { logout } from '../../actions/userActions';
-
+import ScrollToTop from '../../components/ScrollToTop/ScrollToTop';
 import Home from '../Home/Home';
 import HotspotsList from '../HotspotsList/HotspotsList';
 import SignIn from '../SignIn/SignIn';
@@ -21,53 +21,55 @@ export class Routes extends Component {
     const { currentUser } = this.props;
     return (
       <Router>
-        <Fragment>
-          <Route path="/home" component={Home} />
-          <Route exact path="/hotspots" component={HotspotsList} />
-          <Route exact path="/leaderboard" component={Leaderboard} />
-          <Route
-            exact
-            path="/"
-            render={() => {
-              if (!this.props.currentUser) {
+        <ScrollToTop>
+          <Fragment>
+            <Route path="/home" component={Home} />
+            <Route exact path="/hotspots" component={HotspotsList} />
+            <Route exact path="/leaderboard" component={Leaderboard} />
+            <Route
+              exact
+              path="/"
+              render={() => {
+                if (!this.props.currentUser) {
+                  return <SignIn />;
+                } else {
+                  return <Home />;
+                }
+              }}
+            />
+            <Route
+              exact
+              path={`/hotspots/:location_id`}
+              render={({ match }) => {
+                return <Hotspot hotspotId={match.params.location_id} />;
+              }}
+            />
+            <Route
+              exact
+              path={`/hotspots/:location_id/:speciesCode`}
+              render={({ match }) => {
+                return (
+                  <BirdInfo
+                    locId={match.params.location_id}
+                    speciesCode={match.params.speciesCode}
+                  />
+                );
+              }}
+            />
+            <Route exact path="/tweet" component={PostTweet} />
+            <Route
+              exact
+              path="/logout"
+              render={() => {
+                this.props.logout();
                 return <SignIn />;
-              } else {
-                return <Home />;
-              }
-            }}
-          />
-          <Route
-            exact
-            path={`/hotspots/:location_id`}
-            render={({ match }) => {
-              return <Hotspot hotspotId={match.params.location_id} />;
-            }}
-          />
-          <Route
-            exact
-            path={`/hotspots/:location_id/:speciesCode`}
-            render={({ match }) => {
-              return (
-                <BirdInfo
-                  locId={match.params.location_id}
-                  speciesCode={match.params.speciesCode}
-                />
-              );
-            }}
-          />
-          <Route exact path="/tweet" component={PostTweet} />
-          <Route
-            exact
-            path="/logout"
-            render={() => {
-              this.props.logout();
-              return <SignIn />;
-            }}
-          />
-          {currentUser && <Footer />}
-          <Route exact path="/myhotspots" component={MyHotspots} />
-          <Route exact path="/mysightings" component={MySightings} />
-        </Fragment>
+              }}
+            />
+            {currentUser && <Footer />}
+            <Route exact path="/myhotspots" component={MyHotspots} />
+            <Route exact path="/mysightings" component={MySightings} />
+          </Fragment>
+        </ScrollToTop>
       </Router>
     );
   }
@@ -76,7 +78,8 @@ export class Routes extends Component {
 Routes.propTypes = {
   logout: PropTypes.func,
   currentUser: PropTypes.object,
-  hotspots: PropTypes.array
+  hotspots: PropTypes.array,
+  history: PropTypes.object
 };
 
 const mapStateToProps = state => ({
