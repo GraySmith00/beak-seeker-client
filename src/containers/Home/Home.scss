@@ -3,12 +3,13 @@
   flex-direction: column;
   align-items: center;
 
-  margin-bottom: 2rem;
   background: url('./birdBackground2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
-  height: 100%;
+
+  margin-top: 60px;
+  height: 1000px;
 
   .main-content {
     display: flex;
@@ -16,11 +17,8 @@
     align-items: center;
     justify-content: center;
 
-    margin-top: 90px;
-
-    // overflow: scroll;
+    margin-top: 100px;
     width: 100%;
-    height: 100%;
   }
 
   .greeting {

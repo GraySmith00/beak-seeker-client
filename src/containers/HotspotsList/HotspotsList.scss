@@ -4,10 +4,12 @@
   align-items: center;
 
   position: relative;
-  // overflow: scroll;
+
   background: url('./beachBirds.jpg');
   background-size: cover;
   background-position: center center;
+
+  height: 1400px;
 
   .main-content {
     display: flex;
@@ -15,7 +17,7 @@
     align-items: center;
     justify-content: center;
 
-    margin-top: 375px;
+    margin-top: 390px;
 
     width: 100%;
   }
@@ -23,12 +25,13 @@
   .hotspot {
     display: flex;
     justify-content: center;
+    align-items: center;
 
     margin: 0.5rem auto;
     padding: 0.8rem;
 
     width: 80%;
-    background: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.75);
     text-decoration: none;
     color: #fff;
     border-radius: 5px;
@@ -37,9 +40,5 @@
     -webkit-box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.43);
     -moz-box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.43);
     box-shadow: 10px 10px 26px -9px rgba(0, 0, 0, 0.43);
-  }
-
-  .hotspot:last-child {
-    margin-bottom: 8rem;
   }
 }

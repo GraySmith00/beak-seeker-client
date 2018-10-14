@@ -3,14 +3,14 @@
   flex-direction: column;
   align-items: center;
   margin-top: 60px;
-  height: 100vh;
+  height: 1400px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./birdsBackground5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
   .my-sightings .main-content {
     width: 85%;
-    overflow: scroll; }
+    margin-top: 10px; }
     .my-sightings .main-content h1 {
       color: crimson; }
     .my-sightings .main-content .bird-link {

@@ -2,22 +2,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
-  overflow: scroll;
   margin-top: 60px;
   position: relative;
   background: url("./birdBackground4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center; }
+  background-position: top center;
+  height: 1000px; }
   .hotspot-show .main-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding-top: 8rem;
-    width: 80%;
-    height: 100%; }
+    padding-top: 20px;
+    width: 80%; }
   .hotspot-show .badges {
     display: flex;
     margin-bottom: 2rem; }
