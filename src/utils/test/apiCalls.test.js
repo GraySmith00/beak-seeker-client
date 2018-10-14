@@ -121,7 +121,7 @@ describe('apiCalls', () => {
 
     it('should call fetch with the correct params', async () => {
       const url =
-        'http://en.wikipedia.org/w/api.php?action=query&origin=*&titles=canada goose&prop=pageimages&format=json&pithumbsize=200/';
+        'https://en.wikipedia.org/w/api.php?action=query&origin=*&titles=canada goose&prop=pageimages&format=json&pithumbsize=200/';
       getBirdImage('Canada Goose');
       expect(window.fetch).toHaveBeenCalledWith(url);
     });
