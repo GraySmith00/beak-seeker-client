@@ -6,7 +6,9 @@ export const getPosition = async options => {
 };
 
 export const getHotspotData = async (lat, long) => {
-  const url = `https://cors-anywhere.herokuapp.com/https://ebird.org/ws2.0/ref/hotspot/geo?key=${process.env.REACT_APP_EBIRD_KEY}&lat=${lat}&lng=${long}&fmt=json&dist=10`;
+  const url = `https://cors-anywhere.herokuapp.com/https://ebird.org/ws2.0/ref/hotspot/geo?key=${
+    process.env.REACT_APP_EBIRD_KEY
+  }&lat=${lat}&lng=${long}&fmt=json&dist=10`;
   const response = await fetch(url);
   const hotspotData = await response.json();
   return hotspotData;
@@ -14,7 +16,9 @@ export const getHotspotData = async (lat, long) => {
 
 export const getHotspotBirds = async hotspots => {
   const unresolvedPromises = hotspots.map(async hotspot => {
-    const url = `https://cors-anywhere.herokuapp.com/https://ebird.org/ws2.0/data/obs/${hotspot.locID}/recent?key=${process.env.REACT_APP_EBIRD_KEY}`;
+    const url = `https://cors-anywhere.herokuapp.com/https://ebird.org/ws2.0/data/obs/${
+      hotspot.locID
+    }/recent?key=${process.env.REACT_APP_EBIRD_KEY}`;
     const response = await fetch(url);
     const birds = await response.json();
     return { ...hotspot, birds };
@@ -61,7 +65,7 @@ export const getBirdInfo = async name => {
 };
 
 export const tweetPostRequest = async payload => {
-  const url = 'https://gs-beakseeker-server.herokuapp.com/twitter/posttweet';
+  const url = `${process.env.REACT_APP_SERVER}/twitter/posttweet`;
   const response = await fetch(url, {
     method: 'POST',
     body: JSON.stringify(payload),
@@ -74,7 +78,7 @@ export const tweetPostRequest = async payload => {
 };
 
 export const getLeaderboard = async () => {
-  const url = 'https://gs-beakseeker-server.herokuapp.com/api/users';
+  const url = `${process.env.REACT_APP_SERVER}/api/users`;
   const response = await fetch(url);
   let users = await response.json();
   users = users.map(user => ({
@@ -86,7 +90,7 @@ export const getLeaderboard = async () => {
 };
 
 export const getUser = async id => {
-  const url = `https://gs-beakseeker-server.herokuapp.com/api/users/${id}`;
+  const url = `${process.env.REACT_APP_SERVER}/api/users/${id}`;
   const response = await fetch(url);
   const user = await response.json();
   return user;
@@ -94,7 +98,9 @@ export const getUser = async id => {
 
 export const getMyHotspotsData = async locIds => {
   const unresolvedPromises = locIds.map(async locId => {
-    const url = `https://cors-anywhere.herokuapp.com/https://ebird.org/ws2.0/ref/hotspot/${locId}?key=${process.env.REACT_APP_EBIRD_KEY}&fmt=json`;
+    const url = `https://cors-anywhere.herokuapp.com/https://ebird.org/ws2.0/ref/hotspot/${locId}?key=${
+      process.env.REACT_APP_EBIRD_KEY
+    }&fmt=json`;
     const response = await fetch(url);
     const hotspotData = await response.json();
     return hotspotData;

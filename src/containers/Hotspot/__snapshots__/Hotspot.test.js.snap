@@ -126,6 +126,7 @@ ShallowWrapper {
     "batchedUpdates": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
@@ -138,6 +139,7 @@ ShallowWrapper {
         <withRouter()
           currentPage="Hotspot Info"
 />,
+        false,
         <main
           className="main-content"
 >
@@ -285,6 +287,7 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      false,
       Object {
         "instance": null,
         "key": undefined,
@@ -297,6 +300,7 @@ ShallowWrapper {
             <ProgressBar
               numSighted={1}
 />,
+            false,
             <div
               className="birds"
 >
@@ -445,6 +449,7 @@ ShallowWrapper {
             "rendered": null,
             "type": [Function],
           },
+          false,
           Object {
             "instance": null,
             "key": undefined,
@@ -1058,6 +1063,7 @@ ShallowWrapper {
           <withRouter()
             currentPage="Hotspot Info"
 />,
+          false,
           <main
             className="main-content"
 >
@@ -1205,6 +1211,7 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
+        false,
         Object {
           "instance": null,
           "key": undefined,
@@ -1217,6 +1224,7 @@ ShallowWrapper {
               <ProgressBar
                 numSighted={1}
 />,
+              false,
               <div
                 className="birds"
 >
@@ -1365,6 +1373,7 @@ ShallowWrapper {
               "rendered": null,
               "type": [Function],
             },
+            false,
             Object {
               "instance": null,
               "key": undefined,
@@ -1985,8 +1994,6 @@ ShallowWrapper {
         },
       },
     },
-    "attachTo": undefined,
-    "hydrateIn": undefined,
   },
 }
 `;

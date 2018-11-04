@@ -26,7 +26,7 @@ class SignIn extends Component {
           </p>
         </div>
         <a
-          href="https://gs-beakseeker-server.herokuapp.com/twitter/login"
+          href={`${process.env.REACT_APP_SERVER}/twitter/login`}
           className="twitter-button"
         >
           Sign in with Twitter

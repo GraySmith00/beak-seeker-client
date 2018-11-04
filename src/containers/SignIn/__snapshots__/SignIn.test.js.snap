@@ -8,6 +8,7 @@ ShallowWrapper {
     "batchedUpdates": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
@@ -47,7 +48,7 @@ ShallowWrapper {
 </div>,
         <a
           className="twitter-button"
-          href="https://gs-beakseeker-server.herokuapp.com/twitter/login"
+          href="${process.env.REACT_APP_SERVER}/twitter/login"
 >
           Sign in with Twitter
 </a>,
@@ -200,7 +201,7 @@ ShallowWrapper {
         "props": Object {
           "children": "Sign in with Twitter",
           "className": "twitter-button",
-          "href": "https://gs-beakseeker-server.herokuapp.com/twitter/login",
+          "href": "${process.env.REACT_APP_SERVER}/twitter/login",
         },
         "ref": null,
         "rendered": "Sign in with Twitter",
@@ -246,7 +247,7 @@ ShallowWrapper {
 </div>,
           <a
             className="twitter-button"
-            href="https://gs-beakseeker-server.herokuapp.com/twitter/login"
+            href="${process.env.REACT_APP_SERVER}/twitter/login"
 >
             Sign in with Twitter
 </a>,
@@ -399,7 +400,7 @@ ShallowWrapper {
           "props": Object {
             "children": "Sign in with Twitter",
             "className": "twitter-button",
-            "href": "https://gs-beakseeker-server.herokuapp.com/twitter/login",
+            "href": "${process.env.REACT_APP_SERVER}/twitter/login",
           },
           "ref": null,
           "rendered": "Sign in with Twitter",
@@ -425,8 +426,6 @@ ShallowWrapper {
         },
       },
     },
-    "attachTo": undefined,
-    "hydrateIn": undefined,
   },
 }
 `;

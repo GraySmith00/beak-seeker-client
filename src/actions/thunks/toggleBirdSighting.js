@@ -43,7 +43,7 @@ export const toggleBirdSighting = ({
   };
 
   // put request to update backend
-  const url = `https://gs-beakseeker-server.herokuapp.com/api/users/${user._id}`;
+  const url = `${process.env.REACT_APP_SERVER}/api/users/${user._id}`;
   try {
     fetch(url, {
       method: 'PUT',

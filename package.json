@@ -31,7 +31,8 @@
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "eslint": "eslint src/",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "deploy": "aws s3 cp --recursive ./build s3://beakseeker.com"
   },
   "devDependencies": {
     "enzyme": "^3.5.0",
