@@ -2,7 +2,7 @@
 
 Made by Gray Smith
 
-<a href="https://beakseeker.herokuapp.com/" target="_blank">Visit the App</a>
+<a href="https://beakseeker.netlify.com/" target="_blank">Visit the App</a>
 
 BeakSeeker is the most fun way to go birding! Find the best local hotspots. See which birds have been recently seen in your area. Earn badges for spotting birds and compete against your fellow birders to see who is the ultimate beak seeker!
 
