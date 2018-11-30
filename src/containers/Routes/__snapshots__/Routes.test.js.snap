@@ -8,6 +8,7 @@ ShallowWrapper {
     "batchedUpdates": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
@@ -16,236 +17,65 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <Unknown>
-        <Route
-                component={[Function]}
-                path="/home"
-        />
-        <Route
-                component={[Function]}
-                exact={true}
-                path="/hotspots"
-        />
-        <Route
-                component={[Function]}
-                exact={true}
-                path="/leaderboard"
-        />
-        <Route
-                exact={true}
-                path="/"
-                render={[Function]}
-        />
-        <Route
-                exact={true}
-                path="/hotspots/:location_id"
-                render={[Function]}
-        />
-        <Route
-                exact={true}
-                path="/hotspots/:location_id/:speciesCode"
-                render={[Function]}
-        />
-        <Route
-                component={[Function]}
-                exact={true}
-                path="/tweet"
-        />
-        <Route
-                exact={true}
-                path="/logout"
-                render={[Function]}
-        />
-        <Route
-                component={[Function]}
-                exact={true}
-                path="/myhotspots"
-        />
-</Unknown>,
+      "children": <withRouter(ScrollToTop)>
+        <Unknown>
+                <Route
+                        component={[Function]}
+                        path="/home"
+                />
+                <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/hotspots"
+                />
+                <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/leaderboard"
+                />
+                <Route
+                        exact={true}
+                        path="/"
+                        render={[Function]}
+                />
+                <Route
+                        exact={true}
+                        path="/hotspots/:location_id"
+                        render={[Function]}
+                />
+                <Route
+                        exact={true}
+                        path="/hotspots/:location_id/:speciesCode"
+                        render={[Function]}
+                />
+                <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/tweet"
+                />
+                <Route
+                        exact={true}
+                        path="/logout"
+                        render={[Function]}
+                />
+                <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/myhotspots"
+                />
+                <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/mysightings"
+                />
+        </Unknown>
+</withRouter(ScrollToTop)>,
     },
     "ref": null,
     "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "function",
-      "props": Object {
-        "children": Array [
-          <Route
-            component={[Function]}
-            path="/home"
-/>,
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/hotspots"
-/>,
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/leaderboard"
-/>,
-          <Route
-            exact={true}
-            path="/"
-            render={[Function]}
-/>,
-          <Route
-            exact={true}
-            path="/hotspots/:location_id"
-            render={[Function]}
-/>,
-          <Route
-            exact={true}
-            path="/hotspots/:location_id/:speciesCode"
-            render={[Function]}
-/>,
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/tweet"
-/>,
-          <Route
-            exact={true}
-            path="/logout"
-            render={[Function]}
-/>,
-          undefined,
-          <Route
-            component={[Function]}
-            exact={true}
-            path="/myhotspots"
-/>,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "component": [Function],
-            "path": "/home",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "component": [Function],
-            "exact": true,
-            "path": "/hotspots",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "component": [Function],
-            "exact": true,
-            "path": "/leaderboard",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "exact": true,
-            "path": "/",
-            "render": [Function],
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "exact": true,
-            "path": "/hotspots/:location_id",
-            "render": [Function],
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "exact": true,
-            "path": "/hotspots/:location_id/:speciesCode",
-            "render": [Function],
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "component": [Function],
-            "exact": true,
-            "path": "/tweet",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "exact": true,
-            "path": "/logout",
-            "render": [Function],
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        undefined,
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "component": [Function],
-            "exact": true,
-            "path": "/myhotspots",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-      ],
-      "type": Symbol(react.fragment),
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "class",
       "props": Object {
         "children": <Unknown>
           <Route
@@ -291,6 +121,11 @@ ShallowWrapper {
                     component={[Function]}
                     exact={true}
                     path="/myhotspots"
+          />
+          <Route
+                    component={[Function]}
+                    exact={true}
+                    path="/mysightings"
           />
 </Unknown>,
       },
@@ -345,6 +180,11 @@ ShallowWrapper {
               component={[Function]}
               exact={true}
               path="/myhotspots"
+/>,
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/mysightings"
 />,
           ],
         },
@@ -467,8 +307,339 @@ ShallowWrapper {
             "rendered": null,
             "type": [Function],
           },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "exact": true,
+              "path": "/mysightings",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
         ],
         "type": Symbol(react.fragment),
+      },
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <withRouter(ScrollToTop)>
+          <Unknown>
+                    <Route
+                              component={[Function]}
+                              path="/home"
+                    />
+                    <Route
+                              component={[Function]}
+                              exact={true}
+                              path="/hotspots"
+                    />
+                    <Route
+                              component={[Function]}
+                              exact={true}
+                              path="/leaderboard"
+                    />
+                    <Route
+                              exact={true}
+                              path="/"
+                              render={[Function]}
+                    />
+                    <Route
+                              exact={true}
+                              path="/hotspots/:location_id"
+                              render={[Function]}
+                    />
+                    <Route
+                              exact={true}
+                              path="/hotspots/:location_id/:speciesCode"
+                              render={[Function]}
+                    />
+                    <Route
+                              component={[Function]}
+                              exact={true}
+                              path="/tweet"
+                    />
+                    <Route
+                              exact={true}
+                              path="/logout"
+                              render={[Function]}
+                    />
+                    <Route
+                              component={[Function]}
+                              exact={true}
+                              path="/myhotspots"
+                    />
+                    <Route
+                              component={[Function]}
+                              exact={true}
+                              path="/mysightings"
+                    />
+          </Unknown>
+</withRouter(ScrollToTop)>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": <Unknown>
+            <Route
+                        component={[Function]}
+                        path="/home"
+            />
+            <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/hotspots"
+            />
+            <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/leaderboard"
+            />
+            <Route
+                        exact={true}
+                        path="/"
+                        render={[Function]}
+            />
+            <Route
+                        exact={true}
+                        path="/hotspots/:location_id"
+                        render={[Function]}
+            />
+            <Route
+                        exact={true}
+                        path="/hotspots/:location_id/:speciesCode"
+                        render={[Function]}
+            />
+            <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/tweet"
+            />
+            <Route
+                        exact={true}
+                        path="/logout"
+                        render={[Function]}
+            />
+            <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/myhotspots"
+            />
+            <Route
+                        component={[Function]}
+                        exact={true}
+                        path="/mysightings"
+            />
+</Unknown>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <Route
+                component={[Function]}
+                path="/home"
+/>,
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/hotspots"
+/>,
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/leaderboard"
+/>,
+              <Route
+                exact={true}
+                path="/"
+                render={[Function]}
+/>,
+              <Route
+                exact={true}
+                path="/hotspots/:location_id"
+                render={[Function]}
+/>,
+              <Route
+                exact={true}
+                path="/hotspots/:location_id/:speciesCode"
+                render={[Function]}
+/>,
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/tweet"
+/>,
+              <Route
+                exact={true}
+                path="/logout"
+                render={[Function]}
+/>,
+              undefined,
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/myhotspots"
+/>,
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/mysightings"
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/home",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/hotspots",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/leaderboard",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "exact": true,
+                "path": "/",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "exact": true,
+                "path": "/hotspots/:location_id",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "exact": true,
+                "path": "/hotspots/:location_id/:speciesCode",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/tweet",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "exact": true,
+                "path": "/logout",
+                "render": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            undefined,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/myhotspots",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/mysightings",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": Symbol(react.fragment),
+        },
+        "type": [Function],
       },
       "type": [Function],
     },
@@ -489,8 +660,6 @@ ShallowWrapper {
         },
       },
     },
-    "attachTo": undefined,
-    "hydrateIn": undefined,
   },
 }
 `;
