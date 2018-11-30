@@ -10,6 +10,7 @@ ShallowWrapper {
     "batchedUpdates": [Function],
     "getNode": [Function],
     "render": [Function],
+    "simulateError": [Function],
     "simulateEvent": [Function],
     "unmount": [Function],
   },
@@ -70,6 +71,17 @@ ShallowWrapper {
                               className="fas fa-fire"
                     />
                      My Hotspots
+          </NavLink>
+          <NavLink
+                    activeClassName="active"
+                    aria-current="page"
+                    className="nav-link"
+                    to="/mysightings"
+          >
+                    <i
+                              className="fas fa-crow"
+                    />
+                     My Sightings
           </NavLink>
 </main>,
       ],
@@ -139,6 +151,17 @@ ShallowWrapper {
                             className="fas fa-fire"
               />
                My Hotspots
+</NavLink>,
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              className="nav-link"
+              to="/mysightings"
+>
+              <i
+                            className="fas fa-crow"
+              />
+               My Sightings
 </NavLink>,
           ],
           "className": "main-content",
@@ -305,6 +328,39 @@ ShallowWrapper {
             ],
             "type": [Function],
           },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "aria-current": "page",
+              "children": Array [
+                <i
+                  className="fas fa-crow"
+/>,
+                " My Sightings",
+              ],
+              "className": "nav-link",
+              "to": "/mysightings",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "fas fa-crow",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "i",
+              },
+              " My Sightings",
+            ],
+            "type": [Function],
+          },
         ],
         "type": "main",
       },
@@ -369,6 +425,17 @@ ShallowWrapper {
                                     className="fas fa-fire"
                         />
                          My Hotspots
+            </NavLink>
+            <NavLink
+                        activeClassName="active"
+                        aria-current="page"
+                        className="nav-link"
+                        to="/mysightings"
+            >
+                        <i
+                                    className="fas fa-crow"
+                        />
+                         My Sightings
             </NavLink>
 </main>,
         ],
@@ -438,6 +505,17 @@ ShallowWrapper {
                                 className="fas fa-fire"
                 />
                  My Hotspots
+</NavLink>,
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                className="nav-link"
+                to="/mysightings"
+>
+                <i
+                                className="fas fa-crow"
+                />
+                 My Sightings
 </NavLink>,
             ],
             "className": "main-content",
@@ -604,6 +682,39 @@ ShallowWrapper {
               ],
               "type": [Function],
             },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "aria-current": "page",
+                "children": Array [
+                  <i
+                    className="fas fa-crow"
+/>,
+                  " My Sightings",
+                ],
+                "className": "nav-link",
+                "to": "/mysightings",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "fas fa-crow",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "i",
+                },
+                " My Sightings",
+              ],
+              "type": [Function],
+            },
           ],
           "type": "main",
         },
@@ -627,8 +738,6 @@ ShallowWrapper {
         },
       },
     },
-    "attachTo": undefined,
-    "hydrateIn": undefined,
   },
 }
 `;
